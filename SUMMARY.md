@@ -8,5 +8,10 @@ This is the summary of my experience in LintCode.
 	* [Design Pattern](SystemDesign/DesignPattern.md)
 
 * [Technical Questions](TechnicalQuestions/README.md)
-	* [Comparator](TechnicalQuestions/TechnicalQuestions.md)
+	* [Technical Questions](TechnicalQuestions/TechnicalQuestion.md)
 
+* [Git](TechnicalQuestions/README.md)
+	* [Git](TechnicalQuestions/git.md)
+
+* [Bash Command](TechnicalQuestions/README.md)
+	* [Bash Command](TechnicalQuestions/BashCommand.md)
