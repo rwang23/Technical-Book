@@ -5,6 +5,8 @@
 When you visit a website a lot of things happen behind the scenes that you may not be aware of. Let’s go through a list of those things in the order that they occur:
 
 1.	When you visit a website, the web browser that you are using (whether it is Chrome, Safari, Firefox, Internet Explorer etc.) will contact what’s called a DNS (Domain Name System) server that will translate the human readable website name into a numeric IP address. It’s important to remember that every website name is basically an alias for an IP address. So, DNS converts that URL into an IP address, and each website has its own unique IP address.
+(first it will search the DNS in browser cache, then in the operating system cache, or local host;
+then it request the DNS to translate to IP)
 
 ```
 	DNS is interesting because of the fact that it is basically works in a hierarchical structure. There are many DNS servers distributed throughout the world, and if one DNS server does not know a particular IP address, then it will ask another DNS server that is “higher up” in the hierarchy. How does your personal computer know which DNS server to use? Well, your ISP (Internet Service Provider) actually sends some extra network information to your computer whenever you connect to the Internet. That “extra” network information includes which DNS server your computer should be using whenever you visit a website.
@@ -14,11 +16,42 @@ Once a DNS server finds the IP address of the website you are looking for, that 
 
 2. Your browser will now use the IP address returned by DNS to communicate with the web server that hosts the website that you want to visit. It will connect to port number 80 on the web server using a protocol called TCP.
 
-3. Now that your browser has a connection with the website’s web server, your browser will retrieve the html code of the specific page that is requested.
+3. Now that your browser has a connection with the website’s web server, your browser will retrieve the html code(or some other resources) of the specific page that is requested.
 
 4. Once your browser receives the HTML code from the web server, it will display that HTML code to you in the browser window.
 
 5. If and when you close that particular browser window, the connection with the web server will end.
+
+###What is URL?
+
+	http://www.github.com:8080/index.html?user=rwang23&lang=zh-CN#home
+	  |          |          |       |                  |          |
+	protocol     |          |       |                  |          |
+	          hostname     port     |                  |          |
+	              \        /    pathname             search      hash
+	                 host
+##HTTP
+#### HTTP Status Messages
+
+|HTTP Status|Description|Message|
+|------|----|--------|
+|200|The request is OK (this is the standard response for successful HTTP requests)|OK|
+|301|The requested page has moved to a new URL | Moved Permanently|
+|304|Indicates the requested page has not been modified since last requested|Not Modified|
+|400|The request cannot be fulfilled due to bad syntax|Bad Request|
+|404|The requested page could not be found but may be available again in the future|Not Found|
+|500|A generic error message, given when no more specific message is suitable|Internal Server Error|
+
+##What is cookie
+An HTTP cookie (also called web cookie, Internet cookie, browser cookie or simply cookie), is a small piece of data sent from a website and stored in the user's web browser while the user is browsing. Every time the user loads the website, the browser sends the cookie back to the server to notify the user's previous activity.
+###Pros and Cons
+####Pros
+In some ways, cookies make browsing the Internet faster and easier.
+For example, certain websites customize site information based on your location (city). Also, after you have registered on a site like Amazon, for example, you do not have to enter the same information every time you visit the site.
+####Cons
+Since most websites will not allow their site to be accessed unless cookies are enabled, browsers are usually set to accept cookies by default. As a result, cookies are being stored "invisibly" on your hard drive every time you browse the Internet. Since your IP address is usually collected, your browsing history and online activities become public knowledge.
+Also, your browser may start and run slower, and your system may lag or hang up if hard drive space is limited
+When you visit websites that contain ads, third-party cookies (from sites you've never visited) can also be placed on your computer
 
 ##What is a MAC address?
 
