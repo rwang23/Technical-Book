@@ -37,10 +37,10 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 ##工作区与暂存区
 `git add`命令实际上就是把要提交的所有修改放到暂存区（Stage）
 
-![git add](/Users/Des/Documents/Coding/notes/image/git add.jpeg)
+![git add](../image/git add.jpeg)
 `git commit`就可以一次性把暂存区的所有修改提交到分支。
 
-![git commit](/Users/Des/Documents/Coding/notes/image/git commit.jpeg)
+![git commit](../image/git commit.jpeg)
 
 ##撤销修改 撤销删除
 删除文件 使用 rm file，但是如果想要版本库也删除的话 需要使用 `git rm file`
@@ -112,7 +112,7 @@ Git鼓励大量使用分支：
 * master分支应该是非常稳定的，也就是仅用来发布新版本的
 * 一般干活都在dev分支上的，一般来说dev分支是不稳定的，比如到了某个时候才合并到master上边，在master上边发布新版本
 
-![git branch merge](/Users/Des/Documents/Coding/notes/image/git branch&merge.png)
+![git branch merge](../image/git branch&merge.png)
 
 ####Bug出现的修复
 
