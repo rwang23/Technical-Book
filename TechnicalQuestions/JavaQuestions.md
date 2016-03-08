@@ -118,7 +118,7 @@ Here are couple of best practices I follow while using Collectionc classes from 
 - Use iterator to loop over collection.
 - Always use generics with collection.
 
-###拓展一些问题： Java memory leak/JVM/ garbage collection,  Object class method: getclass()/ hashcode(); java: heap/stack存什么; Java 8/Java 7
+###拓展一些问题： Java memory leak,  Object class method: getclass()/ hashcode(); java: heap/stack存什么; Java 8/Java 7
 
 ####How do you remove objects from Java collections like ArrayList, while iterating
 - You should be using Iterator's remove() method to delete any object from Collection you are iterating
@@ -134,8 +134,26 @@ Here are couple of best practices I follow while using Collectionc classes from 
 
 ####Explain Java Heap space and Garbage collection
 - (简化版)When a Java process is started using java command, memory is allocated to it. Part of this memory is used to create heap space, which is used to allocate memory to objects whenever they are created in the program. Garbage collection is the process inside JVM which reclaims memory from dead objects for future allocation.
-- (复杂版)For the sake of Garbage collection Heap is divided into three main regions named as New Generation, Old or Tenured Generation and Perm space. New Generation of Java Heap is part of Java Heap memory where newly created object are stored, During the course of application many objects created and died but those remain live they got moved to Old or Tenured Generation by Java Garbage collector thread on Major or full garbage collection. Perm space of Java Heap is where JVM stores Meta data about classes and methods, String pool and Class level details. You can see How Garbage collection works in Java for more information on Heap in Java and Garbage collection.
+- (复杂版)For the sake of Garbage collection. Heap is divided into three main regions named as New Generation, Old or Tenured Generation and Perm space. New Generation of Java Heap is part of Java Heap memory where newly created object are stored, During the course of application many objects created and died but those remain live they got moved to Old or Tenured Generation by Java Garbage collector thread on Major or full garbage collection. Perm space of Java Heap is where JVM stores Meta data about classes and methods, String pool and Class level details.
 
+####Java Memory Leak
+[Java Memory Leaks](http://www.programcreek.com/2013/10/the-introduction-of-memory-leak-what-why-and-how/)
+- Normally You simply create objects and Java Garbage Collector takes care of allocating and freeing memory. However, the situation is not as simple as that, because memory leaks frequently occur in Java applications.
+- Definition of Memory Leak: objects are no longer being used by the application, but Garbage Collector can not remove them because they are being referenced.
+- Unreferenced objects will be garbage collected, while referenced objects will not be garbage collected. Unreferenced objects are surely unused, because no other objects refer to it. However, unused objects are not all unreferenced. Some of them are being referenced! That's where the memory leaks come from.
+- In the example below, object A refers to object B. A's lifetime (t1 - t4) is much longer than B's (t2 - t3). When B is no longer being used in the application, A still holds a reference to it. In this way, Garbage Collector can not remove B from memory. This would possibly cause out of memory problem, because if A does the same thing for more objects, then there would be a lot of objects that are uncollected and consume memory space.
+It is also possible that B hold a bunch of references of other objects. Those objects referenced by B will not get collected either. All those unused objects will consume precious memory space.
+
+####Create Memory leaks
+[Example](http://stackoverflow.com/questions/6470651/creating-a-memory-leak-with-java)
+
+
+
+####How to Prevent Memory Leaks?
+The following are some quick hands-on tips for preventing memory leaks.
+- Pay attention to Collection classes, such as HashMap, ArrayList, etc., as they are common places to find memory leaks. When they are declared static, their life time is the same as the life time of the application.
+- Pay attention to event listeners and callbacks. A memory leak may occur if a listener is registered but not unregistered when the class is not being used any longer.
+- "If a class manages its own memory, the programer should be alert for memory leaks."[1] Often times member variables of an object that point to other objects need to be null out.
 
 ##数据结构和算法
 	二叉树：超级重点： 收集所有二叉树的题
