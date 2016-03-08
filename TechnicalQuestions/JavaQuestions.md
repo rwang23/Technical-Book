@@ -72,13 +72,50 @@
 - TreeSet is implemented using a tree structure(red-black tree in algorithm book). The elements in a set are sorted, but the add, remove, and contains methods has time complexity of O(log (n)). It offers several methods to deal with the ordered set like first(), last(), headSet(), tailSet(), etc.
 - LinkedHashSet is between HashSet and TreeSet. It is implemented as a hash table with a linked list running through it, so it provides the order of insertion. The time complexity of basic methods is O(1).
 
+####String vs StringBuffer vs StringBuilder
+- String is immutable ( once created can not be changed)object. The object created as a String is stored in the Constant String Pool. Every immutable object in Java is thread safe ,that implies String is also thread safe . String can not be used by two threads simultaneously.
+- StringBuffer is mutable means one can change the value of the object. The object created through StringBuffer is stored in the heap. StringBuffer has the same methods as the StringBuilder, but each method in StringBuffer is synchronized that is StringBuffer is thread safe
+- StringBuilder  is same as the StringBuffer The main difference between the StringBuffer and StringBuilder is that StringBuilder is also not thread safe. and StringBuilder is faster than stringbuffer
 
-- String vs StringBuffer;
-- Hashmap/TreeMap/Hashtable/LinkedHashMap/ ConcurrentHashMap;
-- Array/ArrayList/LinkedList;
-- PriorityQueue(heap);
-- comparable/comparator; iterator
+####Why is String Immutable in Java?
+- The String is Immutable in java because java designer thought that string will be heavily used and making it immutable allow some optimization easy sharing same String object between multiple clients.
 
+####Hashmap/TreeMap/Hashtable/LinkedHashMap/ ConcurrentHashMap
+- HashMap is implemented as a hash table, and there is no ordering on keys or values.
+- Hashtable is synchronized, in contrast to HashMap. Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.
+- TreeMap is implemented based on red-black tree structure, and it is ordered by the key.
+- LinkedHashMap preserves the insertion order
+- ConcurrentHashMap is thread-safe that is the code can be accessed by single thread at a time
+This is the reason that HashMap should be used if the program is thread-safe.
+
+####Array/ArrayList/LinkedList/Vector
+- The obvious difference between them is that ArrrayList is backed by array data structure, supprots random access and LinkedList is backed by linked list data structure and doesn't supprot random access. Accessing an element with the index is O(1) in ArrayList but its O(n) in LinkedList.
+- An ArrayList is better than Array to use when you have no knowledge in advance about elements number. ArrayList are slower than Arrays. So, if you need efficiency try to use Arrays if possible.
+- Vector is similar with ArrayList, but it is synchronized.
+
+####LinkedHashMap and PriorityQueue in Java?
+- PriorityQueue guarantees that lowest or highest priority element always remain at the head of the queue
+- LinkedHashMap maintains the order on which elements are inserted.
+- When you iterate over a PriorityQueue, iterator doesn't guarantee any order but iterator of LinkedHashMap does guarantee the order on which elements are inserted
+
+####comparable/comparator iterator
+- The Comparable interface is used to define the natural order of object while Comparator is used to define custom order.
+- Comparable can be always one, but we can have multiple comparators to define customized order for objects.
+- comparable use compareTo(Object o1), comparator use compare(Object o1, Object o2)
+- difference between Comparator vs Comparable, later is used to compare current object, represented by this keyword, with another object, while Comparator compares two arbitrary object passed to compare() method in Java.
+- compareTo() and compare() method in Java must be consistent with equals() implementation i.e. if two methods are equal by equals() method than compareTo() and compare() must return zero
+- [用法实例](http://java67.blogspot.com/2012/10/how-to-sort-object-in-java-comparator-comparable-example.html)
+
+####iterator
+- Iterator enables you to cycle through a collection, obtaining or removing elements.
+
+####few best practices you apply while using Collections in Java? (answer)
+Here are couple of best practices I follow while using Collectionc classes from Java:
+- Always use the right collection e.g. if you need non-synchronized list then use ArrayList and not Vector.
+- Prefer concurrent collection over synchronized collection because they are more scalable.
+- Always use interface to a represent and access a collection e.g. use List to store ArrayList, Map to store HashMap and so on.
+- Use iterator to loop over collection.
+- Always use generics with collection.
 
 ###拓展一些问题： Java memory leak/JVM/ garbage collection,  Object class method: getclass()/ hashcode(); java: heap/stack存什么; Java 8/Java 7
 
