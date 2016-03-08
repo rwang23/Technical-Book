@@ -6,10 +6,11 @@ This is the summary of my experience in LintCode.
 	* [Network](SystemDesign/Network.md)
 	* [Operating Systems](SystemDesign/OperatingSystems.md)
 	* [Design Pattern](SystemDesign/DesignPattern.md)
-	* [Notes from Others](SystemDesign/fromOthers.md)
 
 * [Technical Questions](TechnicalQuestions/README.md)
-	* [Technical Questions](TechnicalQuestions/TechnicalQuestion.md)
+	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
+	* [Java Questions](SystemDesign/JavaQuestions.md)
+
 
 * [Git](Git/README.md)
 	* [Git](Git/git.md)
