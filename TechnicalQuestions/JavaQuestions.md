@@ -108,6 +108,7 @@ This is the reason that HashMap should be used if the program is thread-safe.
 
 ####iterator
 - Iterator enables you to cycle through a collection, obtaining or removing elements.
+- boolean hasNext( )  Object next( ) void remove( )
 
 ####few best practices you apply while using Collections in Java? (answer)
 Here are couple of best practices I follow while using Collectionc classes from Java:
@@ -118,6 +119,23 @@ Here are couple of best practices I follow while using Collectionc classes from 
 - Always use generics with collection.
 
 ###拓展一些问题： Java memory leak/JVM/ garbage collection,  Object class method: getclass()/ hashcode(); java: heap/stack存什么; Java 8/Java 7
+
+####How do you remove objects from Java collections like ArrayList, while iterating
+- You should be using Iterator's remove() method to delete any object from Collection you are iterating
+- Explain: what is difference in removing object using remove() method of Collection over remove() method of Iterator and why one should use over other?
+- Reason is ConcurrentModificationException, if you use remove() method of List, Set or basically from any Collection to delete object while iterating, it will throw ConcurrentModificationException. Though remove() method of java.util.Collection works fine to remove individual object, they don't work well, when you are iterating over collection.
+
+
+####JRE, JDK, JVM and JIT? (answer)
+- JRE stands for Java run-time and it's required to run Java application.
+- JDK stands for Java development kit and provides tools to develop Java program e.g. Java compiler. It also contains JRE.
+- The JVM stands for Java virtual machine and it's the process responsible for running Java application.
+- The JIT stands for Just In Time compilation and helps to boost the performance of Java application by converting Java byte code into native code when the crossed certain threshold i.e. mainly hot code is converted into native code.
+
+####Explain Java Heap space and Garbage collection
+- (简化版)When a Java process is started using java command, memory is allocated to it. Part of this memory is used to create heap space, which is used to allocate memory to objects whenever they are created in the program. Garbage collection is the process inside JVM which reclaims memory from dead objects for future allocation.
+- (复杂版)For the sake of Garbage collection Heap is divided into three main regions named as New Generation, Old or Tenured Generation and Perm space. New Generation of Java Heap is part of Java Heap memory where newly created object are stored, During the course of application many objects created and died but those remain live they got moved to Old or Tenured Generation by Java Garbage collector thread on Major or full garbage collection. Perm space of Java Heap is where JVM stores Meta data about classes and methods, String pool and Class level details. You can see How Garbage collection works in Java for more information on Heap in Java and Garbage collection.
+
 
 ##数据结构和算法
 	二叉树：超级重点： 收集所有二叉树的题
