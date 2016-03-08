@@ -9,7 +9,7 @@ This is the summary of my experience in LintCode.
 
 * [Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
-	* [Java Questions](SystemDesign/JavaQuestions.md)
+	* [Java Questions](TechnicalQuestions/JavaQuestions.md)
 
 
 * [Git](Git/README.md)
