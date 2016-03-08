@@ -1,10 +1,19 @@
 #Computer Network
 
+##TCP/IP
+###Explain Transmission Control Protocol, TCP
+TCP ensures reliable and end to end delivery of segments of information. Segments are acknowledged to the source when received by the destination. Data is broken up into segments and sequenced properly before transmission. This arrangement of segments allows destination to trace lost data in transmission.
+###What is TCP protocol?
+Transmission control Protocol is used to establish communication between nodes or networks and exchange data packets. It guarantees delivery of data packets in the order they were sent. Hence it is most commonly used in all applications that require guaranteed delivery of data. It can handle both timeouts (if packets were delayed) and retransmission (if packets were lost). The stream of data is transmitted in segments. The segment header is 32 bit. it is a connectionless communication protocol at the third level (network) of the OSI model.
+###TCP vs. UDP.
+TCP guarantees the delivery of data. UDP on the other hand, does not guarantee delivery of data. TCP delivers messages in the order they were sent. UDP has no ordering mechanisms. In TCP data is sent as a stream while UDP sends data as individual packets. UDP is faster than TCP. TCP is a connection oriented protocol while UDP is connectionless.
+
 ##What happens when you visit a website? What exactly goes on after you type a URL into a browser?
 
 When you visit a website a lot of things happen behind the scenes that you may not be aware of. Let’s go through a list of those things in the order that they occur:
 
 1.	When you visit a website, the web browser that you are using (whether it is Chrome, Safari, Firefox, Internet Explorer etc.) will contact what’s called a DNS (Domain Name System) server that will translate the human readable website name into a numeric IP address. It’s important to remember that every website name is basically an alias for an IP address. So, DNS converts that URL into an IP address, and each website has its own unique IP address.
+
 (first it will search the DNS in browser cache, then in the operating system cache, or local host;
 then it request the DNS to translate to IP)
 
@@ -44,6 +53,7 @@ Once a DNS server finds the IP address of the website you are looking for, that 
 
 ##What is cookie
 An HTTP cookie (also called web cookie, Internet cookie, browser cookie or simply cookie), is a small piece of data sent from a website and stored in the user's web browser while the user is browsing. Every time the user loads the website, the browser sends the cookie back to the server to notify the user's previous activity.
+
 ###Pros and Cons
 ####Pros
 In some ways, cookies make browsing the Internet faster and easier.
