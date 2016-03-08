@@ -1,24 +1,24 @@
 ##语言知识点：以java为例
-###Java 语言特性：Java 与 c ++ 区别;
-abstract class vs interface;
-shallow copy/deep copy;
-pass by reference/ pass by value;
-hashcode()/ equals();
-Java 一些关键字：final, static;
-final/finalize/finally;
-checked/unchecked exception；
-java 8种primitive type；
-overriding vs overload；
-public static void main(string args[])每个关键字的作用
+###Java 语言特性Java 以及 c ++ 区别;
+- abstract class vs interface;
+- shallow copy/deep copy;
+- pass by reference/ pass by value;
+- hashcode()/ equals();
+- Java 一些关键字：final, static;
+- final/finalize/finally;
+- checked/unchecked exception；
+- java 8种primitive type；
+- overriding vs overload；
+- public static void main(string args[])每个关键字的作用
 
 ###Java Collections：
-stack/queue/deque;
-hashset/treeset；
-String vs StringBuffer;
-Hashmap/TreeMap/Hashtable/LinkedHashMap/ ConcurrentHashMap;
-Array/ArrayList/LinkedList;
-PriorityQueue(heap);
-comparable/comparator; iterator
+- stack/queue/deque;
+- hashset/treeset；
+- String vs StringBuffer;
+- Hashmap/TreeMap/Hashtable/LinkedHashMap/ ConcurrentHashMap;
+- Array/ArrayList/LinkedList;
+- PriorityQueue(heap);
+- comparable/comparator; iterator
 
 
 ###拓展一些问题： Java memory leak/JVM/ garbage collection,  Object class method: getclass()/ hashcode(); java: heap/stack存什么; Java 8/Java 7
@@ -30,7 +30,7 @@ comparable/comparator; iterator
 	实现基本数据结构： hashmap， stack和queue
 	Array/ String： shuffle an array， java big integer实现
 	dfs vs bfs  word ladder/ topological  sorting
-	 简单dp，不需要很复杂: paint house/stock price/
+	简单dp，不需要很复杂: paint house/stock price/
 
 
 ##计算机网络
