@@ -61,6 +61,10 @@ All communications sent over regular HTTP connections are in 'plain text' and ca
 3.输入www.google.com 会发生什么；What happens when you type [url]www.google.com in your browser?[/url]
 
 ####Post vs Get
+GET - Requests data from a specified resource
+POST - Submits data to be processed to a specified resource
+GET is used for viewing something, without changing it, while POST is used for changing something
+POST also lets you send much more information,  lets you send just about any type of data
 
 #### HTTP Status Messages
 
