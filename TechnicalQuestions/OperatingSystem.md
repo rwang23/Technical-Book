@@ -30,9 +30,23 @@ Because of this, BASE (Basically available, soft state, eventually consistent) i
 	run(): Entry point for the thread
 	sleep(): suspend a thread for a period of time
 	start(): start a thread by calling its run() method
-####
+####Create thread
+A thread can be created in two ways:
+- By extending Thread class
+- By implementing Runnable interface.
+####Thread creation by implementing Runnable Interface
+- Once the thread is created it will start running when start() method gets called. Basically start() method calls run() method implicitly.
 
-Java多线程： extend Tread类，Implement Runnable接口/blockingqueue
+####Thread creation by extending Thread class
+- The class should override the run() method which is the entry point for the new thread as described above.
+- Call start() method to start the execution of a thread.
+
+####Interthread Communication
+- wait() tells the calling thread to give up the monitor and go to sleep until some other thread enters the same monitor and calls notify().
+- notify() wakes up the first thread that called wait() on the same object.
+- notifyAll() wakes up all the threads that called wait() on the same object. The highest priority thread will run first.
+
+Java多线程： /blockingqueue
 
 ###Multi-Threading condition
 - In multitasking systems, some abnormal conditions prevent progress of executing processes or threads. I'll refer to both processes and threads simply as "processes". Two of these conditions are called dead-lock and live-lock.
@@ -41,7 +55,7 @@ Java多线程： extend Tread类，Implement Runnable接口/blockingqueue
 
 ###Starvation and Livelock
 [Starvation](http://www.math.uni-hamburg.de/doc/java/tutorial/essential/threads/deadlock.html)
-[Starvation](https://www.safaribooksonline.com/library/view/erlang-programming/9780596803940/ch04s10.html)
+
 [Starvation](https://codingarchitect.wordpress.com/2006/01/18/multi-threading-basics-deadlocks-livelocks-and-starvation/)
 [Starvation](https://richardbarabe.wordpress.com/2014/02/21/java-deadlock-livelock-and-lock-starvation-examples/)
 Starvation and livelock are much less common a problem than deadlock, but are still problems that every designer of concurrent software is likely to encounter.
@@ -49,8 +63,11 @@ Starvation and livelock are much less common a problem than deadlock, but are st
 ####Starvation
 Starvation describes a situation where a thread is unable to gain regular access to shared resources and is unable to make progress. This happens when shared resources are made unavailable for long periods by "greedy" threads. For example, suppose an object provides a synchronized method that often takes a long time to return. If one thread invokes this method frequently, other threads that also need frequent synchronized access to the same object will often be blocked.
 
+####Deadlock
+Deadlock, the ultimate form of starvation, occurs when two or more threads are waiting on a condition that cannot be satisfied. Deadlock most often occurs when two (or more) threads are each waiting for the other(s) to do something.
+
 ####Livelock
-A thread often acts in response to the action of another thread. If the other thread's action is also a response to the action of another thread, then livelock may result. As with deadlock, livelocked threads are unable to make further progress. However, the threads are not blocked — they are simply too busy responding to each other to resume work. This is comparable to two people attempting to pass each other in a corridor: Alphonse moves to his left to let Gaston pass, while Gaston moves to his right to let Alphonse pass. Seeing that they are still blocking each other, Alphone moves to his right, while Gaston moves to his left. They're still blocking each other, so..
+A thread often acts in response to the action of another thread. If the other thread's action is also a response to the action of another thread, then livelock may result. Livelocked threads are unable to make further progress. However, the threads are not blocked — they are simply too busy responding to each other to resume work. This is comparable to two people attempting to pass each other in a corridor: Livelock occurs when two people meet in a narrow corridor, and each tries to be polite by moving aside to let the other pass, but they end up swaying from side to side without making any progress because they always both move the same way at the same time
 
 ###
 序列化的几种方式：JSON／Object Serialize／ProtoBuf

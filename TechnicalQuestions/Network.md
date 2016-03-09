@@ -10,6 +10,7 @@ A three-way-handshake is also known as a TCP handshake.
 - A client node sends a SYN data packet over an IP network to a server on the same or an external network. The objective of this packet is to ask/infer if the server is open for new connection.
 - The target server must have open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it responds and returns a confirmation receipt - the ACK packet or SYN/ACK packet.
 - The client node receives the SYN/ACK from the server and responds with an ACK packet
+
 [example](http://www.omnisecu.com/tcpip/tcp-three-way-handshake.php)
 
 ###TCP UDP
@@ -94,6 +95,7 @@ The client-server model is a core network computing concept also building functi
 - Domain Name System (DNS)
 - Simple Mail Transfer Protocol (SMTP)
 - Telnet
+
 Clients include Web browsers, chat applications, and email software, among others. Servers include Web, database, application, chat and email, etc.
 
 ####Explains Client-Server Model
