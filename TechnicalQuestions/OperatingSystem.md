@@ -50,8 +50,6 @@ A thread can be created in two ways:
 - notify() wakes up the first thread that called wait() on the same object.
 - notifyAll() wakes up all the threads that called wait() on the same object. The highest priority thread will run first.
 
-Java多线程： /blockingqueue
-
 ###Multi-Threading condition
 - In multitasking systems, some abnormal conditions prevent progress of executing processes or threads. I'll refer to both processes and threads simply as "processes". Two of these conditions are called dead-lock and live-lock.
 - The former refers to processes which are blocking each other, thus preventing either from executing. The latter refers to processes which prevent each other from progressing, but do not actually block the execution. For instance, they might continually cause each other to rollback transactions, neither ever being able to finish them.
@@ -72,6 +70,21 @@ Deadlock, the ultimate form of starvation, occurs when two or more threads are w
 
 ####Livelock
 A thread often acts in response to the action of another thread. If the other thread's action is also a response to the action of another thread, then livelock may result. Livelocked threads are unable to make further progress. However, the threads are not blocked — they are simply too busy responding to each other to resume work. This is comparable to two people attempting to pass each other in a corridor: Livelock occurs when two people meet in a narrow corridor, and each tries to be polite by moving aside to let the other pass, but they end up swaying from side to side without making any progress because they always both move the same way at the same time
+
+###Blockingqueue
+[Blockingqueue](https://examples.javacodegeeks.com/core-java/util/concurrent/java-blockingqueue-example/)
+
+```java
+Blockingqueue<object> blockingqueue = new ArrayBlockingQueue<10>();
+```
+####What is Blockingqueue
+- BlockingQueue is a queue which is thread safe to insert or retrieve elements from it.
+- Also, it provides a mechanism which blocks requests for inserting new elements when the queue is full or requests for removing elements when the queue is empty, with the additional option to stop waiting when a specific timeout passes.
+- This functionality makes BlockingQueue a nice way of implementing the Producer-Consumer pattern, as the producing thread can insert elements until the upper limit of BlockingQueue while the consuming thread can retrieve elements until the lower limit is reached and of course with the support of the aforementioned blocking functionality.
+
+####Queues vs BlockingQueues
+- A java.util.Queue is an interface which extends Collection interface and provides methods for inserting, removing or inspecting elements. First-In-First-Out (FIFO) is a very commonly used method for describing a standard queue, while an alternative one would be to order queue elements in LIFO (Last-In-First-Out).
+- However, BlockingQueues are more preferable for concurrent development.
 
 ###
 序列化的几种方式：JSON／Object Serialize／ProtoBuf
