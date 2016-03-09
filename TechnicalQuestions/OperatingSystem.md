@@ -34,7 +34,16 @@ Because of this, BASE (Basically available, soft state, eventually consistent) i
 
 Java多线程： extend Tread类，Implement Runnable接口/blockingqueue
 
+###Multi-Threading condition
+- In multitasking systems, some abnormal conditions prevent progress of executing processes or threads. I'll refer to both processes and threads simply as "processes". Two of these conditions are called dead-lock and live-lock.
+- The former refers to processes which are blocking each other, thus preventing either from executing. The latter refers to processes which prevent each other from progressing, but do not actually block the execution. For instance, they might continually cause each other to rollback transactions, neither ever being able to finish them.
+- Another condition is known as resource starvation, in which one or more finite resources, required for the progress of the processes, have been depleted by them and can't be restored unless the processes progress. This is also a special case of live-lock.
+
 ###Starvation and Livelock
+[Starvation](http://www.math.uni-hamburg.de/doc/java/tutorial/essential/threads/deadlock.html)
+[Starvation](https://www.safaribooksonline.com/library/view/erlang-programming/9780596803940/ch04s10.html)
+[Starvation](https://codingarchitect.wordpress.com/2006/01/18/multi-threading-basics-deadlocks-livelocks-and-starvation/)
+[Starvation](https://richardbarabe.wordpress.com/2014/02/21/java-deadlock-livelock-and-lock-starvation-examples/)
 Starvation and livelock are much less common a problem than deadlock, but are still problems that every designer of concurrent software is likely to encounter.
 
 ####Starvation
