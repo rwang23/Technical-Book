@@ -20,9 +20,28 @@ ACID features are usually applied to relational DBs. If you want to apply ACID i
 Because of this, BASE (Basically available, soft state, eventually consistent) is used which can provide levels of scalability that cannot be obtained with ACID.
 
 
+##Multi-Threading
+[Intro to multi-threading](http://beginnersbook.com/2013/03/multithreading-in-java/)
+####Basic function
+	getName(): It is used for Obtaining a thread’s name
+	getPriority(): Obtain a thread’s priority
+	isAlive(): Determine if a thread is still running
+	join(): Wait for a thread to terminate
+	run(): Entry point for the thread
+	sleep(): suspend a thread for a period of time
+	start(): start a thread by calling its run() method
+####
 
 Java多线程： extend Tread类，Implement Runnable接口/blockingqueue
+
+###
 序列化的几种方式：JSON／Object Serialize／ProtoBuf
+
+###
 what is dead lock?死锁问题／如何解决
+
+###
 Design Pattern 设计模式（singleton，factory, builder, decorator）
+
+###
 Linux command: kill -9   / scp / telnet / ps
