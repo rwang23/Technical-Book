@@ -106,8 +106,7 @@ Serialization is the conversion of an object to a series of bytes, so that the o
 - It's open source, tested and most importantly widely used in Google itself
 
 
-###
+###Design Pattern
 Design Pattern 设计模式（singleton，factory, builder, decorator）
 
-###
-Linux command: kill -9   / scp / telnet / ps
+

@@ -9,12 +9,11 @@ This is the summary of my experience in LintCode.
 
 * [Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
+	* [Linux Command](TechnicalQuestions/LinuxCommand.md)
 	* [Network Questions](TechnicalQuestions/Network.md)
 	* [Database](TechnicalQuestions/Database.md)
 	* [Operating System](TechnicalQuestions/OperatingSystem.md)
 	* [Java Questions](TechnicalQuestions/JavaQuestions.md)
-
-
 
 * [Git](Git/README.md)
 	* [Git](Git/git.md)

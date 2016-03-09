@@ -21,8 +21,7 @@ Example of Singleton in Java
 	public class Logging {
 
 	// this creates the actual Singleton instance
-	private static final Logging singletonInstance =
-	new Logging();
+	private static final Logging singletonInstance = new Logging();
 
 	/* Private constructor prevents others from
 	   instantiating this class: */
