@@ -41,6 +41,10 @@ A thread can be created in two ways:
 - The class should override the run() method which is the entry point for the new thread as described above.
 - Call start() method to start the execution of a thread.
 
+####Implementing Runnable Interface VS Extending Thread class
+- Extending the Thread class will make your class unable to extend other classes, because of the single inheritance feature in  JAVA. However, this will give you a simpler code structure. If you implement Runnable, you can gain better object-oriented design and consistency and also avoid the single inheritance problems.
+- If you just want to achieve basic functionality of a thread you can simply implement Runnable interface and override run() method. But if you want to do something serious with thread object as it has other methods like suspend(), resume(), ..etc which are not available in Runnable interface then you may prefer to extend the Thread class.
+
 ####Interthread Communication
 - wait() tells the calling thread to give up the monitor and go to sleep until some other thread enters the same monitor and calls notify().
 - notify() wakes up the first thread that called wait() on the same object.
