@@ -68,6 +68,12 @@ Starvation describes a situation where a thread is unable to gain regular access
 ####Deadlock
 Deadlock, the ultimate form of starvation, occurs when two or more threads are waiting on a condition that cannot be satisfied. Deadlock most often occurs when two (or more) threads are each waiting for the other(s) to do something.
 
+####How to solve deadlock
+- design system so that deadlock is impossible
+- avoid
+- check for deadlock peridically
+- recover by killing a deadlocked process and release its resource
+
 ####Livelock
 A thread often acts in response to the action of another thread. If the other thread's action is also a response to the action of another thread, then livelock may result. Livelocked threads are unable to make further progress. However, the threads are not blocked — they are simply too busy responding to each other to resume work. This is comparable to two people attempting to pass each other in a corridor: Livelock occurs when two people meet in a narrow corridor, and each tries to be polite by moving aside to let the other pass, but they end up swaying from side to side without making any progress because they always both move the same way at the same time
 
@@ -85,12 +91,20 @@ Blockingqueue<object> blockingqueue = new ArrayBlockingQueue<10>();
 ####Queues vs BlockingQueues
 - A java.util.Queue is an interface which extends Collection interface and provides methods for inserting, removing or inspecting elements. First-In-First-Out (FIFO) is a very commonly used method for describing a standard queue, while an alternative one would be to order queue elements in LIFO (Last-In-First-Out).
 - However, BlockingQueues are more preferable for concurrent development.
+- it provides a mechanism which blocks requests for inserting new elements when the queue is full or requests for removing elements when the queue is empty, with the additional option to stop waiting when a specific timeout passes.
 
-###
+###Serialization
+[Json vs Protobuf](http://blog.codeclimate.com/blog/2014/06/05/choose-protocol-buffers/)
+
+[Google Protocol Buffer vs Java Serialization vs XML vs JSON](http://javarevisited.blogspot.com/2015/06/google-protocol-buffers-or-protobuf-java-serialization-alternative.html)
 序列化的几种方式：JSON／Object Serialize／ProtoBuf
 
-###
-what is dead lock?死锁问题／如何解决
+Serialization is the conversion of an object to a series of bytes, so that the object can be easily saved to persistent storage or streamed across a communication link. The byte stream can then be deserialized - converted into a replica of the original object.
+
+####ProtoBuf
+- Google protocol buffers, popularly known as protobuf is an alternate and faster way to serialize Java object. It's a good alternative of Java serialization and useful for both data storage and data transfer over network.
+- It's open source, tested and most importantly widely used in Google itself
+
 
 ###
 Design Pattern 设计模式（singleton，factory, builder, decorator）
