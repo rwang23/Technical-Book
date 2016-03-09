@@ -1,7 +1,6 @@
-##数据库
+##Database
 3.primary key；join（四种）和index 原理和作用
 4.简单的sql语句：从table中找出成绩第二好的学生姓名； group by
-5.简单了解几种nosql数据库： MangoDB/ Cassandra/HBase
 
 ####NoSql database
 - MongoDB
@@ -29,7 +28,17 @@
 - For scalability: In most typical situations, SQL databases are vertically scalable. You can manage increasing load by increasing the CPU, RAM, SSD, etc, on a single server. On the other hand, NoSQL databases are horizontally scalable. You can just add few more servers easily in your NoSQL database infrastructure to handle the large traffic.
 
 ###SQL joins
-- INNER JOIN: Returns all rows when there is at least one match in BOTH tables
+- INNER JOIN: Returns only matched row when there is at least one match in BOTH tables
 - LEFT JOIN: Return all rows from the left table, and the matched rows from the right table
 - RIGHT JOIN: Return all rows from the right table, and the matched rows from the left table
-- FULL JOIN: Return all rows when there is a match in ONE of the tables
+- FULL JOIN: A FULL OUTER JOIN is a union of the LEFT OUTER JOIN and RIGHT OUTER JOIN.
+
+###Database index
+####How it does
+[how it does](http://www.tutorialspoint.com/sql/sql-indexes.htm)
+- Indexes are special lookup tables that the database search engine can use to speed up data retrieval. Simply put, an index is a pointer to data in a table. An index in a database is very similar to an index in the back of a book.
+- For example, if you want to reference all pages in a book that discuss a certain topic, you first refer to the index, which lists all topics alphabetically and are then referred to one or more specific page numbers.
+- Creating an index involves the CREATE INDEX statement, which allows you to name the index, to specify the table and which column or columns to index, and to indicate whether the index is in ascending or descending order.
+
+####How it work
+[how it work](http://stackoverflow.com/questions/1108/how-does-database-indexing-work)
