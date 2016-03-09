@@ -1,5 +1,4 @@
-##语言知识点：以java为例
-###Java 语言特性Java 以及 c ++ 区别;
+###Java
 ####abstract class vs interface
 - Interface in Java can only contains declaration. You can not declare any concrete methods inside interface. On the other hand abstract class may contain both abstract and concrete methods, which makes abstract class an ideal place to provide common or default functionality.
 - You can implement multiple interface but can only extends one abstract, Which means interface can provide more Polymorphism support than abstract class .
@@ -118,7 +117,7 @@ Here are couple of best practices I follow while using Collectionc classes from 
 - Use iterator to loop over collection.
 - Always use generics with collection.
 
-###拓展一些问题： Java memory leak,  Object class method: getclass()/ hashcode(); java: heap/stack存什么; Java 8/Java 7
+###拓展一些问题
 
 ####How do you remove objects from Java collections like ArrayList, while iterating
 - You should be using Iterator's remove() method to delete any object from Collection you are iterating
@@ -148,14 +147,32 @@ It is also possible that B hold a bunch of references of other objects. Those ob
 [Example](http://stackoverflow.com/questions/6470651/creating-a-memory-leak-with-java)
 
 
-
 ####How to Prevent Memory Leaks?
 The following are some quick hands-on tips for preventing memory leaks.
 - Pay attention to Collection classes, such as HashMap, ArrayList, etc., as they are common places to find memory leaks. When they are declared static, their life time is the same as the life time of the application.
 - Pay attention to event listeners and callbacks. A memory leak may occur if a listener is registered but not unregistered when the class is not being used any longer.
 - "If a class manages its own memory, the programer should be alert for memory leaks."[1] Often times member variables of an object that point to other objects need to be null out.
 
-##数据结构和算法
+####Object class method: getclass()/ hashcode()
+- java.lang.Object.getClass() method returns the runtime class of an object.
+- a.getClass() returns the runtime type of a. I.e., if you have A a = new B(); then a.getClass() will return the B class.
+- A.class evaluates to the A class statically, and is used for other purposes often related to reflection.
+
+####Heap vs Stack
+- Stack and heap are different memory areas in the JVM and they are used for different purposes.
+- The stack is used to hold method frames and local variables while objects are always allocated memory from the heap.
+- The stack is usually much smaller than heap memory and also didn't shared between multiple threads, but heap is shared among all threads in JVM.
+
+####Java 8
+[Java8](http://javarevisited.blogspot.sg/2014/02/10-example-of-lambda-expressions-in-java8.html)
+- Lambda expression, which allows you pass an anonymous function as object.
+- Stream API, take advantage of multiple cores of modern CPU and allows you to write succinct code.
+- Date and Time API, finally you have a solid and easy to use date and time library right into JDK
+- Extension methods, now you can have static and default method into your interface
+- Repeated annotation, allows you apply the same annotation multiple times on a type
+
+
+##Data Structure and Algorithm
 	二叉树：超级重点： 收集所有二叉树的题
 	链表： 会翻转／快慢指针
 	Binary Deduction/Search: sorted/rotated array/ Sqrt()
@@ -165,7 +182,7 @@ The following are some quick hands-on tips for preventing memory leaks.
 	简单dp，不需要很复杂: paint house/stock price/
 
 
-##计算机网络
+##Computer Network
 1. TCP 三次握手，TCP/UDP 区别；
 2.  http/https 区别；http request：post／get ；http port 80 ssl;
 3.输入www.google.com 会发生什么；What happens when you type [url]www.google.com in your browser?[/url]

@@ -48,6 +48,8 @@ Once a DNS server finds the IP address of the website you are looking for, that 
 |301|The requested page has moved to a new URL | Moved Permanently|
 |304|Indicates the requested page has not been modified since last requested|Not Modified|
 |400|The request cannot be fulfilled due to bad syntax|Bad Request|
+|401|The request was a legal request, but the server is refusing to respond to it|Unauthorized|
+|403|The request was a legal request, but the server is refusing to respond to it|Forbidden|
 |404|The requested page could not be found but may be available again in the future|Not Found|
 |500|A generic error message, given when no more specific message is suitable|Internal Server Error|
 
