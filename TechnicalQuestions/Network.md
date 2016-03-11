@@ -23,6 +23,8 @@ Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are the maj
 - UDP stands for User Datagram Protocol and it operates in Datagram mode. The main difference you should notice here is User Datagram Protocol (UDP) is a connection-less protocol. User Datagram Protocol (UDP) has only the basic error checking mechanism using checksums.
 
 ####TCP VS UDP
+[jenkov](http://tutorials.jenkov.com/java-networking/udp-datagram-sockets.html)
+
 - Transmission Control Protocol (TCP) is a connection oriented protocol, which means the devices should open a connection before transmitting data and should close the connection gracefully after transmitting the data, while UDP is not
 - Transmission Control Protocol (TCP) assure reliable delivery of data to the destination, while UDP does not
 - Transmission Control Protocol (TCP) protocol provides extensive error checking mechanisms such as flow control and acknowledgment of data, while UDP just provides basic error checking
