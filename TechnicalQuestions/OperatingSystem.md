@@ -34,6 +34,7 @@ Because of this, BASE (Basically available, soft state, eventually consistent) i
 A thread can be created in two ways:
 - By extending Thread class
 - By implementing Runnable interface.
+
 ####Thread creation by implementing Runnable Interface
 - Once the thread is created it will start running when start() method gets called. Basically start() method calls run() method implicitly.
 

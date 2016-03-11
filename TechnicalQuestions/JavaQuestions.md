@@ -1,4 +1,7 @@
 ###Java
+[very good conclusion](https://hellohell.gitbooks.io/java-/content/)
+
+[Java Begin Book](http://tutorials.jenkov.com/)
 ####abstract class vs interface
 - Interface in Java can only contains declaration. You can not declare any concrete methods inside interface. On the other hand abstract class may contain both abstract and concrete methods, which makes abstract class an ideal place to provide common or default functionality.
 - You can implement multiple interface but can only extends one abstract, Which means interface can provide more Polymorphism support than abstract class .
