@@ -1,4 +1,15 @@
 ##Computer Network
+
+###Get VS Post
+####Get
+| Get | Post |
+| --- | ---- |
+| parameters in URL | parameters in body|
+| used for fetching document | used for updatint |
+| has maximum url length | no max length|
+| Ok to cache | not ok to cache|
+| should not change the server | Ok to change|
+
 ###TCP 3-way handshake
 ####Definition - What does Three-Way-Handshake mean?
 - Before the sending device and the receiving device start the exchange of data, both devices need to be synchronized
