@@ -6,6 +6,7 @@ This is the summary of my experience in LintCode.
 	* [Network](SystemDesign/Network.md)
 	* [Operating Systems](SystemDesign/OperatingSystems.md)
 	* [Design Pattern](SystemDesign/DesignPattern.md)
+	* [Scale the Web Application](SystemDesign/Scale.md)
 
 * [Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
