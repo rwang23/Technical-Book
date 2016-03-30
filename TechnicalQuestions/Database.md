@@ -2,6 +2,24 @@
 3.primary key；join（四种）和index 原理和作用
 4.简单的sql语句：从table中找出成绩第二好的学生姓名； group by
 
+####Primary Key
+A primary key is a key in a relational database that is unique for each record. It is a unique identifier, such as a driver license number, telephone number (including area code), or vehicle identification number (VIN). A relational database must always have one and only one primary key.
+
+####Unique Key
+a unique key is a set of zero, one, or more attributes. The value(s) of these attributes are required to be unique for each tuple (row) in a relation.
+
+####Foreign Key
+A foreign key is a column (or columns) that references a column (most often the primary key) of another table. The purpose of the foreign key is to ensure referential integrity of the data. In other words, only values that are supposed to appear in the database are permitted.
+
+####Expalin database to a child
+You know how you have to put your toys away when you're done playing,
+if you just throw your toys away, next time you may hardily find them,
+but if you put them in the toy shelf, you can find them easily the next time you want to play with them?
+
+A database is like a shelf to put your toys away, except the toys are data instead.
+
+Now, the database can always find the right data easily - whether it's "all the dinosaur toys" or "all the transformer toys," the computer can get everything out to play with very quickly, because it's in a database.
+
 ####NoSql database
 - MongoDB
 - CouchDB
@@ -42,3 +60,8 @@
 
 ####How it work
 [how it work](http://stackoverflow.com/questions/1108/how-does-database-indexing-work)
+
+
+####Clustered index
+[Video](https://www.youtube.com/watch?v=ITcOiLSfVJQ)
+A clustered index is a special type of index that reorders the way records in the table are physically stored. Therefore table can have only one clustered index. The leaf nodes of a clustered index contain the data pages.

@@ -1,3 +1,7 @@
+##DLL
+Dynamic Link Library (DLL) is Microsoft's implementation of the shared library concept. A DLL file contains code and data that can be used by multiple programs at the same time, hence it promotes code reuse and modularization.
+
+
 ##Hashtable
 	Hash tables suffer from O(n) worst time complexity due to two reasons:
 
