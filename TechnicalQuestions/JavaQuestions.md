@@ -6,6 +6,8 @@
 ####What is polymorphism
 - Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
 
+####Diamond Problem
+[Diamond](http://www.programmerinterview.com/index.php/general-miscellaneous/why-dont-c-and-java-support-multiple-inheritance/)
 
 ####abstract class vs interface
 - Interface in Java can only contains declaration. You can not declare any concrete methods inside interface. On the other hand abstract class may contain both abstract and concrete methods, which makes abstract class an ideal place to provide common or default functionality.

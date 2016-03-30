@@ -50,6 +50,13 @@ Now, the database can always find the right data easily - whether it's "all the 
 - LEFT JOIN: Return all rows from the left table, and the matched rows from the right table
 - RIGHT JOIN: Return all rows from the right table, and the matched rows from the left table
 - FULL JOIN: A FULL OUTER JOIN is a union of the LEFT OUTER JOIN and RIGHT OUTER JOIN.
+- OUter join: combine two tables into one no matter they match or not
+
+###SQL injection
+inject” his harmful/malicious SQL code into someone else’s database, and force that database to run his SQL
+####How to prevent
+escaping strings
+use Prepared Statements
 
 ###Database index
 ####How it does
@@ -62,6 +69,14 @@ Now, the database can always find the right data easily - whether it's "all the 
 [how it work](http://stackoverflow.com/questions/1108/how-does-database-indexing-work)
 
 
-####Clustered index
+###Clustered index
 [Video](https://www.youtube.com/watch?v=ITcOiLSfVJQ)
-A clustered index is a special type of index that reorders the way records in the table are physically stored. Therefore table can have only one clustered index. The leaf nodes of a clustered index contain the data pages.
+A clustered index determines the order in which the rows of a table are stored on disk. If a table has a clustered index, then the rows of that table will be stored on disk in the same exact order as the clustered index.
+
+Remember that an index is usually a tree data structure – and leaf nodes are the nodes that are at the very bottom of that tree. In other words, a clustered index basically contains the actual table level data in the index itself.
+
+####Advantages
+the query will run much faster than if the rows were being stored in some random order on the disk.
+
+####Disadvantages
+disadvantage to using a clustered index is the fact that if a given row has a value updated in one of it’s (clustered) indexed columns what typically happens is that the database will have to move the entire row so that the table will continue to be sorted in the same order as the clustered index column
