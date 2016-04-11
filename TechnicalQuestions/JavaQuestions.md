@@ -22,7 +22,7 @@ In Java Abstraction is achieved using Abstract classes, and Interfaces.
 - In order to implement interface in Java, you need to provide implementation of all methods, which is very painful. On the other hand abstract class may help you in this case by providing default implementation.
 
 ####shallow copy/deep copy
-- Shallow copies duplicate as little as possible. A shallow copy of a collection is a copy of the collection structure, not the elements. With a shallow copy, two collections now share the individual elements.
+- Shallow copies duplicate as little as possible. A shallow copy of a collection is a copy of the collection structure, not the elements. With a shallow copy, two collections now use the individual elements.
 - Deep copies duplicate everything. A deep copy of a collection is two collections with all of the elements in the original collection duplicated.
 
 
