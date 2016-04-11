@@ -6,6 +6,13 @@
 ####What is polymorphism
 - Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
 
+####What is inheritance?
+Inheritance allows a Child class to inherit properties from its parent class. In Java this is achieved by using extends keyword. Only properties with access modifier public and protected can be accessed in child class
+####What is Abstraction?
+Abstraction is the quality of dealing with ideas rather than events.
+Abstraction is a process process of hiding the implementation details from the user, only the functionality will be provided to the user. In other words user will have the information on what the object does instead of how it does it.
+In Java Abstraction is achieved using Abstract classes, and Interfaces.
+
 ####Diamond Problem
 [Diamond](http://www.programmerinterview.com/index.php/general-miscellaneous/why-dont-c-and-java-support-multiple-inheritance/)
 
