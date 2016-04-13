@@ -37,7 +37,7 @@ In Java Abstraction is achieved using Abstract classes, and Interfaces.
 
 ####Difference between final, finalize and finally?
 - The final is a modifier which you can apply to variable, methods and classes. If you make a variable final it means its value cannot be changed once initialized.
-- finalize is a method, which is called just before an object is a garbage collected, giving it last chance to resurrect itself, but the call to finalize is not guaranteed.
+- finalize is a method, which is called just before an object is a garbage collected, giving it last chance to resurrect itself, but the call to finalize is not guaranteed. (if no Garbage collector is being performed, your finalizer may not be called)
 - finally is a keyword which is used in exception handling along with try and catch. the finally block is always executed irrespective of whether an exception is thrown from try block or not.
 
 ####Static
@@ -48,7 +48,6 @@ In Java Abstraction is achieved using Abstract classes, and Interfaces.
 ####checked/unchecked exception
 - checked exception is checked by the compiler at compile time. It's mandatory for a method to either handle the checked exception or declare them in their throws clause.
 - The unchecked exception is the descendant of RuntimeException and not checked by the compiler at compile time.
-
 
 ####java 8种primitive type
 - byle 8 bit
