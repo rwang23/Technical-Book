@@ -22,7 +22,8 @@ In Java Abstraction is achieved using Abstract classes, and Interfaces.
 - In order to implement interface in Java, you need to provide implementation of all methods, which is very painful. On the other hand abstract class may help you in this case by providing default implementation.
 
 ####shallow copy/deep copy
-- Shallow copies duplicate as little as possible. A shallow copy of a collection is a copy of the collection structure, not the elements. With a shallow copy, two collections now use the individual elements.
+- Shallow copies duplicate as little as possible. Simply makes a copy of the reference to A into B. Think about it as a copy of A's Address. So, the addresses of A and B will be the same i.e. they will be pointing to the same memory location i.e. data contents.
+-  A shallow copy can be made by simply copying the reference.
 - Deep copies duplicate everything. A deep copy of a collection is two collections with all of the elements in the original collection duplicated.
 
 
@@ -57,7 +58,7 @@ In Java Abstraction is achieved using Abstract classes, and Interfaces.
 - float 32 bit
 - double 64 bit
 - char 16 bit unicode
-- boolean i bit
+- boolean 1 bit
 
 ####overloading vs overriding；
 - First and major difference between Overloading and Overriding is that former occur during compile time while later occur during runtime.

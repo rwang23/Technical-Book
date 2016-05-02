@@ -2,6 +2,13 @@
 3.primary key；join（四种）和index 原理和作用
 4.简单的sql语句：从table中找出成绩第二好的学生姓名； group by
 
+####ACID
+A Atomicity: all or nothing
+C Consistency: valid according to all defined rules
+I Isolation: a kind of independency between transactions
+D Durability: stored permanently
+
+
 ####Primary Key
 A primary key is a key in a relational database that is unique for each record. It is a unique identifier, such as a driver license number, telephone number (including area code), or vehicle identification number (VIN). A relational database must always have one and only one primary key.
 

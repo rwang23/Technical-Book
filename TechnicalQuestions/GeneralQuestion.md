@@ -38,7 +38,7 @@ Java was created initially as an interpreter for `printing systems` but grew to 
 
 ###Then:
 - C++ supports pointers whereas Java does not pointers. (But when many programmers questioned how you can work without pointers, the promoters began saying "Restricted pointers.” So we can say java supports Restricted pointers.)
-- - Exception and Auto Garbage Collector handling in Java is different because there are no destructors into Java.
+- Exception and Auto Garbage Collector handling in Java is different because there are no destructors into Java.
 - At compilation time Java Source code converts into byte code .The interpreter execute this byte code at run time and gives output .Java is interpreted for the most part and hence platform independent. C++ run and compile using compiler which converts source code into machine level languages so c++ is platefrom dependents
 - Java is platform independent language but c++ is depends upon operating system machine etc. C++ source can be platform independent (and can work on a lot more, especially embedeed, platforms), although the generated objects are generally platofrom dependent but there is clang for llvmwhich doesn't have this restriction.
 - Java uses compiler and interpreter both and in c++ their is only compiler
