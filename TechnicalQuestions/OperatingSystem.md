@@ -1,18 +1,18 @@
 ##系统及其它
 ACID/CAP 分布式系统
-###ACID and CAP
-####ACID
+##ACID and CAP
+###ACID
 - Atomicity: either all occur, or nothing occurs
 - Consistency: Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers
 - Isolation: isolation determines how transaction integrity is visible to other users and systems. For example, when a user is creating a Purchase Order and has created the header, but not the Purchase Order lines, is the header available for other systems/users, carrying out concurrent operations (such as a report on Purchase Orders), to see?
 - Durability: guarantees that transactions that have committed will survive permanently. For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
 
-####CAP
+###CAP
 - Consistency (All Nodes Have Same Data via Eventual Consistency)
 - Availability
 - Partition-Tolerance : system continues to operate despite arbitrary message loss or failure of part of the system
 
-####Difference
+###Difference
 CAP theorem: specifies that a distributed system can provide two services (ex. Availability and Partition tolerance) but never three. If for example, a service provides Availability and Partitioning it can never ensure Consistency, not immediately, thus Eventual Consistency is used, which allows the infrastructure to flux between inconsistency and consistency, however at one point, sooner or later, the infrastructure will become consistent, resulting in eventual consistency. Cloud services work in such fashion and Amazon's Simple DB uses eventual consistency.
 
 ACID features are usually applied to relational DBs. If you want to apply ACID in a distributed fashion (distributed DB), ACID uses 2PC(two-phase commit) to force consistency across partitions. However since ACID provides consistency and partitioning, applying the CAP theorem for (distributed environments) this will mean that availability is compromised.
@@ -22,7 +22,7 @@ Because of this, BASE (Basically available, soft state, eventually consistent) i
 
 ##Multi-Threading
 [Intro to multi-threading](http://beginnersbook.com/2013/03/multithreading-in-java/)
-####Basic function
+###Basic function
 	getName(): It is used for Obtaining a thread’s name
 	getPriority(): Obtain a thread’s priority
 	isAlive(): Determine if a thread is still running
@@ -35,18 +35,18 @@ A thread can be created in two ways:
 - By extending Thread class
 - By implementing Runnable interface.
 
-####Thread creation by implementing Runnable Interface
+###Thread creation by implementing Runnable Interface
 - Once the thread is created it will start running when start() method gets called. Basically start() method calls run() method implicitly.
 
-####Thread creation by extending Thread class
+###Thread creation by extending Thread class
 - The class should override the run() method which is the entry point for the new thread as described above.
 - Call start() method to start the execution of a thread.
 
-####Implementing Runnable Interface VS Extending Thread class
+###Implementing Runnable Interface VS Extending Thread class
 - Extending the Thread class will make your class unable to extend other classes, because of the single inheritance feature in  JAVA. However, this will give you a simpler code structure. If you implement Runnable, you can gain better object-oriented design and consistency and also avoid the single inheritance problems.
 - If you just want to achieve basic functionality of a thread you can simply implement Runnable interface and override run() method. But if you want to do something serious with thread object as it has other methods like suspend(), resume(), ..etc which are not available in Runnable interface then you may prefer to extend the Thread class.
 
-####Interthread Communication
+###Interthread Communication
 - wait() tells the calling thread to give up the monitor and go to sleep until some other thread enters the same monitor and calls notify().
 - notify() wakes up the first thread that called wait() on the same object.
 - notifyAll() wakes up all the threads that called wait() on the same object. The highest priority thread will run first.
@@ -64,18 +64,27 @@ A thread can be created in two ways:
 Starvation and livelock are much less common a problem than deadlock, but are still problems that every designer of concurrent software is likely to encounter.
 
 ####Starvation
-Starvation describes a situation where a thread is unable to gain regular access to shared resources and is unable to make progress. This happens when shared resources are made unavailable for long periods by "greedy" threads. For example, suppose an object provides a synchronized method that often takes a long time to return. If one thread invokes this method frequently, other threads that also need frequent synchronized access to the same object will often be blocked.
+Starvation describes a situation where a thread is unable to gain regular access to shared resources and is unable to make progress.
+This happens when shared resources are made unavailable for long periods by "greedy" or higher priority threads. For example, suppose an object provides a synchronized method that often takes a long time to return. If one thread invokes this method frequently, other threads that also need frequent synchronized access to the same object will often be blocked.
 
-####Deadlock
+###Deadlock
 Deadlock, the ultimate form of starvation, occurs when two or more threads are waiting on a condition that cannot be satisfied. Deadlock most often occurs when two (or more) threads are each waiting for the other(s) to do something.
 
-####How to solve deadlock
-- design system so that deadlock is impossible
-- avoid
-- check for deadlock peridically
-- recover by killing a deadlocked process and release its resource
+###How to solve deadlock
+####Lock Ordering
+Deadlock occurs when multiple threads need the same locks but obtain them in different order.
 
-####Livelock
+If you make sure that all locks are always taken in the same order by any thread, deadlocks cannot occur. Look at this example:
+####Lock Timeout
+Another deadlock prevention mechanism is to put a timeout on lock attempts meaning a thread trying to obtain a lock will only try for so long before giving up.
+####Deadlock Detection
+Deadlock detection is a heavier deadlock prevention mechanism aimed at cases in which lock ordering isn't possible, and lock timeout isn't feasible.
+
+Every time a thread takes a lock it is noted in a data structure (map, graph etc.) of threads and locks. Additionally, whenever a thread requests a lock this is also noted in this data structure.
+
+When a thread requests a lock but the request is denied, the thread can traverse the lock graph to check for deadlocks
+
+###Livelock
 A thread often acts in response to the action of another thread. If the other thread's action is also a response to the action of another thread, then livelock may result. Livelocked threads are unable to make further progress. However, the threads are not blocked — they are simply too busy responding to each other to resume work. This is comparable to two people attempting to pass each other in a corridor: Livelock occurs when two people meet in a narrow corridor, and each tries to be polite by moving aside to let the other pass, but they end up swaying from side to side without making any progress because they always both move the same way at the same time
 
 ###Blockingqueue

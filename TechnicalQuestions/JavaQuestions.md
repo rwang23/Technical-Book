@@ -23,7 +23,7 @@ In Java Abstraction is achieved using Abstract classes, and Interfaces.
 
 ####shallow copy/deep copy
 - Shallow copies duplicate as little as possible. Simply makes a copy of the reference to A into B. Think about it as a copy of A's Address. So, the addresses of A and B will be the same i.e. they will be pointing to the same memory location i.e. data contents.
--  A shallow copy can be made by simply copying the reference.
+- A shallow copy can be made by simply copying the reference.
 - Deep copies duplicate everything. A deep copy of a collection is two collections with all of the elements in the original collection duplicated.
 
 
