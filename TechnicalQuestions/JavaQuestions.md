@@ -3,6 +3,10 @@
 
 [Java Begin Book](http://tutorials.jenkov.com/)
 
+####OOP
+What is Object Oriented Programming and System (OOPS)?
+The Object Oriented Programming (OOP) is a programming model where programs are organized around object and data rather than action and logic.
+
 ####What is polymorphism
 - Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.
 
