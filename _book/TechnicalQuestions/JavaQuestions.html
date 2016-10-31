@@ -1,0 +1,733 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Java Questions | Lintcode Solution Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../Git/index.html" />
+    
+    
+    <link rel="prev" href="../TechnicalQuestions/OperatingSystem.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.6" data-basepath=".." data-revision="Tue Sep 27 2016 01:13:50 GMT-0400 (EDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="SystemDesign/index.html">
+            
+                
+                    <a href="../SystemDesign/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        System Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="SystemDesign/Network.html">
+            
+                
+                    <a href="../SystemDesign/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Network
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="SystemDesign/OperatingSystems.html">
+            
+                
+                    <a href="../SystemDesign/OperatingSystems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Operating Systems
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="SystemDesign/DesignPattern.html">
+            
+                
+                    <a href="../SystemDesign/DesignPattern.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Design Pattern
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="SystemDesign/Scale.html">
+            
+                
+                    <a href="../SystemDesign/Scale.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Scale the Web Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="SystemDesign/web-craw.html">
+            
+                
+                    <a href="../SystemDesign/web-craw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        web-craw
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="TechnicalQuestions/index.html">
+            
+                
+                    <a href="../TechnicalQuestions/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Technical Questions
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="TechnicalQuestions/GeneralQuestion.html">
+            
+                
+                    <a href="../TechnicalQuestions/GeneralQuestion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        General Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="TechnicalQuestions/LinuxCommand.html">
+            
+                
+                    <a href="../TechnicalQuestions/LinuxCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Linux Command
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="TechnicalQuestions/Network.html">
+            
+                
+                    <a href="../TechnicalQuestions/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Network Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="TechnicalQuestions/Database.html">
+            
+                
+                    <a href="../TechnicalQuestions/Database.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Database
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="TechnicalQuestions/OperatingSystem.html">
+            
+                
+                    <a href="../TechnicalQuestions/OperatingSystem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Operating System
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="TechnicalQuestions/JavaQuestions.html">
+            
+                
+                    <a href="../TechnicalQuestions/JavaQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Java Questions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Git/index.html">
+            
+                
+                    <a href="../Git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Git/git.html">
+            
+                
+                    <a href="../Git/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="bash/index.html">
+            
+                
+                    <a href="../bash/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="bash/BashCommand.html">
+            
+                
+                    <a href="../bash/BashCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Lintcode Solution Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h3 id="java">Java</h3>
+<p><a href="https://hellohell.gitbooks.io/java-/content/" target="_blank">very good conclusion</a></p>
+<p><a href="http://tutorials.jenkov.com/" target="_blank">Java Begin Book</a></p>
+<h4 id="oop">OOP</h4>
+<p>What is Object Oriented Programming and System (OOPS)?
+The Object Oriented Programming (OOP) is a programming model where programs are organized around object and data rather than action and logic.</p>
+<h4 id="what-is-polymorphism">What is polymorphism</h4>
+<ul>
+<li>Polymorphism is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.</li>
+</ul>
+<h4 id="what-is-inheritance">What is inheritance?</h4>
+<p>Inheritance allows a Child class to inherit properties from its parent class. In Java this is achieved by using extends keyword. Only properties with access modifier public and protected can be accessed in child class</p>
+<h4 id="what-is-abstraction">What is Abstraction?</h4>
+<p>Abstraction is the quality of dealing with ideas rather than events.
+Abstraction is a process of hiding the implementation details from the user, only the functionality will be provided to the user. In other words user will have the information on what the object does instead of how it does it.
+In Java Abstraction is achieved using Abstract classes, and Interfaces.</p>
+<h4 id="diamond-problem">Diamond Problem</h4>
+<p><a href="http://www.programmerinterview.com/index.php/general-miscellaneous/why-dont-c-and-java-support-multiple-inheritance/" target="_blank">Diamond</a></p>
+<h4 id="abstract-class-vs-interface">abstract class vs interface</h4>
+<ul>
+<li>Interface in Java can only contains declaration. You can not declare any concrete methods inside interface. On the other hand abstract class may contain both abstract and concrete methods, which makes abstract class an ideal place to provide common or default functionality.</li>
+<li>You can implement multiple interface but can only extends one abstract, Which means interface can provide more Polymorphism support than abstract class .</li>
+<li>In order to implement interface in Java, you need to provide implementation of all methods, which is very painful. On the other hand abstract class may help you in this case by providing default implementation.</li>
+</ul>
+<h4 id="shallow-copy-deep-copy">shallow copy/deep copy</h4>
+<ul>
+<li>Shallow copies duplicate as little as possible. Simply makes a copy of the reference to A into B. Think about it as a copy of A&apos;s Address. So, the addresses of A and B will be the same i.e. they will be pointing to the same memory location i.e. data contents.</li>
+<li>A shallow copy can be made by simply copying the reference.</li>
+<li>Deep copies duplicate everything. A deep copy of a collection is two collections with all of the elements in the original collection duplicated.</li>
+</ul>
+<h4 id="pass-by-reference-pass-by-value">pass by reference/ pass by value;</h4>
+<ul>
+<li>Pass by value - The function copies the variable and works with a copy(so it doesn&apos;t change anything in the original variable)</li>
+<li>Pass by reference - The function uses the original variable, if you change the variable in the other function, it changes in the original variable too.</li>
+<li>Java only pass by value but C++ can pass by value and also reference</li>
+</ul>
+<h4 id="hashcode-equals">hashcode()/ equals()</h4>
+<ul>
+<li>hashCode() method returns an int hash value corresponding to an object. It&apos;s used in hash based collection classes e.g Hashtable, HashMap, LinkedHashMap and so on. It&apos;s very tightly related to equals() method. According to Java specification, two objects which are equal to each other using equals() method must have same hash code.</li>
+</ul>
+<h4 id="difference-between-final-finalize-and-finally">Difference between final, finalize and finally?</h4>
+<ul>
+<li>The final is a modifier which you can apply to variable, methods and classes. If you make a variable final it means its value cannot be changed once initialized.</li>
+<li>finalize is a method, which is called just before an object is a garbage collected, giving it last chance to resurrect itself, but the call to finalize is not guaranteed. (if no Garbage collector is being performed, your finalizer may not be called)</li>
+<li>finally is a keyword which is used in exception handling along with try and catch. the finally block is always executed irrespective of whether an exception is thrown from try block or not.</li>
+</ul>
+<h4 id="static">Static</h4>
+<ul>
+<li>static members belong to the class instead of a specific instance.</li>
+<li>It means that only one instance of a static field exists[1] even if you create a million instances of the class or you don&apos;t create any. It will be shared by all instances.</li>
+<li>Since static methods also do not belong to a specific instance, they can&apos;t refer to instance members. static members can only refer to static members. Instance members can, of course access static members</li>
+</ul>
+<h4 id="checked-unchecked-exception">checked/unchecked exception</h4>
+<ul>
+<li>checked exception is checked by the compiler at compile time. It&apos;s mandatory for a method to either handle the checked exception or declare them in their throws clause.</li>
+<li>The unchecked exception is the descendant of RuntimeException and not checked by the compiler at compile time.</li>
+</ul>
+<h4 id="java-8%E7%A7%8Dprimitive-type">java 8&#x79CD;primitive type</h4>
+<ul>
+<li>byle 8 bit</li>
+<li>short 16 bit</li>
+<li>int 32 bit</li>
+<li>long 64 bit</li>
+<li>float 32 bit</li>
+<li>double 64 bit</li>
+<li>char 16 bit unicode</li>
+<li>boolean 1 bit</li>
+</ul>
+<h4 id="overloading-vs-overriding%EF%BC%9B">overloading vs overriding&#xFF1B;</h4>
+<ul>
+<li>First and major difference between Overloading and Overriding is that former occur during compile time while later occur during runtime.</li>
+<li>Second difference between Overloading and Overriding is that, you can overload method in same class but you can only override method in sub class.</li>
+<li>Third difference is that you can overload static method in Java but you can not override static method in Java. In fact when you declare same method in Sub Class it&apos;s known as method hiding because it hide super class method instead of overriding it.</li>
+</ul>
+<h4 id="public-static-void-main-string-args-%E6%AF%8F%E4%B8%AA%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8">public static void main(string args[])&#x6BCF;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F5C;&#x7528;</h4>
+<ul>
+<li>A private member is only accessible within the same class as it is declared.</li>
+<li>A member with no access modifier is only accessible within classes in the same package.</li>
+<li>A protected member is accessible within all classes in the same package and within subclasses in other packages.</li>
+<li>A public member is accessible to all classes (unless it resides in a module that does not export the package it is declared in).</li>
+</ul>
+<h4 id="what-is-the-difference-between-stack-and-heap-in-java-answer">What is the difference between stack and heap in Java? (answer)</h4>
+<ul>
+<li>Stack and heap are different memory areas in the JVM and they are used for different purposes.</li>
+<li>The stack is used to hold method frames and local variables while objects are always allocated memory from the heap.</li>
+<li>The stack is usually much smaller than heap memory and also didn&apos;t shared between multiple threads, but heap is shared among all threads in JVM.</li>
+</ul>
+<h2 id="java-collections%EF%BC%9A">Java Collections&#xFF1A;</h2>
+<h4 id="stack-queue-deque">stack/queue/deque;</h4>
+<ul>
+<li>A stack is a last in, first out (LIFO) data structure. Items are removed from a stack in the reverse order from the way they were inserted</li>
+<li>A queue is a first in, first out (FIFO) data structure. Items are removed from a queue in the same order as they were inserted</li>
+<li>A deque is a double-ended queue, items can be inserted and removed at either end</li>
+</ul>
+<h4 id="hashset-treeset">hashset/treeset</h4>
+<ul>
+<li>HashSet is Implemented using a hash table. Elements are not ordered. The add, remove, and contains methods have constant time complexity O(1).</li>
+<li>TreeSet is implemented using a tree structure(red-black tree in algorithm book). The elements in a set are sorted, but the add, remove, and contains methods has time complexity of O(log (n)). It offers several methods to deal with the ordered set like first(), last(), headSet(), tailSet(), etc.</li>
+<li>LinkedHashSet is between HashSet and TreeSet. It is implemented as a hash table with a linked list running through it, so it provides the order of insertion. The time complexity of basic methods is O(1).</li>
+</ul>
+<h4 id="string-vs-stringbuffer-vs-stringbuilder">String vs StringBuffer vs StringBuilder</h4>
+<ul>
+<li>String is immutable ( once created can not be changed)object. The object created as a String is stored in the Constant String Pool. Every immutable object in Java is thread safe ,that implies String is also thread safe . String can not be used by two threads simultaneously.</li>
+<li>StringBuffer is mutable means one can change the value of the object. The object created through StringBuffer is stored in the heap. StringBuffer has the same methods as the StringBuilder, but each method in StringBuffer is synchronized that is StringBuffer is thread safe</li>
+<li>StringBuilder  is same as the StringBuffer The main difference between the StringBuffer and StringBuilder is that StringBuilder is also not thread safe. and StringBuilder is faster than stringbuffer</li>
+</ul>
+<h4 id="why-is-string-immutable-in-java">Why is String Immutable in Java?</h4>
+<ul>
+<li>The String is Immutable in java because java designer thought that string will be heavily used and making it immutable allow some optimization easy sharing same String object between multiple clients.</li>
+</ul>
+<h4 id="hashmap-treemap-hashtable-linkedhashmap-concurrenthashmap">Hashmap/TreeMap/Hashtable/LinkedHashMap/ ConcurrentHashMap</h4>
+<ul>
+<li>HashMap is implemented as a hash table, and there is no ordering on keys or values.</li>
+<li>Hashtable is synchronized, in contrast to HashMap. Hashtable does not allow null keys or values.  HashMap allows one null key and any number of null values.</li>
+<li>TreeMap is implemented based on red-black tree structure, and it is ordered by the key.</li>
+<li>LinkedHashMap preserves the insertion order</li>
+<li>ConcurrentHashMap is thread-safe that is the code can be accessed by single thread at a time
+This is the reason that HashMap should be used if the program is thread-safe.</li>
+</ul>
+<h4 id="array-arraylist-linkedlist-vector">Array/ArrayList/LinkedList/Vector</h4>
+<ul>
+<li>The obvious difference between them is that ArrrayList is backed by array data structure, supprots random access and LinkedList is backed by linked list data structure and doesn&apos;t supprot random access. Accessing an element with the index is O(1) in ArrayList but its O(n) in LinkedList.</li>
+<li>An ArrayList is better than Array to use when you have no knowledge in advance about elements number. ArrayList are slower than Arrays. So, if you need efficiency try to use Arrays if possible.</li>
+<li>Vector is similar with ArrayList, but it is synchronized.</li>
+</ul>
+<h4 id="linkedhashmap-and-priorityqueue-in-java">LinkedHashMap and PriorityQueue in Java?</h4>
+<ul>
+<li>PriorityQueue guarantees that lowest or highest priority element always remain at the head of the queue</li>
+<li>LinkedHashMap maintains the order on which elements are inserted.</li>
+<li>When you iterate over a PriorityQueue, iterator doesn&apos;t guarantee any order but iterator of LinkedHashMap does guarantee the order on which elements are inserted</li>
+</ul>
+<h4 id="comparable-comparator-iterator">comparable/comparator iterator</h4>
+<ul>
+<li>The Comparable interface is used to define the natural order of object while Comparator is used to define custom order.</li>
+<li>Comparable can be always one, but we can have multiple comparators to define customized order for objects.</li>
+<li>comparable use compareTo(Object o1), comparator use compare(Object o1, Object o2)</li>
+<li>difference between Comparator vs Comparable, later is used to compare current object, represented by this keyword, with another object, while Comparator compares two arbitrary object passed to compare() method in Java.</li>
+<li>compareTo() and compare() method in Java must be consistent with equals() implementation i.e. if two methods are equal by equals() method than compareTo() and compare() must return zero</li>
+<li><a href="http://java67.blogspot.com/2012/10/how-to-sort-object-in-java-comparator-comparable-example.html" target="_blank">&#x7528;&#x6CD5;&#x5B9E;&#x4F8B;</a></li>
+</ul>
+<h4 id="iterator">iterator</h4>
+<ul>
+<li>Iterator enables you to cycle through a collection, obtaining or removing elements.</li>
+<li>boolean hasNext( )  Object next( ) void remove( )</li>
+</ul>
+<h4 id="few-best-practices-you-apply-while-using-collections-in-java-answer">few best practices you apply while using Collections in Java? (answer)</h4>
+<p>Here are couple of best practices I follow while using Collectionc classes from Java:</p>
+<ul>
+<li>Always use the right collection e.g. if you need non-synchronized list then use ArrayList and not Vector.</li>
+<li>Prefer concurrent collection over synchronized collection because they are more scalable.</li>
+<li>Always use interface to a represent and access a collection e.g. use List to store ArrayList, Map to store HashMap and so on.</li>
+<li>Use iterator to loop over collection.</li>
+<li>Always use generics with collection.</li>
+</ul>
+<h3 id="%E6%8B%93%E5%B1%95%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98">&#x62D3;&#x5C55;&#x4E00;&#x4E9B;&#x95EE;&#x9898;</h3>
+<h4 id="how-do-you-remove-objects-from-java-collections-like-arraylist-while-iterating">How do you remove objects from Java collections like ArrayList, while iterating</h4>
+<ul>
+<li>You should be using Iterator&apos;s remove() method to delete any object from Collection you are iterating</li>
+<li>Explain: what is difference in removing object using remove() method of Collection over remove() method of Iterator and why one should use over other?</li>
+<li>Reason is ConcurrentModificationException, if you use remove() method of List, Set or basically from any Collection to delete object while iterating, it will throw ConcurrentModificationException. Though remove() method of java.util.Collection works fine to remove individual object, they don&apos;t work well, when you are iterating over collection.</li>
+</ul>
+<h4 id="jre-jdk-jvm-and-jit-answer">JRE, JDK, JVM and JIT? (answer)</h4>
+<ul>
+<li>JRE stands for Java run-time and it&apos;s required to run Java application.</li>
+<li>JDK stands for Java development kit and provides tools to develop Java program e.g. Java compiler. It also contains JRE.</li>
+<li>The JVM stands for Java virtual machine and it&apos;s the process responsible for running Java application.</li>
+<li>The JIT stands for Just In Time compilation and helps to boost the performance of Java application by converting Java byte code into native code when the crossed certain threshold i.e. mainly hot code is converted into native code.</li>
+</ul>
+<h4 id="explain-java-heap-space-and-garbage-collection">Explain Java Heap space and Garbage collection</h4>
+<ul>
+<li>(&#x7B80;&#x5316;&#x7248;)When a Java process is started using java command, memory is allocated to it. Part of this memory is used to create heap space, which is used to allocate memory to objects whenever they are created in the program. Garbage collection is the process inside JVM which reclaims memory from dead objects for future allocation.</li>
+<li>(&#x590D;&#x6742;&#x7248;)For the sake of Garbage collection. Heap is divided into three main regions named as New Generation, Old or Tenured Generation and Perm space. New Generation of Java Heap is part of Java Heap memory where newly created object are stored, During the course of application many objects created and died but those remain live they got moved to Old or Tenured Generation by Java Garbage collector thread on Major or full garbage collection. Perm space of Java Heap is where JVM stores Meta data about classes and methods, String pool and Class level details.</li>
+</ul>
+<h4 id="java-memory-leak">Java Memory Leak</h4>
+<p><a href="http://www.programcreek.com/2013/10/the-introduction-of-memory-leak-what-why-and-how/" target="_blank">Java Memory Leaks</a></p>
+<ul>
+<li>Normally You simply create objects and Java Garbage Collector takes care of allocating and freeing memory. However, the situation is not as simple as that, because memory leaks frequently occur in Java applications.</li>
+<li>Definition of Memory Leak: objects are no longer being used by the application, but Garbage Collector can not remove them because they are being referenced.</li>
+<li>Unreferenced objects will be garbage collected, while referenced objects will not be garbage collected. Unreferenced objects are surely unused, because no other objects refer to it. However, unused objects are not all unreferenced. Some of them are being referenced! That&apos;s where the memory leaks come from.</li>
+<li>In the example below, object A refers to object B. A&apos;s lifetime (t1 - t4) is much longer than B&apos;s (t2 - t3). When B is no longer being used in the application, A still holds a reference to it. In this way, Garbage Collector can not remove B from memory. This would possibly cause out of memory problem, because if A does the same thing for more objects, then there would be a lot of objects that are uncollected and consume memory space.
+It is also possible that B hold a bunch of references of other objects. Those objects referenced by B will not get collected either. All those unused objects will consume precious memory space.</li>
+</ul>
+<h4 id="create-memory-leaks">Create Memory leaks</h4>
+<p><a href="http://stackoverflow.com/questions/6470651/creating-a-memory-leak-with-java" target="_blank">Example</a></p>
+<h4 id="how-to-prevent-memory-leaks">How to Prevent Memory Leaks?</h4>
+<p>The following are some quick hands-on tips for preventing memory leaks.</p>
+<ul>
+<li>Pay attention to Collection classes, such as HashMap, ArrayList, etc., as they are common places to find memory leaks. When they are declared static, their life time is the same as the life time of the application.</li>
+<li>Pay attention to event listeners and callbacks. A memory leak may occur if a listener is registered but not unregistered when the class is not being used any longer.</li>
+<li>&quot;If a class manages its own memory, the programer should be alert for memory leaks.&quot;[1] Often times member variables of an object that point to other objects need to be null out.</li>
+</ul>
+<h4 id="object-class-method-getclass-hashcode">Object class method: getclass()/ hashcode()</h4>
+<ul>
+<li>java.lang.Object.getClass() method returns the runtime class of an object.</li>
+<li>a.getClass() returns the runtime type of a. I.e., if you have A a = new B(); then a.getClass() will return the B class.</li>
+<li>A.class evaluates to the A class statically, and is used for other purposes often related to reflection.</li>
+</ul>
+<h4 id="heap-vs-stack">Heap vs Stack</h4>
+<ul>
+<li>Stack and heap are different memory areas in the JVM and they are used for different purposes.</li>
+<li>The stack is used to hold method frames and local variables while objects are always allocated memory from the heap.</li>
+<li>The stack is usually much smaller than heap memory and also didn&apos;t shared between multiple threads, but heap is shared among all threads in JVM.</li>
+</ul>
+<h4 id="java-8">Java 8</h4>
+<p><a href="http://javarevisited.blogspot.sg/2014/02/10-example-of-lambda-expressions-in-java8.html" target="_blank">Java8</a></p>
+<ul>
+<li>Lambda expression, which allows you pass an anonymous function as object.</li>
+<li>Stream API, take advantage of multiple cores of modern CPU and allows you to write succinct code.</li>
+<li>Date and Time API, finally you have a solid and easy to use date and time library right into JDK</li>
+<li>Extension methods, now you can have static and default method into your interface</li>
+<li>Repeated annotation, allows you apply the same annotation multiple times on a type</li>
+</ul>
+<h2 id="data-structure-and-algorithm">Data Structure and Algorithm</h2>
+<pre><code>&#x4E8C;&#x53C9;&#x6811;&#xFF1A;&#x8D85;&#x7EA7;&#x91CD;&#x70B9;&#xFF1A; &#x6536;&#x96C6;&#x6240;&#x6709;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x9898;
+&#x94FE;&#x8868;&#xFF1A; &#x4F1A;&#x7FFB;&#x8F6C;&#xFF0F;&#x5FEB;&#x6162;&#x6307;&#x9488;
+Binary Deduction/Search: sorted/rotated array/ Sqrt()
+&#x5B9E;&#x73B0;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1A; hashmap&#xFF0C; stack&#x548C;queue
+Array/ String&#xFF1A; shuffle an array&#xFF0C; java big integer&#x5B9E;&#x73B0;
+dfs vs bfs  word ladder/ topological  sorting
+&#x7B80;&#x5355;dp&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5F88;&#x590D;&#x6742;: paint house/stock price/
+</code></pre><h2 id="computer-network">Computer Network</h2>
+<ol>
+<li>TCP &#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;TCP/UDP &#x533A;&#x522B;&#xFF1B;</li>
+<li>http/https &#x533A;&#x522B;&#xFF1B;http request&#xFF1A;post&#xFF0F;get &#xFF1B;http port 80 ssl;
+3.&#x8F93;&#x5165;www.google.com &#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1B;What happens when you type [url]www.google.com in your browser?[/url]
+4.Public key/Private key;</li>
+<li>HTTP 401, 403, or 404 Error&#xFF0F; client/server&#x6A21;&#x578B;</li>
+</ol>
+<h2 id="%E6%95%B0%E6%8D%AE%E5%BA%93">&#x6570;&#x636E;&#x5E93;</h2>
+<ol>
+<li>SQL vs NoSql &#x533A;&#x522B;</li>
+<li>select&#xFF0F;update&#xFF0F;delete&#xFF0F;insert
+3.primary key&#xFF1B;join&#xFF08;&#x56DB;&#x79CD;&#xFF09;&#x548C;index &#x539F;&#x7406;&#x548C;&#x4F5C;&#x7528;
+4.&#x7B80;&#x5355;&#x7684;sql&#x8BED;&#x53E5;&#xFF1A;&#x4ECE;table&#x4E2D;&#x627E;&#x51FA;&#x6210;&#x7EE9;&#x7B2C;&#x4E8C;&#x597D;&#x7684;&#x5B66;&#x751F;&#x59D3;&#x540D;&#xFF1B; group by
+5.&#x7B80;&#x5355;&#x4E86;&#x89E3;&#x51E0;&#x79CD;nosql&#x6570;&#x636E;&#x5E93;&#xFF1A; MangoDB/ Cassandra/HBase</li>
+</ol>
+<h2 id="%E7%B3%BB%E7%BB%9F%E5%8F%8A%E5%85%B6%E5%AE%83">&#x7CFB;&#x7EDF;&#x53CA;&#x5176;&#x5B83;</h2>
+<p>ACID/CAP &#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;
+Java&#x591A;&#x7EBF;&#x7A0B;&#xFF1A; extend Tread&#x7C7B;&#xFF0C;Implement Runnable&#x63A5;&#x53E3;/blockingqueue
+&#x5E8F;&#x5217;&#x5316;&#x7684;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;JSON&#xFF0F;Object Serialize&#xFF0F;ProtoBuf
+what is dead lock?&#x6B7B;&#x9501;&#x95EE;&#x9898;&#xFF0F;&#x5982;&#x4F55;&#x89E3;&#x51B3;
+Design Pattern &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;singleton&#xFF0C;factory, builder, decorator&#xFF09;
+Linux command: kill -9   / scp / telnet / ps</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../TechnicalQuestions/OperatingSystem.html" class="navigation navigation-prev " aria-label="Previous page: Operating System"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Git/index.html" class="navigation navigation-next " aria-label="Next page: Git"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

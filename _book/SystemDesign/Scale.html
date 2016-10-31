@@ -1,0 +1,551 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Scale the Web Application | Lintcode Solution Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../SystemDesign/web-craw.html" />
+    
+    
+    <link rel="prev" href="../SystemDesign/DesignPattern.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.4" data-basepath=".." data-revision="Tue Sep 27 2016 01:13:50 GMT-0400 (EDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="SystemDesign/index.html">
+            
+                
+                    <a href="../SystemDesign/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        System Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="SystemDesign/Network.html">
+            
+                
+                    <a href="../SystemDesign/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Network
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="SystemDesign/OperatingSystems.html">
+            
+                
+                    <a href="../SystemDesign/OperatingSystems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Operating Systems
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="SystemDesign/DesignPattern.html">
+            
+                
+                    <a href="../SystemDesign/DesignPattern.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Design Pattern
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="SystemDesign/Scale.html">
+            
+                
+                    <a href="../SystemDesign/Scale.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Scale the Web Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="SystemDesign/web-craw.html">
+            
+                
+                    <a href="../SystemDesign/web-craw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        web-craw
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="TechnicalQuestions/index.html">
+            
+                
+                    <a href="../TechnicalQuestions/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Technical Questions
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="TechnicalQuestions/GeneralQuestion.html">
+            
+                
+                    <a href="../TechnicalQuestions/GeneralQuestion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        General Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="TechnicalQuestions/LinuxCommand.html">
+            
+                
+                    <a href="../TechnicalQuestions/LinuxCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Linux Command
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="TechnicalQuestions/Network.html">
+            
+                
+                    <a href="../TechnicalQuestions/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Network Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="TechnicalQuestions/Database.html">
+            
+                
+                    <a href="../TechnicalQuestions/Database.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Database
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="TechnicalQuestions/OperatingSystem.html">
+            
+                
+                    <a href="../TechnicalQuestions/OperatingSystem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Operating System
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="TechnicalQuestions/JavaQuestions.html">
+            
+                
+                    <a href="../TechnicalQuestions/JavaQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Java Questions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Git/index.html">
+            
+                
+                    <a href="../Git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Git/git.html">
+            
+                
+                    <a href="../Git/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="bash/index.html">
+            
+                
+                    <a href="../bash/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="bash/BashCommand.html">
+            
+                
+                    <a href="../bash/BashCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Lintcode Solution Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="scale">Scale</h1>
+<h2 id="clone">Clone</h2>
+<p><a href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones" target="_blank">lecloud</a></p>
+<p>every server contains exactly the same codebase and does not store any user-related data, like sessions or profile pictures, on local disc or memory.</p>
+<p>Sessions need to be stored in a centralized data store which is accessible to all your application servers. It can be an external database or an external persistent cache, like Redis. An external persistent cache will have better performance than an external database. By external I mean that the data store does not reside on the application servers. Instead, it is somewhere in or near the data center of your application servers.</p>
+<h2 id="how-to-use-database">How to use Database</h2>
+<p><a href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database" target="_blank">lecloud</a></p>
+<h3 id="two-ways-to-scale-database">Two ways to scale database</h3>
+<h4 id="path-1">Path #1</h4>
+<p>It is to stick with MySQL and keep the &#x201C;beast&#x201D; running. Hire a database administrator (DBA,) tell him to do master-slave replication (read from slaves, write to master) and upgrade your master server by adding RAM, RAM and more RAM. In some months, your DBA will come up with words like &#x201C;sharding&#x201D;, &#x201C;denormalization&#x201D; and &#x201C;SQL tuning&#x201D; and will look worried about the necessary overtime during the next weeks. At that point every new action to keep your database running will be more expensive and time consuming than the previous one. You might have been better off if you had chosen Path #2 while your dataset was still small and easy to migrate.</p>
+<h4 id="path-2">Path #2</h4>
+<p>It means to denormalize right from the beginning and include no more Joins in any database query. You can stay with MySQL, and use it like a NoSQL database, or you can switch to a better and easier to scale NoSQL database like MongoDB or CouchDB. Joins will now need to be done in your application code. The sooner you do this step the less code you will have to change in the future. But even if you successfully switch to the latest and greatest NoSQL database and let your app do the dataset-joins, soon your database requests will again be slower and slower. You will need to introduce a cache.</p>
+<p>But even if successfully switched the latest and greatest NoSQL database and let your app do the dataset-joins, soon your database requests will be again slower and slower. You will need to introduce a cache.</p>
+<h2 id="cache">Cache</h2>
+<p><a href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache" target="_blank">lecloud</a></p>
+<p>A cache is a simple key-value store and it should reside as a buffering layer between your application and your data storage.</p>
+<p>Whenever your application has to read data it should at first try to retrieve the data from your cache.</p>
+<p>Only if it&#x2019;s not in the cache should it then try to get the data from the main data source.</p>
+<p>Because a cache is lightning-fast. It holds every dataset in RAM and requests are handled as fast as technically possible.</p>
+<h3 id="patterns-of-caching-your-data">Patterns of caching your data.</h3>
+<h4 id="cached-database-queries">Cached Database Queries</h4>
+<p>Whenever you do a query to your database, you store the result dataset in cache.</p>
+<p>A hashed version of your query is the cache key.</p>
+<p>The next time you run the query, you first check if it is already in the cache. The next time you run the query, you check at first the cache if there is already a result.</p>
+<p>The main issue is the expiration. It is hard to delete a cached result when you cache a complex query (who has not?). When one piece of data changes (for example a table cell) you need to delete all cached queries who may include that table cell.</p>
+<h4 id="cached-objects-strong-recommendation">Cached Objects(strong recommendation)</h4>
+<p>In general, see your data as an object like you already do in your code (classes, instances, etc.).</p>
+<p>Let your class assemble a dataset from your database and then store the complete instance of the class or the assembed dataset in the cache.</p>
+<p>You have, for example, a class called &#x201C;Product&#x201D; which has a property called &#x201C;data&#x201D;. It is an array containing prices, texts, pictures, and customer reviews of your product. The property &#x201C;data&#x201D; is filled by several methods in the class doing several database requests which are hard to cache, since many things relate to each other.</p>
+<p>Now, do the following: when your class has finished the &#x201C;assembling&#x201D; of the data array, directly store the data array, or better yet the complete instance of the class, in the cache! This allows you to easily get rid of the object whenever something did change and makes the overall</p>
+<p>it makes asynchronous processing possible! Just imagine an army of worker servers who assemble your objects for you! The application just consumes the latest cached object and nearly never touches the databases anymore!</p>
+<h3 id="two-memory-cache-mostly-used">Two Memory Cache Mostly Used</h3>
+<h4 id="memcached">Memcached</h4>
+<p>Free &amp; open source, high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.</p>
+<p>Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.</p>
+<p>Memcached is simple yet powerful. Its simple design promotes quick deployment, ease of development, and solves many problems facing large data caches. Its API is available for most popular languages.</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">get_foo</span>(<span class="hljs-params">foo_id</span>)
+    <span class="hljs-title">foo</span> = <span class="hljs-title">memcached_get</span>(<span class="hljs-params">&quot;foo:&quot; . foo_id</span>)
+    <span class="hljs-title">return</span> <span class="hljs-title">foo</span> <span class="hljs-title">if</span> <span class="hljs-title">defined</span> <span class="hljs-title">foo</span>
+
+    <span class="hljs-title">foo</span> = <span class="hljs-title">fetch_foo_from_database</span>(<span class="hljs-params">foo_id</span>)
+    <span class="hljs-title">memcached_set</span>(<span class="hljs-params">&quot;foo:&quot; . foo_id, foo</span>)
+    <span class="hljs-title">return</span> <span class="hljs-title">foo</span>
+<span class="hljs-title">end</span>
+</span></code></pre>
+<h4 id="redis">Redis</h4>
+<p>Redis is an open source (BSD licensed), in-memory data structure store, used as database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, (hyperloglogs and geospatial indexes with radius queries).
+Redis has built-in replication, Lua scripting, LRU eviction, transactions and different levels of on-disk persistence, and provides high availability (via Redis Sentinel) and automatic partitioning with Redis Cluster.</p>
+<h2 id="asynchronism">Asynchronism</h2>
+<p><a href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism" target="_blank">lecloud</a></p>
+<p>Please imagine that you want to buy bread at your favorite bakery.  So you go into the bakery, ask for a loaf of bread, but there is no bread there! Instead, you are asked to come back in 2 hours when your ordered bread is ready. That&#x2019;s annoying, isn&#x2019;t it?</p>
+<p>To avoid such a &#x201C;please wait a while&#x201D; - situation, asynchronism needs to be done.  And what&#x2019;s good for a bakery, is maybe also good for your web service or web app.</p>
+<h3 id="two-ways-paradigms-asynchronism">Two ways / paradigms asynchronism</h3>
+<h4 id="async-1">Async #1</h4>
+<p>Let&#x2019;s stay in the former bakery picture. The first way of async processing is the &#x201C;bake the breads at night and sell them in the morning&#x201D; way. No waiting time at the cash register and a happy customer.  Referring to a web app this means doing the time-consuming work in advance and serving the finished work with a low request time.</p>
+<p>Very often this paradigm is used to turn dynamic content into static content.  Pages of a website, maybe built with a massive framework or CMS, are pre-rendered and locally stored as static HTML files on every change. Often these computing tasks are done on a regular basis, maybe by a script which is called every hour by a cronjob. This pre-computing of overall general data can extremely improve websites and web apps and makes them very scalable and performant. Just imagine the scalability of your website if the script would upload these pre-rendered HTML pages to AWS S3 or Cloudfront or another Content Delivery Network! Your website would be super responsive and could handle millions of visitors per hour!</p>
+<h4 id="async-2">Async #2</h4>
+<p>Back to the bakery. Unfortunately, sometimes customers has special requests like a birthday cake with &#x201C;Happy Birthday, Steve!&#x201D; on it. The bakery can not foresee these kind of customer wishes, so it must start the task when the customer is in the bakery and tell him to come back at the next day. Refering to a web service that means to handle tasks asynchronously.</p>
+<p>Here is a typical workflow:</p>
+<p>A user comes to your website and starts a very computing intensive task which would take several minutes to finish. So the frontend of your website sends a job onto a job queue and immediately signals back to the user: your job is in work, please continue to the browse the page. The job queue is constantly checked by a bunch of workers for new jobs. If there is a new job then the worker does the job and after some minutes sends a signal that the job was done. The frontend, which constantly checks for new &#x201C;job is done&#x201D; - signals, sees that the job was done and informs the user about it. I know, that was a very simplified example.</p>
+<p>If you now want to dive more into the details and actual technical design, I recommend you take a look at the first 3 tutorials on the RabbitMQ website. RabbitMQ is one of many systems which help to implement async processing. You could also use ActiveMQ or a simple Redis list. The basic idea is to have a queue of tasks or jobs that a worker can process. Asynchronism seems complicated, but it is definitely worth your time to learn about it and implement it yourself. Backends become nearly infinitely scalable and frontends become snappy which is good for the overall user experience.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../SystemDesign/DesignPattern.html" class="navigation navigation-prev " aria-label="Previous page: Design Pattern"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../SystemDesign/web-craw.html" class="navigation navigation-next " aria-label="Next page: web-craw"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

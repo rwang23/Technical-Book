@@ -1,0 +1,669 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Network Questions | Lintcode Solution Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../TechnicalQuestions/Database.html" />
+    
+    
+    <link rel="prev" href="../TechnicalQuestions/LinuxCommand.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.3" data-basepath=".." data-revision="Tue Sep 27 2016 01:13:50 GMT-0400 (EDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="SystemDesign/index.html">
+            
+                
+                    <a href="../SystemDesign/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        System Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="SystemDesign/Network.html">
+            
+                
+                    <a href="../SystemDesign/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Network
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="SystemDesign/OperatingSystems.html">
+            
+                
+                    <a href="../SystemDesign/OperatingSystems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Operating Systems
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="SystemDesign/DesignPattern.html">
+            
+                
+                    <a href="../SystemDesign/DesignPattern.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Design Pattern
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="SystemDesign/Scale.html">
+            
+                
+                    <a href="../SystemDesign/Scale.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Scale the Web Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="SystemDesign/web-craw.html">
+            
+                
+                    <a href="../SystemDesign/web-craw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        web-craw
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="TechnicalQuestions/index.html">
+            
+                
+                    <a href="../TechnicalQuestions/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Technical Questions
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="TechnicalQuestions/GeneralQuestion.html">
+            
+                
+                    <a href="../TechnicalQuestions/GeneralQuestion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        General Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="TechnicalQuestions/LinuxCommand.html">
+            
+                
+                    <a href="../TechnicalQuestions/LinuxCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Linux Command
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="TechnicalQuestions/Network.html">
+            
+                
+                    <a href="../TechnicalQuestions/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Network Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="TechnicalQuestions/Database.html">
+            
+                
+                    <a href="../TechnicalQuestions/Database.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Database
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="TechnicalQuestions/OperatingSystem.html">
+            
+                
+                    <a href="../TechnicalQuestions/OperatingSystem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Operating System
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="TechnicalQuestions/JavaQuestions.html">
+            
+                
+                    <a href="../TechnicalQuestions/JavaQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Java Questions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Git/index.html">
+            
+                
+                    <a href="../Git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Git/git.html">
+            
+                
+                    <a href="../Git/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="bash/index.html">
+            
+                
+                    <a href="../bash/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="bash/BashCommand.html">
+            
+                
+                    <a href="../bash/BashCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Lintcode Solution Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="computer-network">Computer Network</h2>
+<h3 id="get-vs-post">Get VS Post</h3>
+<h4 id="get">Get</h4>
+<table>
+<thead>
+<tr>
+<th>Get</th>
+<th>Post</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parameters in URL</td>
+<td>parameters in body</td>
+</tr>
+<tr>
+<td>used for fetching document</td>
+<td>used for updatint</td>
+</tr>
+<tr>
+<td>has maximum url length</td>
+<td>no max length</td>
+</tr>
+<tr>
+<td>Ok to cache</td>
+<td>not ok to cache</td>
+</tr>
+<tr>
+<td>should not change the server</td>
+<td>Ok to change</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tcp-3-way-handshake">TCP 3-way handshake</h3>
+<h4 id="definition-what-does-three-way-handshake-mean">Definition - What does Three-Way-Handshake mean?</h4>
+<ul>
+<li>Before the sending device and the receiving device start the exchange of data, both devices need to be synchronized</li>
+<li>A three-way-handshake is a method used in a TCP/IP network to create a connection between a local host/client and server. It is a three-step method that requires both the client and server to exchange SYN and ACK (acknowledgment) packets before actual data communication begins.
+A three-way-handshake is also known as a TCP handshake.</li>
+</ul>
+<h4 id="explain">Explain</h4>
+<ul>
+<li>A three-way-handshake is primarily used to create a TCP socket connection. It works when:</li>
+<li>A client node sends a SYN data packet over an IP network to a server on the same or an external network. The objective of this packet is to ask/infer if the server is open for new connection.</li>
+<li>The target server must have open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it responds and returns a confirmation receipt - the ACK packet or SYN/ACK packet.</li>
+<li>The client node receives the SYN/ACK from the server and responds with an ACK packet</li>
+</ul>
+<p><a href="http://www.omnisecu.com/tcpip/tcp-three-way-handshake.php" target="_blank">example</a></p>
+<h3 id="tcp-udp">TCP UDP</h3>
+<p>Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) are the major protocols operating at Transport Layer.</p>
+<h4 id="tcp">TCP</h4>
+<ul>
+<li>TCP stands for Transmission Control Protocol and it guarantees delivery of data packets. This protocol provides extensive error checking mechanisms such as flow control and acknowledgment of data.</li>
+<li>Transmission Control Protocol (TCP) is a connection oriented protocol. Before transmitting data, a connection must be established between the devices participating in data transmission. If your Application require guaranteed delivery of data, then you must choose TCP as the Transport layer protocol.</li>
+</ul>
+<h4 id="udp">UDP</h4>
+<ul>
+<li>UDP stands for User Datagram Protocol and it operates in Datagram mode. The main difference you should notice here is User Datagram Protocol (UDP) is a connection-less protocol. User Datagram Protocol (UDP) has only the basic error checking mechanism using checksums.</li>
+</ul>
+<h4 id="tcp-vs-udp">TCP VS UDP</h4>
+<p><a href="http://tutorials.jenkov.com/java-networking/udp-datagram-sockets.html" target="_blank">jenkov</a></p>
+<ul>
+<li>Transmission Control Protocol (TCP) is a connection oriented protocol, which means the devices should open a connection before transmitting data and should close the connection gracefully after transmitting the data, while UDP is not</li>
+<li>Transmission Control Protocol (TCP) assure reliable delivery of data to the destination, while UDP does not</li>
+<li>Transmission Control Protocol (TCP) protocol provides extensive error checking mechanisms such as flow control and acknowledgment of data, while UDP just provides basic error checking</li>
+<li>Sequencing of data is a feature of Transmission Control Protocol (TCP), but there is no sequencing of data in UDP</li>
+<li>Transmission Control Protocol (TCP) is comparatively slow because of these extensive error checking mechanisms, while UDP is faster</li>
+<li>Retransmission of lost packets is possible in Transmission Control Protocol (TCP). There is no retransmission of lost packets in User Datagram Protocol (UDP).</li>
+</ul>
+<h3 id="http-https">http / https</h3>
+<p><a href="https://www.instantssl.com/ssl-certificate-products/https.html" target="_blank">http / https</a></p>
+<h3 id="http">Http</h3>
+<p>Client and server agreed on a procedure for exchanging information and called it HyperText Transfer Protocol (HTTP).</p>
+<ul>
+<li>HyperText Transfer Protocol (HTTP) use port 80</li>
+</ul>
+<h4 id="https">Https</h4>
+<ul>
+<li>HyperText Transfer Protocol Secure (HTTPS).  is the secure version of HTTP, use port 443</li>
+<li>It means all communications between your browser and the website are encrypted</li>
+<li>Using HTTPS, the computers agree on a &quot;code&quot; between them, and then they scramble the messages using that &quot;code&quot; so that no one in between can read them. This keeps your information safe from hackers.</li>
+<li>HTTPS is often used to protect highly confidential online transactions like online banking and online shopping order forms.</li>
+</ul>
+<h4 id="how-does-https-work">How does Https work</h4>
+<p>HTTPS pages typically use one of two secure protocols to encrypt communications - SSL (Secure Sockets Layer) or TLS (Transport Layer Security). Both the TLS and SSL protocols use what is known as an &apos;asymmetric&apos; Public Key Infrastructure (PKI) system. An asymmetric system uses two &apos;keys&apos; to encrypt communications, a &apos;public&apos; key and a &apos;private&apos; key. Anything encrypted with the public key can only be decrypted by the private key and vice-versa.</p>
+<p>As the names suggest, the &apos;private&apos; key should be kept strictly protected and should only be accessible the owner of the private key. In the case of a website, the private key remains securely ensconced on the web server. Conversely, the public key is intended to be distributed to anybody and everybody that needs to be able to decrypt information that was encrypted with the private key.</p>
+<h4 id="https-certificate">Https certificate</h4>
+<p>When you request a HTTPS connection to a webpage, the website will initially send its SSL certificate to your browser. This certificate contains the public key needed to begin the secure session. Based on this initial exchange, your browser and the website then initiate the &apos;SSL handshake&apos;. The SSL handshake involves the generation of shared secrets to establish a uniquely secure connection between yourself and the website.</p>
+<p>When a trusted SSL Digital Certificate is used during a HTTPS connection, users will see a padlock icon in the browser address bar. When an Extended Validation Certificate is installed on a web site, the address bar will turn green.</p>
+<h4 id="why-is-an-ssl-certificate-required">Why Is an SSL Certificate Required?</h4>
+<p>All communications sent over regular HTTP connections are in &apos;plain text&apos; and can be read by any hacker that manages to break into the connection between your browser and the website. This presents a clear danger if the &apos;communication&apos; is on an order form and includes your credit card details or social security number. With a HTTPS connection, all communications are securely encrypted. This means that even if somebody managed to break into the connection, they would not be able decrypt any of the data which passes between you and the website.</p>
+<p>3.&#x8F93;&#x5165;www.google.com &#x4F1A;&#x53D1;&#x751F;&#x4EC0;&#x4E48;&#xFF1B;What happens when you type [url]www.google.com in your browser?[/url]</p>
+<h4 id="post-vs-get">Post vs Get</h4>
+<p>GET - Requests data from a specified resource
+POST - Submits data to be processed to a specified resource
+GET is used for viewing something, without changing it, while POST is used for changing something
+POST also lets you send much more information,  lets you send just about any type of data</p>
+<h4 id="http-status-messages">HTTP Status Messages</h4>
+<table>
+<thead>
+<tr>
+<th>HTTP Status</th>
+<th>Description</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>The request is OK (this is the standard response for successful HTTP requests)</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>301</td>
+<td>The requested page has moved to a new URL</td>
+<td>Moved Permanently</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Indicates the requested page has not been modified since last requested</td>
+<td>Not Modified</td>
+</tr>
+<tr>
+<td>400</td>
+<td>The request cannot be fulfilled due to bad syntax</td>
+<td>Bad Request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>The request was a legal request, but the server is refusing to respond to it, For use when authentication is possible but has failed or not yet been provided</td>
+<td>Unauthorized</td>
+</tr>
+<tr>
+<td>403</td>
+<td>The request was a legal request, but the server is refusing to respond to it</td>
+<td>Forbidden</td>
+</tr>
+<tr>
+<td>404</td>
+<td>The requested page could not be found but may be available again in the future</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>500</td>
+<td>A generic error message, given when no more specific message is suitable</td>
+<td>Internal Server Error</td>
+</tr>
+</tbody>
+</table>
+<h4 id="what-is-url">What is URL?</h4>
+<pre><code>http://www.github.com:8080/index.html?user=rwang23&amp;lang=zh-CN#home
+  |          |          |       |                  |          |
+protocol     |          |       |                  |          |
+          hostname     port     |                  |          |
+              \        /    pathname             search      hash
+                 host
+</code></pre><h3 id="client-server-model">Client Server Model</h3>
+<p><a href="https://www.techopedia.com/definition/18321/client-server-model" target="_blank">Client-Server Model</a></p>
+<h4 id="definition-what-does-client-server-model-mean">Definition - What does Client-Server Model mean?</h4>
+<p>The client-server model is a distributed communication framework of network processes among service requestors, clients and service providers. The client-server connection is established through a network or the Internet.</p>
+<p>The client-server model is a core network computing concept also building functionality for email exchange and Web/database access. Web technologies and protocols built around the client-server model are:</p>
+<ul>
+<li>Hypertext Transfer Protocol (HTTP)</li>
+<li>Domain Name System (DNS)</li>
+<li>Simple Mail Transfer Protocol (SMTP)</li>
+<li>Telnet</li>
+</ul>
+<p>Clients include Web browsers, chat applications, and email software, among others. Servers include Web, database, application, chat and email, etc.</p>
+<h4 id="explains-client-server-model">Explains Client-Server Model</h4>
+<p>A server manages most processes and stores all data. A client requests specified data or processes. The server relays process output to the client. Clients sometimes handle processing, but require server data resources for completion.</p>
+<p>The client-server model differs from a peer-to-peer (P2P) model where communicating systems are the client or server, each with equal status and responsibilities. The P2P model is decentralized networking. The client-server model is centralized networking.
+One client-server model drawback is having too many client requests underrun a server and lead to improper functioning or total shutdown. Hackers often use such tactics to terminate specific organizational services through distributed denial-of-service (DDoS) attacks.</p>
+<h2 id="%E7%B3%BB%E7%BB%9F%E5%8F%8A%E5%85%B6%E5%AE%83">&#x7CFB;&#x7EDF;&#x53CA;&#x5176;&#x5B83;</h2>
+<p>ACID/CAP &#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;
+Java&#x591A;&#x7EBF;&#x7A0B;&#xFF1A; extend Tread&#x7C7B;&#xFF0C;Implement Runnable&#x63A5;&#x53E3;/blockingqueue
+&#x5E8F;&#x5217;&#x5316;&#x7684;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;JSON&#xFF0F;Object Serialize&#xFF0F;ProtoBuf
+what is dead lock?&#x6B7B;&#x9501;&#x95EE;&#x9898;&#xFF0F;&#x5982;&#x4F55;&#x89E3;&#x51B3;
+Design Pattern &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#xFF08;singleton&#xFF0C;factory, builder, decorator&#xFF09;
+Linux command: kill -9   / scp / telnet / ps</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../TechnicalQuestions/LinuxCommand.html" class="navigation navigation-prev " aria-label="Previous page: Linux Command"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../TechnicalQuestions/Database.html" class="navigation navigation-next " aria-label="Next page: Database"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Network | Lintcode Solution Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../SystemDesign/OperatingSystems.html" />
+    
+    
+    <link rel="prev" href="../SystemDesign/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Tue Sep 27 2016 01:13:50 GMT-0400 (EDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="SystemDesign/index.html">
+            
+                
+                    <a href="../SystemDesign/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        System Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="SystemDesign/Network.html">
+            
+                
+                    <a href="../SystemDesign/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Network
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="SystemDesign/OperatingSystems.html">
+            
+                
+                    <a href="../SystemDesign/OperatingSystems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Operating Systems
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="SystemDesign/DesignPattern.html">
+            
+                
+                    <a href="../SystemDesign/DesignPattern.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Design Pattern
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="SystemDesign/Scale.html">
+            
+                
+                    <a href="../SystemDesign/Scale.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Scale the Web Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="SystemDesign/web-craw.html">
+            
+                
+                    <a href="../SystemDesign/web-craw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        web-craw
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="TechnicalQuestions/index.html">
+            
+                
+                    <a href="../TechnicalQuestions/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Technical Questions
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="TechnicalQuestions/GeneralQuestion.html">
+            
+                
+                    <a href="../TechnicalQuestions/GeneralQuestion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        General Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="TechnicalQuestions/LinuxCommand.html">
+            
+                
+                    <a href="../TechnicalQuestions/LinuxCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Linux Command
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="TechnicalQuestions/Network.html">
+            
+                
+                    <a href="../TechnicalQuestions/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Network Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="TechnicalQuestions/Database.html">
+            
+                
+                    <a href="../TechnicalQuestions/Database.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Database
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="TechnicalQuestions/OperatingSystem.html">
+            
+                
+                    <a href="../TechnicalQuestions/OperatingSystem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Operating System
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="TechnicalQuestions/JavaQuestions.html">
+            
+                
+                    <a href="../TechnicalQuestions/JavaQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Java Questions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Git/index.html">
+            
+                
+                    <a href="../Git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Git/git.html">
+            
+                
+                    <a href="../Git/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="bash/index.html">
+            
+                
+                    <a href="../bash/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="bash/BashCommand.html">
+            
+                
+                    <a href="../bash/BashCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Lintcode Solution Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="computer-network">Computer Network</h1>
+<h2 id="tcp-ip">TCP/IP</h2>
+<h3 id="explain-transmission-control-protocol-tcp">Explain Transmission Control Protocol, TCP</h3>
+<p>TCP ensures reliable and end to end delivery of segments of information. Segments are acknowledged to the source when received by the destination. Data is broken up into segments and sequenced properly before transmission. This arrangement of segments allows destination to trace lost data in transmission.</p>
+<h3 id="what-is-tcp-protocol">What is TCP protocol?</h3>
+<p>Transmission control Protocol is used to establish communication between nodes or networks and exchange data packets. It guarantees delivery of data packets in the order they were sent. Hence it is most commonly used in all applications that require guaranteed delivery of data. It can handle both timeouts (if packets were delayed) and retransmission (if packets were lost). The stream of data is transmitted in segments. The segment header is 32 bit. it is a connectionless communication protocol at the third level (network) of the OSI model.</p>
+<h3 id="tcp-vs-udp">TCP vs. UDP.</h3>
+<p>TCP guarantees the delivery of data. UDP on the other hand, does not guarantee delivery of data. TCP delivers messages in the order they were sent. UDP has no ordering mechanisms. In TCP data is sent as a stream while UDP sends data as individual packets. UDP is faster than TCP. TCP is a connection oriented protocol while UDP is connectionless.</p>
+<h2 id="what-happens-when-you-visit-a-website-what-exactly-goes-on-after-you-type-a-url-into-a-browser">What happens when you visit a website? What exactly goes on after you type a URL into a browser?</h2>
+<p>When you visit a website a lot of things happen behind the scenes that you may not be aware of. Let&#x2019;s go through a list of those things in the order that they occur:</p>
+<ol>
+<li>When you visit a website, the web browser that you are using (whether it is Chrome, Safari, Firefox, Internet Explorer etc.) will contact what&#x2019;s called a DNS (Domain Name System) server that will translate the human readable website name into a numeric IP address. It&#x2019;s important to remember that every website name is basically an alias for an IP address. So, DNS converts that URL into an IP address, and each website has its own unique IP address.</li>
+</ol>
+<p>(first it will search the DNS in browser cache, then in the operating system cache, or local host;
+then it request the DNS to translate to IP)</p>
+<pre><code>    DNS is interesting because of the fact that it is basically works in a hierarchical structure. There are many DNS servers distributed throughout the world, and if one DNS server does not know a particular IP address, then it will ask another DNS server that is &#x201C;higher up&#x201D; in the hierarchy. How does your personal computer know which DNS server to use? Well, your ISP (Internet Service Provider) actually sends some extra network information to your computer whenever you connect to the Internet. That &#x201C;extra&#x201D; network information includes which DNS server your computer should be using whenever you visit a website.
+</code></pre><p>Once a DNS server finds the IP address of the website you are looking for, that IP address is returned to your browser.</p>
+<ol>
+<li><p>Your browser will now use the IP address returned by DNS to communicate with the web server that hosts the website that you want to visit. It will connect to port number 80 on the web server using a protocol called TCP.</p>
+</li>
+<li><p>Now that your browser has a connection with the website&#x2019;s web server, your browser will retrieve the html code(or some other resources) of the specific page that is requested.</p>
+</li>
+<li><p>Once your browser receives the HTML code from the web server, it will display that HTML code to you in the browser window.</p>
+</li>
+<li><p>If and when you close that particular browser window, the connection with the web server will end.</p>
+</li>
+</ol>
+<h3 id="what-is-url">What is URL?</h3>
+<pre><code>http://www.github.com:8080/index.html?user=rwang23&amp;lang=zh-CN#home
+  |          |          |       |                  |          |
+protocol     |          |       |                  |          |
+          hostname     port     |                  |          |
+              \        /    pathname             search      hash
+                 host
+</code></pre><h2 id="http">HTTP</h2>
+<h4 id="http-status-messages">HTTP Status Messages</h4>
+<table>
+<thead>
+<tr>
+<th>HTTP Status</th>
+<th>Description</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>The request is OK (this is the standard response for successful HTTP requests)</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>301</td>
+<td>The requested page has moved to a new URL</td>
+<td>Moved Permanently</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Indicates the requested page has not been modified since last requested</td>
+<td>Not Modified</td>
+</tr>
+<tr>
+<td>400</td>
+<td>The request cannot be fulfilled due to bad syntax</td>
+<td>Bad Request</td>
+</tr>
+<tr>
+<td>401</td>
+<td>The request was a legal request, but the server is refusing to respond to it</td>
+<td>Unauthorized</td>
+</tr>
+<tr>
+<td>403</td>
+<td>The request was a legal request, but the server is refusing to respond to it</td>
+<td>Forbidden</td>
+</tr>
+<tr>
+<td>404</td>
+<td>The requested page could not be found but may be available again in the future</td>
+<td>Not Found</td>
+</tr>
+<tr>
+<td>500</td>
+<td>A generic error message, given when no more specific message is suitable</td>
+<td>Internal Server Error</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-is-cookie">What is cookie</h2>
+<p>An HTTP cookie (also called web cookie, Internet cookie, browser cookie or simply cookie), is a small piece of data sent from a website and stored in the user&apos;s web browser while the user is browsing. Every time the user loads the website, the browser sends the cookie back to the server to notify the user&apos;s previous activity.</p>
+<h3 id="pros-and-cons">Pros and Cons</h3>
+<h4 id="pros">Pros</h4>
+<p>In some ways, cookies make browsing the Internet faster and easier.
+For example, certain websites customize site information based on your location (city). Also, after you have registered on a site like Amazon, for example, you do not have to enter the same information every time you visit the site.</p>
+<h4 id="cons">Cons</h4>
+<p>Since most websites will not allow their site to be accessed unless cookies are enabled, browsers are usually set to accept cookies by default. As a result, cookies are being stored &quot;invisibly&quot; on your hard drive every time you browse the Internet. Since your IP address is usually collected, your browsing history and online activities become public knowledge.
+Also, your browser may start and run slower, and your system may lag or hang up if hard drive space is limited
+When you visit websites that contain ads, third-party cookies (from sites you&apos;ve never visited) can also be placed on your computer</p>
+<h2 id="what-is-a-mac-address">What is a MAC address?</h2>
+<p>MAC stands for Media Access Control. The MAC address is globally unique &#x2013; which means that no two devices in the world (in theory) will share a MAC addresses.</p>
+<h3 id="what-do-the-numbers-mean-in-the-mac-address">What do the numbers mean in the MAC address?</h3>
+<p>A MAC address is typically represented by six groups of 2 hexadecimal numbers. When presented in a friendly format for humans to read, the six groups are generally separated by either a hypen (a &#x201C;-&#x201C;) or a colon (a &#x201C;:&#x201D;). So, a MAC address could look like this: 01-33-45-69-89-yz, or even this: 01:33:45:69:89:yz, where each group of 2 hexadecimal numbers is separated by the hyphen or by the colon. Each group is composed of 1 byte &#x2013; or 1 octet &#x2013; since both terms represent 8 bits.</p>
+<p>The first three bytes of a MAC address (which is also the first half of the MAC address) are specific for each manufacturer of the hardware. What does that mean? Well, if you see a MAC address that starts with &#x201C;00:05:69&#x2033;, then you know that the hardware was manufactured by the company VMWare. Similarly, you can identify hardware manufactured by Intel just by looking at the first three bytes of the MAC address. The last three bytes (or the second half of the MAC address) are assigned by the manufacturer as they please &#x2013; as long as those last three bytes are unique then the manufacturer can assign those bytes as they see fit.</p>
+<h3 id="can-a-mac-address-be-changed">Can a MAC address be changed?</h3>
+<p>MAC addresses were originally meant to be both globally unique and permanent, but in newer hardware it is actually possible to change the MAC address. So, yes, the MAC address can be changed on most new hardware.</p>
+<h3 id="are-mac-addresses-only-for-devices-with-an-ethernet-interface">Are MAC addresses only for devices with an ethernet interface?</h3>
+<p>No, this is a popular misconception. Even iPhones &#x2013; which have no Ethernet interface &#x2013; still have (and need) a MAC address.</p>
+<h3 id="how-to-get-a-mac-address-using-php">How to get a MAC address using PHP?</h3>
+<p>Retrieving the MAC address of a client connecting to your website using PHP is not possible. This is not some limitation of PHP &#x2013; this is simply because the MAC address is lost once the client&#x2019;s packets have been routed from their local subnet to the gateway that leads out to the Internet. The client&#x2019;s local router can of course access the MAC address, but once the packets proceed past that point and into the &#x2018;outside&#x2019; world of the Internet, the MAC address simply can not be retrieved.</p>
+<h3 id="what-are-some-uses-for-the-mac-address">What are some uses for the MAC address?</h3>
+<p>One common method used to secure wireless routers is to add a list of all the MAC addresses of all devices that should have access to the router&#x2019;s network. If a device&#x2019;s MAC address is not on that list, then it is not allowed to access the Internet through that router. This is commonly known as MAC address filtering.</p>
+<p>I&#x2019;ve also seen hotels use MAC addresses to give their guests a fixed period of free time &#x2013; like 30 minutes of free time daily &#x2013; to access the Internet. Because guests will have to go through the hotel&#x2019;s router to access the Internet, the hotel router can remember the MAC addresses of devices that accessed the Internet. This way, if you try to access the Internet again after exceeding your daily free 30 minutes, you will be denied. The reason these hotels don&#x2019;t use cookies is because it is too simple to get around that &#x2013; you can easily delete your cookies to access the Internet again. But, the only drawback is that if a guest has multiple devices &#x2013; like an iPhone and a laptop &#x2013; then he/she could get a full hour of free Internet time, since the MAC address is only different for every device, and they have no way of knowing that both devices (like the iPhone and the laptop) belong to the same guest.</p>
+<h2 id="what-is-the-difference-between-baud-rate-and-bit-rate">What is the difference between baud rate and bit rate?</h2>
+<p>Bits, as you probably know, are the 0&#x2019;s and 1&#x2019;s that binary data consists of. The bit rate is a measure of the number of bits that are transmitted per unit of time &#x2013; where the unit of time can be anything. Generally you will see the bit rate measured in bits per second. This means that if a network is transmitting 15,000 bits ever second, the bit rate is 15,000 bps &#x2013; where bps obviously stands for bits per second.</p>
+<p>The baud rate, which is also known as symbol rate, measures the number of symbols that are transmitted per unit of time. A symbol typically consists of a fixed number of bits depending on what the symbol is defined as. The baud rate is measured in symbols per second.</p>
+<h3 id="the-difference-between-baud-rate-and-bit-rate">The difference between baud rate and bit rate</h3>
+<p>To summarize, the bit rate measures the number of bits transmitted per second, whereas the baud rate measures the number of symbols transmitted per second &#x2013; and that is the major difference between the two.</p>
+<h3 id="can-the-baud-rate-equal-the-bit-rate">Can the baud rate equal the bit rate?</h3>
+<p>Because symbols are comprised of bits, the baud rate will equal the bit rate only when there is just one bit per symbol.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../SystemDesign/index.html" class="navigation navigation-prev " aria-label="Previous page: System Design"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../SystemDesign/OperatingSystems.html" class="navigation navigation-next " aria-label="Next page: Operating Systems"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

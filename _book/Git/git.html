@@ -1,0 +1,673 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Git | Lintcode Solution Book</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.4.3">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../bash/index.html" />
+    
+    
+    <link rel="prev" href="../Git/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Tue Sep 27 2016 01:13:50 GMT-0400 (EDT)">
+    
+
+<div class="book-summary">
+    <div class="book-search" role="search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="SystemDesign/index.html">
+            
+                
+                    <a href="../SystemDesign/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        System Design
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="SystemDesign/Network.html">
+            
+                
+                    <a href="../SystemDesign/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Network
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="SystemDesign/OperatingSystems.html">
+            
+                
+                    <a href="../SystemDesign/OperatingSystems.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Operating Systems
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="SystemDesign/DesignPattern.html">
+            
+                
+                    <a href="../SystemDesign/DesignPattern.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Design Pattern
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="SystemDesign/Scale.html">
+            
+                
+                    <a href="../SystemDesign/Scale.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Scale the Web Application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="SystemDesign/web-craw.html">
+            
+                
+                    <a href="../SystemDesign/web-craw.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        web-craw
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="TechnicalQuestions/index.html">
+            
+                
+                    <a href="../TechnicalQuestions/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Technical Questions
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="TechnicalQuestions/GeneralQuestion.html">
+            
+                
+                    <a href="../TechnicalQuestions/GeneralQuestion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        General Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="TechnicalQuestions/LinuxCommand.html">
+            
+                
+                    <a href="../TechnicalQuestions/LinuxCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Linux Command
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="TechnicalQuestions/Network.html">
+            
+                
+                    <a href="../TechnicalQuestions/Network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Network Questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="TechnicalQuestions/Database.html">
+            
+                
+                    <a href="../TechnicalQuestions/Database.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Database
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="TechnicalQuestions/OperatingSystem.html">
+            
+                
+                    <a href="../TechnicalQuestions/OperatingSystem.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Operating System
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="TechnicalQuestions/JavaQuestions.html">
+            
+                
+                    <a href="../TechnicalQuestions/JavaQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Java Questions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Git/index.html">
+            
+                
+                    <a href="../Git/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1" data-path="Git/git.html">
+            
+                
+                    <a href="../Git/git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Git
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="bash/index.html">
+            
+                
+                    <a href="../bash/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="bash/BashCommand.html">
+            
+                
+                    <a href="../bash/BashCommand.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Bash Command
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Lintcode Solution Book</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="git-%E5%88%9D%E6%AD%A5">Git &#x521D;&#x6B65;</h2>
+<p>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;Git&#x4ED3;&#x5E93;&#xFF0C;&#x4F7F;&#x7528;<code>git init</code>&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x5230;Git&#x4ED3;&#x5E93;&#xFF0C;&#x5206;&#x4E24;&#x6B65;&#xFF1A;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>git add &lt;file&gt;</code>&#xFF0C;&#x6CE8;&#x610F;&#xFF0C;&#x53EF;&#x53CD;&#x590D;&#x591A;&#x6B21;&#x4F7F;&#x7528;&#xFF0C;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x6587;&#x4EF6;&#xFF1B;</li>
+<li>&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>git commit</code>&#xFF0C;&#x5B8C;&#x6210;&#x3002;
+&#x901A;&#x5E38;&#x4F7F;&#x7528; <code>git commit -m &quot;something to comment&quot;</code></li>
+<li>&#x6CE8;&#x610F;&#xFF0C;&#x6BCF;&#x6B21;commit&#x524D;&#x90FD;&#x5148;&#x8981;<code>add commit</code>,&#x5982;&#x679C;&#x5728;commit&#x524D;&#x6CA1;&#x6709;add&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x4F1A;commit&#x5230;&#x4E4B;&#x524D;add&#x65F6;&#x5019;&#x7684;&#x5185;&#x5BB9;</li>
+<li>&#x547D;&#x4EE4;<code>git commit -a -m &quot;message&#x201C;</code> &#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x8FDB;&#x884C;add&#x7136;&#x540E;&#x8FDB;&#x884C;commit</li>
+<li>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x63D0;&#x4EA4;&#x5B8C;&#x4E86;&#x624D;&#x53D1;&#x73B0;&#x6F0F;&#x6389;&#x4E86;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x6CA1;&#x6709;&#x52A0;&#xFF0C;&#x6216;&#x8005;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&#x5199;&#x9519;&#x4E86;&#x3002;&#x60F3;&#x8981;&#x64A4;&#x6D88;&#x521A;&#x624D;&#x7684;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; --amend &#x9009;&#x9879;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;&#xFF1A; <code>git commit --amend</code></li>
+</ol>
+<h2 id="git-%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C">Git &#x4E00;&#x4E9B;&#x64CD;&#x4F5C;</h2>
+<ul>
+<li><code>git mv README.txt Readme</code> &#x5C06;&#x6587;&#x4EF6;&#x66F4;&#x6539;&#x540D;&#x5B57;</li>
+</ul>
+<h2 id="git%E6%9F%A5%E7%9C%8B">Git&#x67E5;&#x770B;</h2>
+<ul>
+<li>&#x8981;&#x968F;&#x65F6;&#x638C;&#x63E1;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F7F;&#x7528;<code>git status</code>&#x547D;&#x4EE4;&#x3002;</li>
+<li>&#x5982;&#x679C;<code>git status</code>&#x544A;&#x8BC9;&#x4F60;&#x6709;&#x6587;&#x4EF6;&#x88AB;&#x4FEE;&#x6539;&#x8FC7;&#xFF0C;&#x7528;<code>git diff</code>&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x4FEE;&#x6539;&#x5185;&#x5BB9;,&#x8FD9;&#x91CC;&#x67E5;&#x770B;&#x7684;&#x662F;&#x6682;&#x5B58;&#x533A;&#x4E0E;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4E0D;&#x540C;&#x3002;</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7528;<code>git diff --cached</code>&#x6216;&#x8005;&#x662F;<code>git diff --staged</code>&#x8FD9;&#x662F;&#x67E5;&#x770B;&#x5DF2;&#x7ECF;&#x6682;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#x4E0E;&#x4E0A;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x5FEB;&#x7167;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;</li>
+<li>&#x4F7F;&#x7528;<code>git log</code>&#x6765;&#x67E5;&#x770B;git commit&#x8BB0;&#x5F55;</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>git log --pretty=oneline</code> &#x4E00;&#x884C;&#x663E;&#x793A;</li>
+<li><code>git log -p -2</code> -p &#x9009;&#x9879;&#x5C55;&#x5F00;&#x663E;&#x793A;&#x6BCF;&#x6B21;&#x63D0;&#x4EA4;&#x7684;&#x5185;&#x5BB9;&#x5DEE;&#x5F02;&#xFF0C;&#x7528; -2 &#x5219;&#x4EC5;&#x663E;&#x793A;&#x6700;&#x8FD1;&#x7684;&#x4E24;&#x6B21;&#x66F4;&#x65B0;</li>
+<li><code>git log --stat</code>&#x663E;&#x793A;&#x7B80;&#x8981;&#x7684;&#x66F4;&#x6539;&#x884C;&#x6570;&#x7EDF;&#x8BA1;</li>
+</ul>
+<h2 id="%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80">&#x7248;&#x672C;&#x56DE;&#x9000;</h2>
+<p>HEAD&#x6307;&#x5411;&#x7684;&#x7248;&#x672C;&#x5C31;&#x662F;&#x5F53;&#x524D;&#x7248;&#x672C;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;Git&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x7248;&#x672C;&#x7684;&#x5386;&#x53F2;&#x4E4B;&#x95F4;&#x7A7F;&#x68AD;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#xFF1A;</p>
+<ul>
+<li><code>git reset --hard commit_id</code> &#x56DE;&#x9000;&#x5230;id&#x7684;&#x7248;&#x672C;</li>
+<li><code>git reset --hard HEAD^</code>      &#x56DE;&#x9000;&#x4E00;&#x4E2A;&#x7248;&#x672C;</li>
+<li><code>git reset --hard HEAD^^</code>   &#x56DE;&#x9000;&#x4E24;&#x4E2A;&#x7248;&#x672C;</li>
+<li><code>git reset --hard HEAD~100</code> &#x56DE;&#x9000;&#x4E00;&#x767E;&#x4E2A;&#x7248;&#x672C;</li>
+</ul>
+<p>&#x7A7F;&#x68AD;&#x524D;&#xFF0C;&#x7528;<code>git log</code>&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x63D0;&#x4EA4;&#x5386;&#x53F2;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x5B9A;&#x8981;&#x56DE;&#x9000;&#x5230;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x3002;
+&#x8981;&#x91CD;&#x8FD4;&#x672A;&#x6765;&#xFF0C;&#x7528;<code>git reflog</code>&#x67E5;&#x770B;&#x547D;&#x4EE4;&#x5386;&#x53F2;&#xFF0C;&#x4EE5;&#x4FBF;&#x786E;&#x5B9A;&#x8981;&#x56DE;&#x5230;&#x672A;&#x6765;&#x7684;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x3002;</p>
+<h2 id="%E5%B7%A5%E4%BD%9C%E5%8C%BA%E4%B8%8E%E6%9A%82%E5%AD%98%E5%8C%BA">&#x5DE5;&#x4F5C;&#x533A;&#x4E0E;&#x6682;&#x5B58;&#x533A;</h2>
+<p><code>git add</code>&#x547D;&#x4EE4;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x628A;&#x8981;&#x63D0;&#x4EA4;&#x7684;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x653E;&#x5230;&#x6682;&#x5B58;&#x533A;&#xFF08;Stage&#xFF09;</p>
+<p><img src="../image/git add.jpeg" alt="git add">
+<code>git commit</code>&#x5C31;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x6027;&#x628A;&#x6682;&#x5B58;&#x533A;&#x7684;&#x6240;&#x6709;&#x4FEE;&#x6539;&#x63D0;&#x4EA4;&#x5230;&#x5206;&#x652F;&#x3002;</p>
+<p><img src="../image/git commit.jpeg" alt="git commit"></p>
+<h2 id="%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9-%E6%92%A4%E9%94%80%E5%88%A0%E9%99%A4">&#x64A4;&#x9500;&#x4FEE;&#x6539; &#x64A4;&#x9500;&#x5220;&#x9664;</h2>
+<p>&#x5220;&#x9664;&#x6587;&#x4EF6; &#x4F7F;&#x7528; rm file&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x60F3;&#x8981;&#x7248;&#x672C;&#x5E93;&#x4E5F;&#x5220;&#x9664;&#x7684;&#x8BDD; &#x9700;&#x8981;&#x4F7F;&#x7528; <code>git rm file</code></p>
+<ol>
+<li><p>&#x5F53;&#x4F60;&#x6539;&#x4E71;&#x4E86;&#x5DE5;&#x4F5C;&#x533A;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x60F3;&#x76F4;&#x63A5;&#x4E22;&#x5F03;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x7528;&#x547D;&#x4EE4;<code>git checkout -- file</code>&#x3002; git checkout&#x5176;&#x5B9E;&#x662F;&#x7528;&#x7248;&#x672C;&#x5E93;&#x91CC;&#x7684;&#x7248;&#x672C;&#x66FF;&#x6362;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x65E0;&#x8BBA;&#x5DE5;&#x4F5C;&#x533A;&#x662F;&#x4FEE;&#x6539;&#x8FD8;&#x662F;&#x5220;&#x9664;&#xFF0C;&#x6BD4;&#x5982;&#x4E0D;&#x5C0F;&#x5FC3;&#x5220;&#x6389;&#x6587;&#x4EF6;&#x4E86;&#xFF0C;&#x4F7F;&#x7528;<code>git checkout --file</code>&#x90FD;&#x53EF;&#x4EE5;&#x201C;&#x4E00;&#x952E;&#x8FD8;&#x539F;&#x201D;&#xFF0C;&#x5C06;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x6587;&#x4EF6;&#x7528;&#x7248;&#x672C;&#x5E93;&#x91CC;&#x8FB9;&#x7684;&#x6062;&#x590D;&#x3002;</p>
+</li>
+<li><p>&#x5F53;&#x4F60;&#x4E0D;&#x4F46;&#x6539;&#x4E71;&#x4E86;&#x5DE5;&#x4F5C;&#x533A;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x8FD8;&#x6DFB;&#x52A0;&#x5230;&#x4E86;&#x6682;&#x5B58;&#x533A;&#x65F6;&#xFF0C;&#x5373;&#x5DF2;&#x7ECF;&#x8FDB;&#x884C;&#x4E86;<code>add</code>&#x64CD;&#x4F5C;&#xFF0C;&#x60F3;&#x4E22;&#x5F03;&#x4FEE;&#x6539;&#xFF0C;&#x5206;&#x4E24;&#x6B65;&#xFF0C;&#x7B2C;&#x4E00;&#x6B65;&#x7528;&#x547D;&#x4EE4;<code>git reset HEAD file</code>&#xFF0C;&#x5C31;&#x56DE;&#x5230;&#x4E86;&#x573A;&#x666F;1&#xFF0C;&#x7B2C;&#x4E8C;&#x6B65;&#x6309;&#x573A;&#x666F;1&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p>&#x5DF2;&#x7ECF;&#x63D0;&#x4EA4;&#x4E86;&#x4E0D;&#x5408;&#x9002;&#x7684;&#x4FEE;&#x6539;&#x5230;&#x7248;&#x672C;&#x5E93;&#x65F6;&#xFF0C;&#x60F3;&#x8981;&#x64A4;&#x9500;&#x672C;&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x53C2;&#x8003;&#x7248;&#x672C;&#x56DE;&#x9000;&#x4E00;&#x8282;&#xFF0C;&#x4E0D;&#x8FC7;&#x524D;&#x63D0;&#x662F;&#x6CA1;&#x6709;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x5E93;&#x3002;</p>
+</li>
+</ol>
+<h2 id="%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5">&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;</h2>
+<h4 id="%E4%BB%8E%E6%9C%AC%E5%9C%B0%E6%8B%B7%E8%B4%9D%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%BA%93">&#x4ECE;&#x672C;&#x5730;&#x62F7;&#x8D1D;&#x5230;&#x8FDC;&#x7A0B;&#x5E93;</h4>
+<p>cd&#x5230;&#x8981;&#x62F7;&#x8D1D;&#x7684;git&#x7684;&#x6587;&#x4EF6;&#x5939;</p>
+<ol>
+<li>&#x8981;&#x5173;&#x8054;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x5E93;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4; <code>git remote add origin git@server-name:path/repo-name.git</code>&#xFF1B;</li>
+<li><p>&#x6BD4;&#x5982; <code>git remote add origin git@github.com:rwang23/xx.git</code></p>
+</li>
+<li><p>&#x5173;&#x8054;&#x540E;&#xFF0C;&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>git push -u origin master</code>&#x7B2C;&#x4E00;&#x6B21;&#x63A8;&#x9001;master&#x5206;&#x652F;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;,&#x5982;&#x679C;&#x4E0D;&#x662F;master&#x5206;&#x652F;&#xFF0C;&#x6362;&#x540D;&#x5B57;&#x5C31;&#x53EF;&#x4EE5;&#xFF1B;</p>
+</li>
+<li><p>&#x6B64;&#x540E;&#xFF0C;&#x6BCF;&#x6B21;&#x672C;&#x5730;&#x63D0;&#x4EA4;&#x540E;&#xFF0C;&#x53EA;&#x8981;&#x6709;&#x5FC5;&#x8981;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x547D;&#x4EE4;<code>git push origin master</code>&#x63A8;&#x9001;&#x6700;&#x65B0;&#x4FEE;&#x6539;&#xFF1B;</p>
+</li>
+</ol>
+<p>&#x5206;&#x5E03;&#x5F0F;&#x7248;&#x672C;&#x7CFB;&#x7EDF;&#x7684;&#x6700;&#x5927;&#x597D;&#x5904;&#x4E4B;&#x4E00;&#x662F;&#x5728;&#x672C;&#x5730;&#x5DE5;&#x4F5C;&#x5B8C;&#x5168;&#x4E0D;&#x9700;&#x8981;&#x8003;&#x8651;&#x8FDC;&#x7A0B;&#x5E93;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6709;&#x6CA1;&#x6709;&#x8054;&#x7F51;&#x90FD;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;&#x800C;SVN&#x5728;&#x6CA1;&#x6709;&#x8054;&#x7F51;&#x7684;&#x65F6;&#x5019;&#x662F;&#x62D2;&#x7EDD;&#x5E72;&#x6D3B;&#x7684;&#xFF01;&#x5F53;&#x6709;&#x7F51;&#x7EDC;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x518D;&#x628A;&#x672C;&#x5730;&#x63D0;&#x4EA4;&#x63A8;&#x9001;&#x4E00;&#x4E0B;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x540C;&#x6B65;&#xFF0C;&#x771F;&#x662F;&#x592A;&#x65B9;&#x4FBF;&#x4E86;&#xFF01;</p>
+<h4 id="%E6%B7%BB%E5%8A%A0ssh%E5%90%8E">&#x6DFB;&#x52A0;SSH&#x540E;</h4>
+<ol>
+<li><p>If you already have your SSH keys set up and are still getting the password prompt, make sure your repo URL is in the form <code>git+ssh://git@github.com/username/reponame.git</code> as opposed to <code>https://github.com/username/reponame.git</code></p>
+</li>
+<li><p>To see your repo URL, run:
+<code>git remote show origin</code>
+You can change the URL with git remote set-url like so: <code>git remote set-url origin git+ssh://git@github.com/username/reponame.git</code></p>
+</li>
+</ol>
+<h4 id="%E4%BB%8E%E8%BF%9C%E7%A8%8B%E5%BA%93%E5%85%8B%E9%9A%86%E5%88%B0%E6%9C%AC%E5%9C%B0">&#x4ECE;&#x8FDC;&#x7A0B;&#x5E93;&#x514B;&#x9686;&#x5230;&#x672C;&#x5730;</h4>
+<p>&#x8FDB;&#x5165;&#x8981;&#x514B;&#x9686;&#x5230;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;
+<code>git clone git@github.com:michaelliao/gitskills.git</code>
+Git&#x652F;&#x6301;&#x591A;&#x79CD;&#x534F;&#x8BAE;&#xFF0C;&#x5305;&#x62EC;https&#xFF0C;&#x4F46;&#x901A;&#x8FC7;ssh&#x652F;&#x6301;&#x7684;&#x539F;&#x751F;git&#x534F;&#x8BAE;&#x901F;&#x5EA6;&#x6700;&#x5FEB;&#x3002;</p>
+<h2 id="%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86">&#x5206;&#x652F;&#x7BA1;&#x7406;</h2>
+<p>Git&#x9F13;&#x52B1;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#x5206;&#x652F;&#xFF1A;</p>
+<ul>
+<li>&#x67E5;&#x770B;&#x5206;&#x652F;&#xFF1A;<code>git branch</code></li>
+<li>&#x521B;&#x5EFA;&#x5206;&#x652F;&#xFF1A;<code>git branch &lt;name&gt;</code></li>
+<li>&#x5207;&#x6362;&#x5206;&#x652F;&#xFF1A;<code>git checkout &lt;name&gt;</code></li>
+<li>&#x521B;&#x5EFA;+&#x5207;&#x6362;&#x5206;&#x652F;&#xFF1A;<code>git checkout -b &lt;name&gt;</code></li>
+<li>&#x5408;&#x5E76;&#x67D0;&#x5206;&#x652F;&#x5230;&#x5F53;&#x524D;&#x5206;&#x652F;&#xFF1A;<code>git merge &lt;name&gt;</code></li>
+<li>&#x5220;&#x9664;&#x5206;&#x652F;&#xFF1A;<code>git branch -d &lt;name&gt;</code></li>
+<li>&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x65B0;feature&#xFF0C;&#x6700;&#x597D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x5206;&#x652F;&#xFF1B;&#x5982;&#x679C;&#x8981;&#x4E22;&#x5F03;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x88AB;&#x5408;&#x5E76;&#x8FC7;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>git branch -D &lt;name&gt;</code>&#x5F3A;&#x884C;&#x5220;&#x9664;&#x3002;</li>
+</ul>
+<p>&#x5408;&#x5E76;&#x5206;&#x652F;&#x7684;&#x65F6;&#x5019;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x51B2;&#x7A81;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x4F1A;&#x51FA;&#x73B0;&#x51B2;&#x7A81;&#x63D0;&#x9192;
+&#x5E76;&#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x4E0A;&#x51FA;&#x73B0;&#xFF1A;</p>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Creating a new branch is quick &amp; simple.
+=======
+Creating a new branch is quick AND simple.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature1
+</code></pre><p>&#x4FEE;&#x6539;&#x597D;&#x540E;&#x518D;&#x6B21;&#x63D0;&#x4EA4;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;
+&#x540C;&#x65F6; &#x53EF;&#x4EE5;&#x4F7F;&#x7528; git log &#x6216;&#x8005;git log --graph&#x6307;&#x4EE4;&#x6765;&#x67E5;&#x770B;&#x5206;&#x652F;&#x4E0E;&#x5206;&#x652F;&#x5408;&#x5E76;&#x60C5;&#x51B5;</p>
+<p>&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;&#x5408;&#x5E76;&#x5206;&#x652F;Git&#x4F1A;&#x81EA;&#x52A8;&#x4F7F;&#x7528;<code>Fast forward</code>&#x6A21;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5220;&#x9664;&#x5206;&#x652F;&#x540E;&#xFF0C;&#x4F1A;&#x4E22;&#x5931;&#x5206;&#x652F;&#x4FE1;&#x606F;&#xFF0C;
+&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;--no-ff&#x65B9;&#x5F0F;&#x4E0B;&#x7684;<code>git merge</code>&#xFF0C;&#x5B83;&#x4F1A;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A;&#x65B0;&#x7684;commit
+<code>git merge --no-ff -m &quot;merge with no-ff&quot; dev</code></p>
+<h3 id="%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5">&#x5206;&#x652F;&#x7B56;&#x7565;</h3>
+<ul>
+<li>master&#x5206;&#x652F;&#x5E94;&#x8BE5;&#x662F;&#x975E;&#x5E38;&#x7A33;&#x5B9A;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4EC5;&#x7528;&#x6765;&#x53D1;&#x5E03;&#x65B0;&#x7248;&#x672C;&#x7684;</li>
+<li>&#x4E00;&#x822C;&#x5E72;&#x6D3B;&#x90FD;&#x5728;dev&#x5206;&#x652F;&#x4E0A;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;dev&#x5206;&#x652F;&#x662F;&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x5230;&#x4E86;&#x67D0;&#x4E2A;&#x65F6;&#x5019;&#x624D;&#x5408;&#x5E76;&#x5230;master&#x4E0A;&#x8FB9;&#xFF0C;&#x5728;master&#x4E0A;&#x8FB9;&#x53D1;&#x5E03;&#x65B0;&#x7248;&#x672C;</li>
+</ul>
+<p><img src="../image/git branch&amp;merge.png" alt="git branch merge"></p>
+<h4 id="bug%E5%87%BA%E7%8E%B0%E7%9A%84%E4%BF%AE%E5%A4%8D">Bug&#x51FA;&#x73B0;&#x7684;&#x4FEE;&#x590D;</h4>
+<ul>
+<li><p>&#x5F53;&#x6B63;&#x5728;&#x65B0;&#x7684;branch&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x65F6;&#xFF0C;&#x60F3;&#x8981;&#x4FEE;&#x590D;&#x539F;&#x6765;&#x7684;branch&#x6BD4;&#x5982;master&#x7684;bug&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5C31;&#x60F3;&#x5207;&#x6362;&#x5230;master&#x3002;</p>
+</li>
+<li><p>&#x4F46;&#x662F;&#x6B64;&#x65F6;&#x7531;&#x4E8E;branch&#x8FD8;&#x6CA1;&#x5B8C;&#x6210;&#x4E0D;&#x80FD;&#x63D0;&#x4EA4;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>git stash</code>&#x6765;&#x50A8;&#x5B58;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x73B0;&#x573A;</p>
+</li>
+<li><p>&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x5230;&#x8981;&#x4FEE;&#x6539;Bug&#x7684;branch&#x7136;&#x540E;&#x521B;&#x5EFA;bug&#x65B0;&#x5206;&#x652F;&#x518D;&#x7528;&#x539F;&#x5206;&#x652F;&#x5408;&#x5E76;&#xFF0C;&#x518D;&#x5207;&#x6362;&#x5230;&#x521A;&#x624D;&#x7684;&#x65B0;brach&#x5DE5;&#x4F5C;</p>
+</li>
+</ul>
+<p>&#x5982;&#x4F55;&#x50A8;&#x5B58;&#x5DE5;&#x4F5C;&#x73B0;&#x573A;&#xFF1F;</p>
+<ol>
+<li><p>&#x4F7F;&#x7528;<code>git stash</code>&#x6765;&#x50A8;&#x5B58;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x73B0;&#x573A;</p>
+</li>
+<li><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>git stash list</code>&#x6765;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x73B0;&#x573A;</p>
+</li>
+<li><p>&#x5DE5;&#x4F5C;&#x73B0;&#x573A;&#x8FD8;&#x5728;&#xFF0C;Git&#x628A;stash&#x5185;&#x5BB9;&#x5B58;&#x5728;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x6062;&#x590D;&#x4E00;&#x4E0B;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x529E;&#x6CD5;&#xFF1A;</p>
+</li>
+<li><p>&#x4E00;&#x662F;&#x7528;<code>git stash apply</code>&#x6062;&#x590D;&#xFF0C;&#x4F46;&#x662F;&#x6062;&#x590D;&#x540E;&#xFF0C;stash&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x5220;&#x9664;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x7528;<code>git stash drop</code>&#x6765;&#x5220;&#x9664;&#xFF1B;</p>
+</li>
+<li><p>&#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x7528;<code>git stash pop</code>&#xFF0C;&#x6062;&#x590D;&#x7684;&#x540C;&#x65F6;&#x628A;stash&#x5185;&#x5BB9;&#x4E5F;&#x5220;&#x4E86;&#xFF1A;</p>
+</li>
+</ol>
+<h2 id="%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C">&#x591A;&#x4EBA;&#x534F;&#x4F5C;</h2>
+<p>&#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x5E93;&#x4FE1;&#x606F;&#xFF0C;&#x4F7F;&#x7528;git remote -v&#xFF1B;</p>
+<p>&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x7684;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#x901A;&#x5E38;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
+<ol>
+<li><p>&#x9996;&#x5148;&#xFF0C;&#x53EF;&#x4EE5;&#x8BD5;&#x56FE;&#x7528;git push origin branch-name&#x63A8;&#x9001;&#x81EA;&#x5DF1;&#x7684;&#x4FEE;&#x6539;&#xFF1B;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x63A8;&#x9001;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x56E0;&#x4E3A;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x6BD4;&#x4F60;&#x7684;&#x672C;&#x5730;&#x66F4;&#x65B0;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x7528;git pull&#x8BD5;&#x56FE;&#x5408;&#x5E76;&#xFF1B;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x5408;&#x5E76;&#x6709;&#x51B2;&#x7A81;&#xFF0C;&#x5219;&#x89E3;&#x51B3;&#x51B2;&#x7A81;&#xFF0C;&#x5E76;&#x5728;&#x672C;&#x5730;&#x63D0;&#x4EA4;&#xFF1B;</p>
+</li>
+<li><p>&#x6CA1;&#x6709;&#x51B2;&#x7A81;&#x6216;&#x8005;&#x89E3;&#x51B3;&#x6389;&#x51B2;&#x7A81;&#x540E;&#xFF0C;&#x518D;&#x7528;git push origin branch-name&#x63A8;&#x9001;&#x5C31;&#x80FD;&#x6210;&#x529F;&#xFF01;</p>
+</li>
+<li><p>&#x5982;&#x679C;git pull&#x63D0;&#x793A;&#x201C;no tracking information&#x201D;&#xFF0C;&#x5219;&#x8BF4;&#x660E;&#x672C;&#x5730;&#x5206;&#x652F;&#x548C;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x7684;&#x94FE;&#x63A5;&#x5173;&#x7CFB;&#x6CA1;&#x6709;&#x521B;&#x5EFA;&#xFF0C;&#x7528;&#x547D;&#x4EE4;git branch --set-upstream branch-name origin/branch-name&#x3002;</p>
+</li>
+</ol>
+<p>&#x8FD9;&#x5C31;&#x662F;&#x591A;&#x4EBA;&#x534F;&#x4F5C;&#x7684;&#x5DE5;&#x4F5C;&#x6A21;&#x5F0F;&#xFF0C;&#x4E00;&#x65E6;&#x719F;&#x6089;&#x4E86;&#xFF0C;&#x5C31;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
+<h2 id="%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86">&#x6807;&#x7B7E;&#x7BA1;&#x7406;</h2>
+<h3 id="%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE">&#x521B;&#x5EFA;&#x6807;&#x7B7E;</h3>
+<ul>
+<li>&#x547D;&#x4EE4;git tag <name>&#x7528;&#x4E8E;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;HEAD&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;commit id&#xFF1B;</name></li>
+<li>git tag commit_id &#x5728;&#x8BE5;commit_id&#x4E0A;&#x6253;&#x4E0A;&#x6807;&#x7B7E;</li>
+<li>git tag -a <tagname> -m &quot;blablabla...&quot; commit_id&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x6807;&#x7B7E;&#x4FE1;&#x606F;&#xFF1B;</tagname></li>
+<li>git tag -s <tagname> -m &quot;blablabla...&quot;&#x53EF;&#x4EE5;&#x7528;PGP&#x7B7E;&#x540D;&#x6807;&#x7B7E;&#xFF1B;</tagname></li>
+<li>&#x547D;&#x4EE4;git tag&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x6240;&#x6709;&#x6807;&#x7B7E;&#x3002;</li>
+</ul>
+<h3 id="%E4%BF%AE%E6%94%B9%E6%A0%87%E7%AD%BE">&#x4FEE;&#x6539;&#x6807;&#x7B7E;</h3>
+<p>&#x56E0;&#x4E3A;&#x521B;&#x5EFA;&#x7684;&#x6807;&#x7B7E;&#x90FD;&#x53EA;&#x5B58;&#x50A8;&#x5728;&#x672C;&#x5730;&#xFF0C;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x63A8;&#x9001;&#x5230;&#x8FDC;&#x7A0B;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6253;&#x9519;&#x7684;&#x6807;&#x7B7E;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x5B89;&#x5168;&#x5220;&#x9664;&#x3002;</p>
+<ul>
+<li>&#x547D;&#x4EE4;<code>git push origin tagname</code>&#x53EF;&#x4EE5;&#x63A8;&#x9001;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x6807;&#x7B7E;&#xFF1B;</li>
+<li>&#x547D;&#x4EE4;<code>git push origin --tags</code>&#x53EF;&#x4EE5;&#x63A8;&#x9001;&#x5168;&#x90E8;&#x672A;&#x63A8;&#x9001;&#x8FC7;&#x7684;&#x672C;&#x5730;&#x6807;&#x7B7E;&#xFF1B;</li>
+<li>&#x547D;&#x4EE4;<code>git tag -d tagname</code>&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x6807;&#x7B7E;&#xFF1B;</li>
+<li>&#x547D;&#x4EE4;<code>git push origin :refs/tags/&lt;tagname&gt;</code>&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x6807;&#x7B7E;&#x3002;</li>
+</ul>
+<h2 id="fork%E6%9B%B4%E6%96%B0%E4%B8%8Epull-request">Fork&#x66F4;&#x65B0;&#x4E0E;pull request</h2>
+<p>&#x5728;&#x66F4;&#x65B0;&#x81EA;&#x5DF1;Fork&#x7684;&#x4EE3;&#x7801;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x628A;&#x81EA;&#x5DF1;&#x5728;&#x672C;&#x5730;&#x7684;&#x66F4;&#x6539;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;&#x3002;</p>
+<ol>
+<li><p>&#x68C0;&#x51FA;&#x81EA;&#x5DF1;&#x5728;github&#x4E0A;fork&#x7684;&#x5206;&#x652F;,clone&#x4E0B;&#x6765;
+<code>git clone git@github.com:rwang23/xx.git</code></p>
+</li>
+<li><p>&#x589E;&#x52A0;&#x8BE5;git&#x7684;&#x8FDC;&#x7A0B;&#x539F;&#x59CB;&#x5206;&#x652F;&#xFF08;&#x6211;&#x7684;&#x5206;&#x652F;&#xFF09;&#x5230;&#x672C;&#x5730;&#xFF08;&#x589E;&#x52A0;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x7528;<code>git remote -v</code>&#x547D;&#x4EE4;&#x91CC;&#x786E;&#x8BA4;&#x662F;&#x5426;&#x6709;&#x8FD9;&#x4E2A;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#xFF09;
+<code>git remote add aliasname git@github.com:rwang23/xx.git</code></p>
+</li>
+<li><p>&#x547D;&#x4EE4;&#xFF1A;<code>git remote -v</code> &#x4F1A;&#x53D1;&#x73B0;&#x591A;&#x51FA;&#x6765;&#x4E86;&#x4E00;&#x4E2A;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x3002;&#x542B;&#x6709;Push&#x4E0E;fetch</p>
+</li>
+<li><p>&#x7136;&#x540E;&#x628A;&#x8FDC;&#x7A0B;&#x539F;&#x59CB;&#x5206;&#x652F;&#x4EE3;&#x7801;&#x62C9;&#x5230;&#x672C;&#x5730;
+<code>git fetch aliasname</code></p>
+</li>
+<li><p>&#x7136;&#x540E;&#x5408;&#x5E76;&#x5BF9;&#x65B9;&#x8FDC;&#x7A0B;&#x539F;&#x59CB;&#x5206;&#x652F;&#x4E0A;&#x7684;&#x4EE3;&#x7801;
+<code>git merge aliasname/master</code></p>
+</li>
+<li><p>&#x6700;&#x540E;&#x628A;&#x6700;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#x63A8;&#x9001;&#x5230;&#x4F60;&#x7684;github&#x4E0A;
+<code>git push origin master</code></p>
+</li>
+<li><p>&#x7ED9;&#x5BF9;&#x65B9;&#x53D1;&#x9001;Pull Request</p>
+</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Git/index.html" class="navigation navigation-prev " aria-label="Previous page: Git"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../bash/index.html" class="navigation navigation-next " aria-label="Next page: Bash Command"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
