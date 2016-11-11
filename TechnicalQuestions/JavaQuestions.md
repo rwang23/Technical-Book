@@ -182,6 +182,11 @@ class A extends B {
 - char 16 bit unicode
 - boolean 1 bit
 
+####WrapperClasses
+- Predefined classes have been defined to represent the primtive datatypes in the form of object
+is called as Wrapper Classes.
+- Number is the superclass of Byte,Short,Long,Integer,Double,Float
+
 ####overloading vs overriding；
 - First and major difference between Overloading and Overriding is that former occur during compile time while later occur during runtime.
 - Second difference between Overloading and Overriding is that, you can overload method in same class but you can only override method in sub class.
@@ -230,6 +235,7 @@ This is the reason that HashMap should be used if the program is thread-safe.
 - The obvious difference between them is that ArrrayList is backed by array data structure, supprots random access and LinkedList is backed by linked list data structure and doesn't supprot random access. Accessing an element with the index is O(1) in ArrayList but its O(n) in LinkedList.
 - An ArrayList is better than Array to use when you have no knowledge in advance about elements number. ArrayList are slower than Arrays. So, if you need efficiency try to use Arrays if possible.
 - Vector is similar with ArrayList, but it is synchronized.
+- all methods in vector are synchronized
 
 ####LinkedHashMap and PriorityQueue in Java?
 - PriorityQueue guarantees that lowest or highest priority element always remain at the head of the queue
