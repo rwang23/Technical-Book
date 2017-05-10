@@ -34,6 +34,13 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 穿梭前，用`git log`可以查看提交历史，以便确定要回退到哪个版本。
 要重返未来，用`git reflog`查看命令历史，以便确定要回到未来的哪个版本。
 
+##git checkout vs git reset
+
+* `git checkout HEAD filename`: Discards changes in the working directory.
+* `git checkout branch_name` : switch to another branch
+* `git reset HEAD filename`: Unstages file changes in the staging area.
+* `git reset SHA`: Can be used to reset to a previous commit in your commit history
+
 ##工作区与暂存区
 `git add`命令实际上就是把要提交的所有修改放到暂存区（Stage）
 
