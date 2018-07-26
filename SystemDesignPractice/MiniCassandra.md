@@ -40,10 +40,7 @@ NoSQL
 - PriorityQueue只能保证每次出最大/最小值,直接遍历不会保证顺序,所以要合理利用dummy
 
 ####问题
-- 题目中并未提及如一种情况:
-- 我的结果中 [(3, "ODAMGH"),(3, "KELFJN"),(4, "EAKNIF"),(7, "DGFINL")]
-- 理想结果是 [(3, "KELFJN"),(4, "EAKNIF"),(7, "DGFINL")]
-- 说明如果出现了rowkey(唯一),但是columnkey不同,value相同的情况,那么将产生替换,如结果中,4替代了3,而不是在加上4
+- PriorityQueue的remove操作是针对object的
 
 ####初次代码
 
@@ -95,9 +92,16 @@ public class MiniCassandra {
             miniCassandra.put(raw_key, columns);
         } else {
             columns = miniCassandra.get(raw_key);
-            if (columns.contains(column_key)) {
-                columns.remove(column_key);
-            }
+
+            PriorityQueue<Column> pqCopy = new PriorityQueue<Column>(columns);
+            while(!pqCopy.isEmpty()){
+                Column curColumn = pqCopy.poll();
+                if (curColumn.key == column_key) {
+                    columns.remove(curColumn);
+                    break;
+                }
+             }
+
             columns.offer(column);
         }
     }
