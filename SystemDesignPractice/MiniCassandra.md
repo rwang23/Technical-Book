@@ -32,9 +32,9 @@ NoSQL
 - 写时间复杂度 O(nlogn) 读时间复杂度 O(n)
 
 ####思路二
-- 使用HashMap和PriorityQueue,使用HashMap和PriorityQueue,PriorityQueu存Column(columnkey, value). 这样在取出的时候保证他们已经sort了,但是insert的时候时间复杂度是O(logn).
+- 使用HashMap和PriorityQueue,使用HashMap和PriorityQueue,PriorityQueu存Column(columnkey, value). 这样在取出的时候保证他们已经sort了,但是insert的时候时间复杂度是O(logn).但是因为我们有检查除重的操作,如果重了需要删除,而使PriorityQueue的remove是O(n)
 - 读的时候,不能直接遍历PriorityQueue, 要么就是遍历生成一个List,再sort一个list,但是这样时间就多了,要么就构造一个dummy PriorityQueue, 每次从它里边去读,这样只需要O(n)的时间
-- 写时间复杂度O(logn),读时间复杂度 O(n)
+- 写时间复杂度O(logn) ~ O(logn + n) 取决于查重hit rate,读时间复杂度 O(n)
 
 ####注意事项
 - PriorityQueue只能保证每次出最大/最小值,直接遍历不会保证顺序,所以要合理利用dummy
