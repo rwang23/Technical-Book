@@ -9,6 +9,18 @@ This is the summary of my experience in LintCode.
 	* [Scale the Web Application](SystemDesign/Scale.md)
 	* [web-craw](SystemDesign/web-craw.md)
 
+* [System Design Practice](SystemDesignPractice/README.md)
+	* [Design Twitter](SystemDesignPractice/DesignTwitter.md)
+	* [Consistent Hashing](SystemDesignPractice/ConsistentHashing.md)
+	* [Memcache](SystemDesignPractice/Memcache.md)
+	* [Mini Cassandra](SystemDesignPractice/MiniCassandra.md)
+
+* [Big Data](BigData/README.md)
+	* [Design Twitter](SystemDesign/Network.md)
+	* [Consistent Hashing](SystemDesign/OperatingSystems.md)
+	* [Memcache](SystemDesign/DesignPattern.md)
+	* [Mini Cassandra](SystemDesign/Scale.md)
+
 * [Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
 	* [Linux Command](TechnicalQuestions/LinuxCommand.md)

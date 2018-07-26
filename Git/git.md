@@ -148,7 +148,7 @@ Git鼓励大量使用分支：
 
 1. 首先，可以试图用git push origin branch-name推送自己的修改；
 
-2. 如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+2. 如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；git pull origin master. origin是远程分支的名字
 
 3. 如果合并有冲突，则解决冲突，并在本地提交；
 
@@ -156,7 +156,16 @@ Git鼓励大量使用分支：
 
 5. 如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream branch-name origin/branch-name。
 
+
 这就是多人协作的工作模式，一旦熟悉了，就非常简单。
+
+
+##workflow
+* 1.Fetch and merge changes from the remote
+* 2.Create a branch to work on a new project feature
+* 3.Develop the feature on your branch and commit your work
+* 4.Fetch and merge from the remote again (in case new commits were made while you were working)
+* 5.Push your branch up to the remote for review
 
 ##标签管理
 
