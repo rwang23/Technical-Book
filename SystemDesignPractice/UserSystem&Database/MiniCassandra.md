@@ -36,6 +36,11 @@ NoSQL
 - 读的时候,不能直接遍历PriorityQueue, 要么就是遍历生成一个List,再sort一个list,但是这样时间就多了,要么就构造一个dummy PriorityQueue, 每次从它里边去读,这样只需要O(n)的时间
 - 写时间复杂度O(logn) ~ O(logn + n) 取决于查重hit rate,读时间复杂度 O(n)
 
+####思路三
+- 使用treemap (红黑树) -> NavigableMap
+- [NavigableMap](https://www.geeksforgeeks.org/navigablemap-interface-in-java-with-example/)
+- [NavigableMap](http://tutorials.jenkov.com/java-collections/navigablemap.html)
+
 ####注意事项
 - PriorityQueue只能保证每次出最大/最小值,直接遍历不会保证顺序,所以要合理利用dummy
 
