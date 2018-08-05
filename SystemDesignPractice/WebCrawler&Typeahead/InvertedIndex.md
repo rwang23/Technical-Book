@@ -1,4 +1,5 @@
 ##Inverted Index
+[lintcode](https://www.lintcode.com/problem/inverted-index/)
 
 	Create an inverted index with given documents.
 
@@ -33,6 +34,7 @@
 - 在搜索引擎里,搜索car,有7b的结果,7b的网页,这就倒排索引
 - 在一个网页内,含有car,plane,很多东西,这就是正向索引
 - 有道相同的题 要求使用map reduce来做这道题
+- [Map reduce](https://www.lintcode.com/problem/inverted-index-map-reduce/)
 
 ```java
 /**
