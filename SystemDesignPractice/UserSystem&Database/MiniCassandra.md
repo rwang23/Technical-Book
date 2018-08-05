@@ -1,4 +1,5 @@
 ##Mini Cassandra
+[lintcode](https://www.lintcode.com/problem/mini-cassandra/description)
 
 	502. Mini Cassandra
 	Cassandra is a NoSQL storage. The structure has two-level keys.

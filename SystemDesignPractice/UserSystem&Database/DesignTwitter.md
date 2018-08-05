@@ -1,4 +1,5 @@
 ##Design Twitter
+[Lintcode](https://www.lintcode.com/problem/design-twitter/description)
 
 	501. Design Twitter
 	Implement a simple twitter. Support the following method:

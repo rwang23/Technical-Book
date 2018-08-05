@@ -1,4 +1,5 @@
 ##Consistent Hashing
+[lintcode](https://www.lintcode.com/problem/consistent-hashing/description)
 
 	Description
 	一般的数据库进行horizontal shard的方法是指，把 id 对 数据库服务器总数 n 取模，然后来得到他在哪台机器上。
