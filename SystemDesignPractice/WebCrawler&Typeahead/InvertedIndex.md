@@ -26,7 +26,7 @@
 	Ensure that data does not include punctuation.
 
 ##思路
-- 这道题就是理解什么是Inverted index
+- 这道题就是理解什么是Inverted index 倒排索引
 - 有道相同的题 要求使用map reduce来做这道题
 
 ```java
