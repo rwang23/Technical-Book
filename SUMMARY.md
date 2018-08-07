@@ -10,10 +10,7 @@ This is the summary of my experience in LintCode.
 	* [web-craw](SystemDesign/web-craw.md)
 
 * [System Design](SystemDesignPractice/README.md)
-	* [Design Twitter](SystemDesignPractice/DesignTwitter.md)
-	* [Consistent Hashing](SystemDesignPractice/ConsistentHashing.md)
-	* [Memcache](SystemDesignPractice/Memcache.md)
-	* [Mini Cassandra](SystemDesignPractice/MiniCassandra.md)
+
 
 * [User System & Database](SystemDesignPractice/UserSystem&Database/README.md)
 	* [Design Twitter](SystemDesignPractice/UserSystem&Database/DesignTwitter.md)
@@ -35,8 +32,8 @@ This is the summary of my experience in LintCode.
 * [Web Crawler & Type Ahead](SystemDesignPractice/WebCrawler&Typeahead/README.md)
 	* [Inverted Index](SystemDesignPractice/WebCrawler&Typeahead/InvertedIndex.md)
 	* [Url Parser ](SystemDesignPractice/WebCrawler&Typeahead/UrlParser.md)
-	* [Trie Service](SystemDesignPractice/WebCrawler&Typeahead/TrieService.md)
 	* [Implement Trie](SystemDesignPractice/WebCrawler&Typeahead/ImplementTrie.md)
+	* [Trie Service](SystemDesignPractice/WebCrawler&Typeahead/TrieService.md)
 	* [Trie Serialization](SystemDesignPractice/WebCrawler&Typeahead/TrieSerialization.md)
 	* [Type ahead](SystemDesignPractice/WebCrawler&Typeahead/Typeahead.md)
 
