@@ -38,16 +38,15 @@ This is the summary of my experience in LintCode.
 	* [Type ahead](SystemDesignPractice/WebCrawler&Typeahead/Typeahead.md)
 
 * [Distributed File System](SystemDesignPractice/DistributedFileSystem/README.md)
-	* [Design Twitter](SystemDesignPractice/DistributedFileSystem/DesignTwitter.md)
-	* [Consistent Hashing](SystemDesignPractice/DistributedFileSystem/ConsistentHashing.md)
-	* [Memcache](SystemDesignPractice/DistributedFileSystem/Memcache.md)
-	* [Mini Cassandra](SystemDesignPractice/DistributedFileSystem/MiniCassandra.md)
+	* [GFS Client](SystemDesignPractice/DistributedFileSystem/GFSClient.md)
+	* [Heart Beat](SystemDesignPractice/DistributedFileSystem/HeartBeat.md)
 
 * [Big Data](SystemDesignPractice/BigData/README.md)
-	* [Design Twitter](SystemDesignPractice/SystemDesign/Network.md)
-	* [Consistent Hashing](SystemDesignPractice/SystemDesign/OperatingSystems.md)
-	* [Memcache](SystemDesignPractice/SystemDesign/DesignPattern.md)
-	* [Mini Cassandra](SystemDesignPractice/SystemDesign/Scale.md)
+	* [Word Count](SystemDesignPractice/SystemDesign/WordCount.md)
+	* [Word Count](SystemDesignPractice/SystemDesign/N-Gram.md)
+	* [Top K Frequent Words](SystemDesignPractice/SystemDesign/TopKFrequentWords.md)
+	* [Inverted Index](SystemDesignPractice/SystemDesign/InvertedIndex.md)
+	* [Anagram](SystemDesignPractice/SystemDesign/Anagram.md)
 
 * [Some Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)

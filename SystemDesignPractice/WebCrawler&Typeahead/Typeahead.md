@@ -1,4 +1,5 @@
 ##Typeahead
+[lintcode](https://www.lintcode.com/problem/typeahead/description)
 
 ##Description
 
