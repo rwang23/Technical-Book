@@ -42,11 +42,11 @@ This is the summary of my experience in LintCode.
 	* [Heart Beat](SystemDesignPractice/DistributedFileSystem/HeartBeat.md)
 
 * [Big Data](SystemDesignPractice/BigData/README.md)
-	* [Word Count](SystemDesignPractice/SystemDesign/WordCount.md)
-	* [Word Count](SystemDesignPractice/SystemDesign/N-Gram.md)
-	* [Top K Frequent Words](SystemDesignPractice/SystemDesign/TopKFrequentWords.md)
-	* [Inverted Index](SystemDesignPractice/SystemDesign/InvertedIndex.md)
-	* [Anagram](SystemDesignPractice/SystemDesign/Anagram.md)
+	* [Word Count](SystemDesignPractice/BigData/WordCount.md)
+	* [Word Count](SystemDesignPractice/BigData/N-Gram.md)
+	* [Top K Frequent Words](SystemDesignPractice/BigData/TopKFrequentWords.md)
+	* [Inverted Index](SystemDesignPractice/BigData/InvertedIndex.md)
+	* [Anagram](SystemDesignPractice/BigData/Anagram.md)
 
 * [Some Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
