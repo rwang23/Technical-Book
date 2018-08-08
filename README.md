@@ -1,4 +1,7 @@
-#Lintcode Solution Book
+#System Design and other technical Book
+
+##Algorithm Book
+Click [Lintcode Algorithm](https://rwang23.gitbooks.io/lintcodebook/content/index.html) to view my algorithm practice
 
 ####Learning Progress
 
@@ -37,7 +40,7 @@ This note documents my learning progress of Programming.
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Renfei Wang. https://github.com/rwang23
+Copyright (c) 2018 Renfei Wang. https://github.com/rwang23
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
