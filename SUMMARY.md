@@ -9,8 +9,9 @@ This is the summary of my experience in LintCode.
 	* [Scale the Web Application](SystemDesign/Scale.md)
 	* [web-craw](SystemDesign/web-craw.md)
 
-* [System Design](SystemDesignPractice/README.md)
+* [Design Pattern](DesignPattern/README.md)
 
+* [System Design](SystemDesignPractice/README.md)
 
 * [User System & Database](SystemDesignPractice/UserSystem&Database/README.md)
 	* [Design Twitter](SystemDesignPractice/UserSystem&Database/DesignTwitter.md)
@@ -55,6 +56,9 @@ This is the summary of my experience in LintCode.
 	* [Database](TechnicalQuestions/Database.md)
 	* [Operating System](TechnicalQuestions/OperatingSystem.md)
 	* [Java Questions](TechnicalQuestions/JavaQuestions.md)
+
+* [Regular Expression](RegularExpression/README.md)
+	* [Regular Expression](RegularExpression/RegularExpression.md)
 
 * [Git](Git/README.md)
 	* [Git](Git/git.md)
