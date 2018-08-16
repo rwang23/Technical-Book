@@ -42,12 +42,16 @@ This is the summary of my experience in LintCode.
 	* [GFS Client](SystemDesignPractice/DistributedFileSystem/GFSClient.md)
 	* [Heart Beat](SystemDesignPractice/DistributedFileSystem/HeartBeat.md)
 
-* [Big Data](SystemDesignPractice/BigData/README.md)
+* [Big Data/ Map Reduce](SystemDesignPractice/BigData/README.md)
 	* [Word Count](SystemDesignPractice/BigData/WordCount.md)
 	* [Word Count](SystemDesignPractice/BigData/N-Gram.md)
 	* [Top K Frequent Words](SystemDesignPractice/BigData/TopKFrequentWords.md)
 	* [Inverted Index](SystemDesignPractice/BigData/InvertedIndex.md)
 	* [Anagram](SystemDesignPractice/BigData/Anagram.md)
+
+* [Big Table](SystemDesignPractice/BigTable/README.md)
+	* [Standard Bloom Filter](SystemDesignPractice/BigTable/StandardBloomFilter.md)
+	* [Counting Bloom Filter](SystemDesignPractice/BigTable/CountingBloomFilter.md)
 
 * [Some Technical Questions](TechnicalQuestions/README.md)
 	* [General Questions](TechnicalQuestions/GeneralQuestion.md)
