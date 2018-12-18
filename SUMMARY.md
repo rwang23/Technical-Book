@@ -11,7 +11,8 @@ This is the summary of my experience in LintCode.
 
 * [Design Pattern](DesignPattern/README.md)
 
-* [System Design](SystemDesignPractice/README.md)
+* [System Design](SystemDesign/README.md)
+	* [Design Twitter / 4S Analyze](SystemDesign/DesignTwitter.md)
 
 * [User System & Database](SystemDesignPractice/UserSystem&Database/README.md)
 	* [Design Twitter](SystemDesignPractice/UserSystem&Database/DesignTwitter.md)
