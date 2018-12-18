@@ -2,12 +2,12 @@
 
 This is the summary of my experience in LintCode.
 
-* [System](SystemDesign/README.md)
-	* [Network](SystemDesign/Network.md)
-	* [Operating Systems](SystemDesign/OperatingSystems.md)
-	* [Design Pattern](SystemDesign/DesignPattern.md)
-	* [Scale the Web Application](SystemDesign/Scale.md)
-	* [web-craw](SystemDesign/web-craw.md)
+* [System](System/README.md)
+	* [Network](System/Network.md)
+	* [Operating Systems](System/OperatingSystems.md)
+	* [Design Pattern](System/DesignPattern.md)
+	* [Scale the Web Application](System/Scale.md)
+	* [web-craw](System/web-craw.md)
 
 * [Design Pattern](DesignPattern/README.md)
 

@@ -1,4 +1,5 @@
 ##Counting Bloom Filter
+[lintcode](https://www.lintcode.com/problem/counting-bloom-filter/description)
 	Implement a counting bloom filter. Support the following method:
 
 	add(string). Add a string into bloom filter.

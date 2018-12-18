@@ -1,4 +1,5 @@
 ##Standard Bloom Filter
+[lintcode](https://www.lintcode.com/problem/standard-bloom-filter/description)
 	Implement a standard bloom filter. Support the following method:
 
 	StandardBloomFilter(k),The constructor and you need to create k hash functions.

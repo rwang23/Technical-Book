@@ -14,9 +14,10 @@
 - 再没有Builder前，完全通过一步步的append
 - 建立了builder后，只需要传入nodeName和nodeText
 - fluent builder可以实现chain call
+- 代码使用缩进2格
 
 ```java
-public static void main(String[] args)
+  public static void main(String[] args)
   {
 
 

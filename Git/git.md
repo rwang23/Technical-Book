@@ -63,7 +63,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 cd到要拷贝的git的文件夹
 
 1. 要关联一个远程库，使用命令 `git remote add origin git@server-name:path/repo-name.git`；
-2. 比如 `git remote add origin git@github.com:rwang23/xx.git`
+2. 比如 `git remote add origin git@github.com/rwang23/xx.git`
+	比如`git+ssh://git@github.com/rwang23/Technical-Interview.git`
 
 2. 关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容,如果不是master分支，换名字就可以；
 
@@ -150,6 +151,14 @@ Git鼓励大量使用分支：
 
 2. 如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；git pull origin master. origin是远程分支的名字
 
+- 如果pull失败了,那么需要fetch
+- git pull does a git fetch followed by a git merge.
+```
+git fetch
+git merge origin/branch_name
+```
+- In this, you first fetch all the changes but instead of rebasing, you merge the remote changes onto your local branch.
+
 3. 如果合并有冲突，则解决冲突，并在本地提交；
 
 4. 没有冲突或者解决掉冲突后，再用git push origin branch-name推送就能成功！
@@ -194,6 +203,7 @@ Git鼓励大量使用分支：
 
 2. 增加该git的远程原始分支（我的分支）到本地（增加之后，需要用`git remote -v`命令里确认是否有这个远程分支）
 `git remote add aliasname git@github.com:rwang23/xx.git`
+有SSH的话就用git+ssh`git+ssh://git@github.com/rwang23/Technical-Interview.git`
 
 3. 命令：`git remote -v` 会发现多出来了一个远程分支。含有Push与fetch
 
