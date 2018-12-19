@@ -82,3 +82,9 @@ QPS = 1M 需要1000台Web服务器集群,需要考虑挂了怎么办
 - 细化表单结构
 
 ![Storage](../image/Storage.png)
+
+- DB是对FileSystem的包装,DB基于FS
+- 本身就是文件的东西,就不需要放在DB中了,比如视频,图片
+
+![Select Storage](../image/SelectStorage.png)
+(Tweet Service数据量大,也不需要支持太复杂的查询,所以用NoSQL)
