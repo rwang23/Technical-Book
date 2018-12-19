@@ -22,6 +22,17 @@ DAU 1M
 ![Authentication Service](../image/AuthenticationService.png)
 - Session Table 存在哪儿? 一般来说，都可以，即便存在 Cache 里,断电了相当于让所有用户都 logout 也没啥大不了 存在数据库里肯定更好 如果访问多的话，就用 Cache 做优化即可
 
+####FriendShip Service
+![Friendship Service](../image/FriendshipService.png)
+
+#####FriendShip Service 如何选择数据库
+- 数据库选择原则1 大部分的情况，用SQL也好，用NoSQL也好，都是可以的
+- 数据库选择原则2 需要支持 Transaction 的话不能选 NoSQL
+- 数据库选择原则3 你想不想偷懒很大程度决定了选什么数据库, SQL更成熟帮你做了很多事儿 NoSQL很多事儿都要亲力亲为(Serialization, Secondary Index)
+- 数据库选择原则4 如果想省点服务器获得更高的性能，NoSQL就更好 硬盘型的NoSQL比SQL一般都要快10倍以上
+![SQL](../image/SQL.png)
+![Cassandra](../image/Cassandra.png)
+
 ###Storage
 - Cache 只是个概念
 -  Memcached 一款负责帮你Cache在内存里的“软件” 非常广泛使用的数据存储系统
