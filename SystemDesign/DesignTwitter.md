@@ -88,3 +88,26 @@ QPS = 1M 需要1000台Web服务器集群,需要考虑挂了怎么办
 
 ![Select Storage](../image/SelectStorage.png)
 (Tweet Service数据量大,也不需要支持太复杂的查询,所以用NoSQL)
+
+####NewsFeed如何活取
+- NewsFeed: 你登陆 Facebook / Twitter / 朋友圈 之后看到的信息流. 你的所有朋友发的信息的集合
+
+#####Pull Model
+- 算法:在用户查看News Feed时，获取每个好友的前100条Tweets，合并出前100条News Feed • K路归并算法 Merge K Sorted Arrays
+- 复杂度分析: News Feed => 假如有N个关注对象，则为N次DB Reads的时间 + K路归并时间(可忽略)
+- 为什么K路归并的时间可以忽略? Post a tweet => 1次DB Write的时间
+![Pull Model](../image/PullModel.png)
+
+#####Pull Model 缺陷
+- N次DB Reads非常慢 且发生在用户获得News Feed的请求过程中
+
+#####Push Model
+- 算法: 为每个用户建一个List(一个NewsFeed Table)存储他的News Feed信息, 在另用户发一个Tweet之后，将该推文逐个推送到每个用户的News Feed List中
+- 关键词:Fanout,逐步推送,fanout到用户News Feed List
+- 用户需要查看News Feed时，只需要从该News Feed List中读取最新的100条即可
+- 读复杂度分析: News Feed => 1次DB Read
+- 写复杂度分析: Post a tweet => N个粉丝，需要N次DB Writes
+- 但是这时候的写有个好处是可以用异步任务在后台执行，无需用户等待
+
+![News Feed Table](../image/NewsFeedTable.png)
+![Push Model](../image/PushModel.png)
