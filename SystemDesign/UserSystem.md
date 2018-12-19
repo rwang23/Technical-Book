@@ -32,6 +32,7 @@ DAU 1M
 - 数据库选择原则4 如果想省点服务器获得更高的性能，NoSQL就更好 硬盘型的NoSQL比SQL一般都要快10倍以上
 ![SQL](../image/SQL.png)
 ![Cassandra](../image/Cassandra.png)
+![Cassandra Example](../image/CassandraExample.png)
 
 ###Storage
 - Cache 只是个概念
