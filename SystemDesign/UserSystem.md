@@ -51,3 +51,18 @@ DAU 1M
 
 ![Cache Aside](../image/CacheAside.png)
 ![Cache Through](../image/CacheThrough.png)
+
+####Scale
+- 100M 的用户存在一台 MySQL 数据库里也存得下，Storage没问题,通过 Cache 优化读操作后，只有 300QPS 的写，QPS也没问题 还有什么问题?
+- Single Point Failure 万一这一台数据库挂了 短暂的挂:网站就不可用了 彻底的挂:数据就全丢了
+
+#####接下来两件事情
+- 数据拆分 Sharding
+  * 按照一定的规则，将数据拆分成不同的部分，保存在不同的机器上 • 这样就算挂也不会导致网站 100% 不可用
+  * 数据备份 Replica
+  * 通常的做法是一式三份(重要的事情“写”三遍) • Replica 同时还能分摊读请求
+
+#####Sharding 数据的分发规则
+- SQL自身不带 Sharding 功能，需要码农亲自上手 Cassandra为例的NoSQL大多数都自带 Sharding
+
+#####Replica
