@@ -108,6 +108,27 @@ QPS = 1M 需要1000台Web服务器集群,需要考虑挂了怎么办
 - 读复杂度分析: News Feed => 1次DB Read
 - 写复杂度分析: Post a tweet => N个粉丝，需要N次DB Writes
 - 但是这时候的写有个好处是可以用异步任务在后台执行，无需用户等待
+- 缺陷:大V会push到好多人那里去,每次大V发送都会特别慢
 
 ![News Feed Table](../image/NewsFeedTable.png)
 ![Push Model](../image/PushModel.png)
+
+###4.Scale
+- Pull/Push Scale
+![Pull Scale](../image/PullScale.png)
+![Push Scale](../image/PushScale.png)
+![Push Scale 2](../image/PushScale2.png)
+![Push & Pull Scale](../image/PushPull.png)
+
+- 什么时候用 Push?
+  * 资源少
+  * 想偷懒，少写代码
+  * 实时性要求不高(push需要执行很长时间)
+  * 用户发帖比较少
+  * 双向好友关系，没有明星问题(比如朋友圈)
+- 什么时候用 Pull ?
+  * 资源充足
+  * 实时性要求高
+  * 用户发帖很多
+  * 单向好友关系，有明星问题
+- 一般先从Push开始,然后再加入Pull
