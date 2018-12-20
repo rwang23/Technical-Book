@@ -69,4 +69,64 @@ row_key=shortURL, column_key=LongURL, value=null or timestamp
 • long to short(生成新 short url 时需要)
 • short to long(查询 short url 时需要)
 ```
-2.
+2. 提速
+```
+利用地理位置信息提􏰁
+
+优化服务器访问􏰁度
+• 不同的地区，使用不同的 Web 服务器
+• 通过DNS解析不同地区的用户到不同的服务器
+
+ 优化数据访问􏰁度
+• 使用Centralized MySQL+Distributed Memcached
+• 一个MySQL配多个Memcached，Memcached跨地区分布
+
+```
+
+3. 假如我们一开始估算错了，一台MySQL搞不定了
+
+ ```
+什么时候需要多台数据库服务器?
+• Cache 资源不够
+• 写操作越来越多
+• 越来越多的请求无法通过 Cache 满足
+
+增加多台数据库服务器可以优化什么?
+• 解决“存不下”的问题 —— Storage的角度
+• 解决“忙不过”的问题 —— QPS的角度
+• Tiny URL 主要是什么问题?
+ ```
+
+ - Horizontal Sharding
+• 用什么做Sharding Key?
+• 如果用 ID，如何查询 Long Url? • 如果用Long Url，如何查询 ID?
+
+```
+用 Long URL 做 shard key
+• 查询的时候，只能广播给N台数据库查询
+• 并不解决降低每台机器QPS的问题
+• 因为更常见是使用shortURL 去找 Long URL
+
+用 ID 做 shard key
+• 按照 ID % N(N为数据服务器个数)，来分配存储
+• Short url to long url
+  • 将 short url 转换为 ID
+  • 根据ID找到数据库
+  • 在该数据库中查询到 long url
+• Long url to short url
+  • 先查询:广播给 N 台数据库，查询是否存在
+    • 看起来有点耗，不 过也是可行的，因 为数据库服务器不会太多
+  • 再插入:如果不存在的话，获得下一个自增ID的值，插入对应数据库
+```
+
+- 或者更高级的方法
+![ShortKey](../image/ShortKey.png)
+
+4. 目前架构
+![ScaleArchitecture](../image/ScaleArchitecture.png)
+
+5. 继续优化
+![ScaleMultiRegion](../image/ScaleMultiRegion.png)
+
+6. 最终架构
+![finalArchitecture](../image/finalArchitecture.png)
