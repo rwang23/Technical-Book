@@ -130,3 +130,5 @@ row_key=shortURL, column_key=LongURL, value=null or timestamp
 
 6. 最终架构
 ![finalArchitecture](../image/finalArchitecture.png)
+
+7. 再可以考虑加入新功能: Custom URL
