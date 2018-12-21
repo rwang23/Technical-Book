@@ -15,6 +15,7 @@ This is the summary of my experience in LintCode.
 	* [Design Twitter / 4S Analyze](SystemDesign/DesignTwitter.md)
 	* [User System - Database & Memcache](SystemDesign/UserSystem.md)
 	* [Design Tiny URL](SystemDesign/DesignTinyURL.md)
+	* [Location Based Service](SystemDesign/LocationService.md)
 
 * [User System & Database](SystemDesignPractice/UserSystem&Database/README.md)
 	* [Design Twitter](SystemDesignPractice/UserSystem&Database/DesignTwitter.md)
