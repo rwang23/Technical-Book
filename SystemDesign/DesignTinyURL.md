@@ -66,12 +66,14 @@ row_key=shortURL, column_key=LongURL, value=null or timestamp
 ###Scale
 
 1. 利用缓存
+
 ```
 利用缓存提􏰁(Cache Aside) • 缓存里需要存两类数据:
 • long to short(生成新 short url 时需要)
 • short to long(查询 short url 时需要)
 ```
 2. 提速
+
 ```
 利用地理位置信息提􏰁
 
