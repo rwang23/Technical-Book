@@ -27,6 +27,7 @@
 
 ###Storage
 - 数据库的选择
+
 ```
 是否需要支持 Transaction?——不需要。NoSQL +1
 • NoSQL不支持Transaction
@@ -47,6 +48,7 @@
 • 也就是1,2,3,4,5 ...
 • NoSQL的ID并不是 Sequential 的
 ```
+
 ###算法
 ![base62](../image/base62.png)
 - 用全局自增ID,一般更常用语单机(可以在自增ID前加入一个参数,比如0ID, 1ID, 作为机器的自增ID)
