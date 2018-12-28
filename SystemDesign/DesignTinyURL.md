@@ -6,6 +6,7 @@
 2. 根据Short URL 找到 Long URL进行跳转
 3. 两个需要和面试官确认的问题 1)Long Url 和 Short Url 之间必须是一一对应的关系么? 2)Short Url 长时间没人用需要释放么?
 
+
 ```
 1. 询问面试官微博日活跃用户
 • 约100M
@@ -22,6 +23,7 @@
 • 每一条 URL 长度平均 100 算，一共1G
 • 1T 的硬盘可以用 3 年
 ```
+
 ###Service
 ![Tiny URL Service](../image/TinyURLService.png)
 
