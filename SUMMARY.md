@@ -16,6 +16,8 @@ This is the summary of my experience in LintCode.
 	* [User System - Database & Memcache](SystemDesign/UserSystem.md)
 	* [Design Tiny URL](SystemDesign/DesignTinyURL.md)
 	* [Location Based Service](SystemDesign/LocationService.md)
+	* [Crawler](SystemDesign/Crawler.md)
+	* [Typeahead](SystemDesign/Typeahead.md)
 
 * [User System & Database](SystemDesignPractice/UserSystem&Database/README.md)
 	* [Design Twitter](SystemDesignPractice/UserSystem&Database/DesignTwitter.md)
