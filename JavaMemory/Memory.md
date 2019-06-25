@@ -38,3 +38,22 @@ c = new Customer("Susan"); //compile error
 
 ![stack](../image/escapingReference.png)
 ![stack](../image/escapingReferenceSolution.png)
+
+####Better way
+- Still, it's not perfect way since iterator also has a remove method
+- a better way is to return a new hashmap using constructor like below
+- then we are not allowed to edit original object without setter
+- so even we do ```records.getCustomers.clear()```, it wont impact on original object
+
+![stack](../image/escapingReferenceSolution2.png)
+
+####Improvement
+- the safe way is to return immutable collections
+- make it unmodifiable
+
+![stack](../image/escapingReferenceSolution3.png)
+
+####Addition
+- not even return original objects
+- give it a new constructor and return a new object so that no edition will be on original objects
+![stack](../image/escapingReferenceSolution4.png)

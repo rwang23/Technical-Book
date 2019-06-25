@@ -13,6 +13,7 @@ This is the summary of my experience in LintCode.
 
 * [Java Memory Management](JavaMemory/README.md)
 	* [Java Memory](JavaMemory/Memory.md)
+	* [Java Memory](JavaMemory/GarbageCollection.md)
 
 * [System Design](SystemDesign/README.md)
 	* [Design Twitter / 4S Analyze](SystemDesign/DesignTwitter.md)
