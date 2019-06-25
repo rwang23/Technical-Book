@@ -11,6 +11,9 @@ This is the summary of my experience in LintCode.
 
 * [Design Pattern](DesignPattern/README.md)
 
+* [Java Memory Management](JavaMemory/README.md)
+	* [Java Memory](JavaMemory/Memory.md)
+
 * [System Design](SystemDesign/README.md)
 	* [Design Twitter / 4S Analyze](SystemDesign/DesignTwitter.md)
 	* [User System - Database & Memcache](SystemDesign/UserSystem.md)
@@ -18,6 +21,7 @@ This is the summary of my experience in LintCode.
 	* [Location Based Service](SystemDesign/LocationService.md)
 	* [Crawler](SystemDesign/Crawler.md)
 	* [Typeahead](SystemDesign/Typeahead.md)
+	* [Distributed System](SystemDesign/DistributedSystem.md)
 
 * [User System & Database](SystemDesignPractice/UserSystem&Database/README.md)
 	* [Design Twitter](SystemDesignPractice/UserSystem&Database/DesignTwitter.md)
