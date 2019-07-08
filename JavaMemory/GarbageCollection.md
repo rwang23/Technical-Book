@@ -46,5 +46,25 @@ five.equals(four); // false
 - a way to organize the heap
 - heap is divided into young and old Generation
 - new object is created in young generation
-- since new objects are young generation and it mostly possible that garbage are these new objects, so the process to young generation should be very quick and this time survice objects are copied to old generation
+- since new objects are young generation and it mostly possible that garbage are these new objects, so the process to young generation should be very quick and this time survival objects are copied to old generation
 - real model might have 8 division on young generations, young1 -> yong2 -> ... -> yong8 -> old
+- use ```Visual GC```to view a soft leak
+- use ```Memory Analyzer tool``` to analyze leak details
+
+####PermGen / MetaSpace(after Java 6)
+- PermGen: permanent generation
+- Heap is divided into young, old, PermGen
+- Java 8 removed PermGen and introduce MetaSpace(meta data of class, allocated from memory from computer)
+- Java 8, heap is divided into young and old, and MetaSpace is direct from memory
+
+####Tuning VM
+- ```-Xmx``` set the max heap size
+- ```Xms``` set the starting heap size
+- ```-Xmx512m -Xms150m```
+- ```XX:MaxPermSize=256m```
+- ```-verbose:gc``` print to console when gc happen
+- ```-Xmn``` set the size of the young generation ```-Xmn256m```
+- ```XX:HeapDumpOnOutOfMemory``` creates a heap dump file
+
+####GC collector
+![GCCollector](../image/GCCollector.png)
