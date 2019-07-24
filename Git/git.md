@@ -41,6 +41,15 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 * `git reset HEAD filename`: Unstages file changes in the staging area.
 * `git reset SHA`: Can be used to reset to a previous commit in your commit history
 
+##git revert
+版本回退到merge之前
+
+* `git revert -m 1 commit_id` commit_id就是merge时的commit
+* 只是更改内容,并不更改历史
+* branch还是以为已经merge了,只是内容被改回去了,所以下一次merge同样的东西的时候,branch觉得我已经merge过了之前的change,之前的change就不会再merge了
+* 这个时候就需要 `git revert revert_commit_id` 把之前的revert再次revert,这样原来的内容就有了
+
+
 ##工作区与暂存区
 `git add`命令实际上就是把要提交的所有修改放到暂存区（Stage）
 
