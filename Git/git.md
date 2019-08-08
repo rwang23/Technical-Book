@@ -23,6 +23,12 @@
 * `git log -p -2` -p 选项展开显示每次提交的内容差异，用 -2 则仅显示最近的两次更新
 *  `git log --stat`显示简要的更改行数统计
 
+##Head
+* First of all what is HEAD?
+* HEAD is simply a reference to the current commit (latest) on the current branch.
+* The content of HEAD is stored inside .git/HEAD and it contains the 40 bytes SHA-1 of the current commit.
+* head does not mean lastest commit, it's where you are on now
+
 ##版本回退
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令：
 
@@ -30,9 +36,25 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 * `git reset --hard HEAD^` 	 回退一个版本
 * `git reset --hard HEAD^^`   回退两个版本
 * `git reset --hard HEAD~100` 回退一百个版本
+* `git reset --soft HEAD~1`
+* soft flag: this makes sure that the changes in undone revisions are preserved. After running the command, you'll find the changes as uncommitted local modifications in your working copy.
+* --hard flag. Be sure to only do this when you're sure you don't need these changes anymore.
+* both soft and hard flag will move head to this commit and give up commits after this commit id
+* `git reset HEAD~1` will just move to one commit, other commits remain
 
 穿梭前，用`git log`可以查看提交历史，以便确定要回退到哪个版本。
 要重返未来，用`git reflog`查看命令历史，以便确定要回到未来的哪个版本。
+
+##Undo a commit
+
+```
+$ git commit -m "Something terribly misguided" (1)
+$ git reset HEAD~ (2)
+<< edit files as necessary >> (3)
+$ git add ... (4)
+$ git commit -c ORIG_HEAD (5)
+```
+
 
 ##git checkout vs git reset
 
