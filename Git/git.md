@@ -41,20 +41,12 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 * --hard flag. Be sure to only do this when you're sure you don't need these changes anymore.
 * both soft and hard flag will move head to this commit and give up commits after this commit id
 * `git reset HEAD~1` will just move to one commit, other commits remain
+* to go revert a commit, use `git revert commit_id`
+* 如果需要把远程repo的内容替换到commit以前的版本(历史也改变),那么在使用`git reset --hard`后使用`git push origin HEAD --force`
+* Using this is dangerous in a collaborative environment: you're rewriting history
 
 穿梭前，用`git log`可以查看提交历史，以便确定要回退到哪个版本。
 要重返未来，用`git reflog`查看命令历史，以便确定要回到未来的哪个版本。
-
-##Undo a commit
-
-```
-$ git commit -m "Something terribly misguided" (1)
-$ git reset HEAD~ (2)
-<< edit files as necessary >> (3)
-$ git add ... (4)
-$ git commit -c ORIG_HEAD (5)
-```
-
 
 ##git checkout vs git reset
 
@@ -66,11 +58,11 @@ $ git commit -c ORIG_HEAD (5)
 ##git revert
 版本回退到merge之前
 
-* `git revert -m 1 commit_id` commit_id就是merge时的commit
+* `git revert -m 1 commit_id` commit_id就是merge时的commit,此时会产生一个新的commit
 * 只是更改内容,并不更改历史
 * branch还是以为已经merge了,只是内容被改回去了,所以下一次merge同样的东西的时候,branch觉得我已经merge过了之前的change,之前的change就不会再merge了
 * 这个时候就需要 `git revert revert_commit_id` 把之前的revert再次revert,这样原来的内容就有了
-
+* git revert只会revert commit_id的内容,不会把commit_id 到head的内容全部revert了
 
 ##工作区与暂存区
 `git add`命令实际上就是把要提交的所有修改放到暂存区（Stage）
@@ -248,12 +240,3 @@ git merge origin/branch_name
 `git push origin master`
 
 6. 给对方发送Pull Request
-
-
-##########
-111111111111111111
-22222222222222222
-333333333333333
-44444444444444
-5555555555555
-666666666666
