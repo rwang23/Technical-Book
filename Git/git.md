@@ -42,7 +42,7 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 * both soft and hard flag will move head to this commit and give up commits after this commit id
 * `git reset HEAD~1` will just move to one commit, other commits remain
 * to go revert a commit, use `git revert commit_id`
-* 如果需要把远程repo的内容替换到commit以前的版本(历史也改变),那么在使用`git reset --hard`后使用`git push origin HEAD --force`
+* 如果需要把远程repo的内容替换到commit以前的版本(历史也改变),那么在使用`git reset --hard`后使用`git push origin branch --force`
 * Using this is dangerous in a collaborative environment: you're rewriting history
 
 穿梭前，用`git log`可以查看提交历史，以便确定要回退到哪个版本。
