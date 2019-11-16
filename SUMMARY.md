@@ -15,6 +15,9 @@ This is the summary of my experience in LintCode.
 	* [Java Memory](JavaMemory/Memory.md)
 	* [Java Memory](JavaMemory/GarbageCollection.md)
 
+* [Machine Learning](machineLearning/README.md)
+
+
 * [System Design](SystemDesign/README.md)
 	* [Design Twitter / 4S Analyze](SystemDesign/DesignTwitter.md)
 	* [User System - Database & Memcache](SystemDesign/UserSystem.md)
