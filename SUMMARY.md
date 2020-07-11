@@ -84,5 +84,5 @@ This is the summary of my experience in LintCode.
 * [Bash Command](bash/README.md)
 	* [Bash Command](bash/BashCommand.md)
 
-* [Stock Trading](bash/README.md)
+* [Stock Trading](stockTrading/README.md)
 	* [TTM Squeeze](stockTrading/TTMSqueeze.md)
