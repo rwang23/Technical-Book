@@ -4,6 +4,13 @@
 ##Algorithm
 View [TTM Squeeze Algorithm](https://www.cypherscope.com/home/the-best-indicators-youve-never-used-ttm-squeeze#:~:text=The%20TTM%20Squeeze%20captures%20the,subsequent%20direction%20of%20that%20move) to view how TTM Squeeze works
 
+##How to use
+* Navigate to tradingview chart
+* Open Pine Editor at bottom of the page
+* Click New -> Blank indicator script
+* Copy code and save
+* Click Indicators at top of the page -> My scripts -> choose your copy
+* For futu users, please replace the functions with those supported by futu
 
 ##PineScript Code
 
