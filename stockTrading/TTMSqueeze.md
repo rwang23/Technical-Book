@@ -10,6 +10,7 @@ Click [TTM Squeeze Algorithm](https://www.cypherscope.com/home/the-best-indicato
 * Click New -> Blank indicator script
 * Copy code and save
 * Click Indicators at top of the page -> My scripts -> choose your copy
+* Adjust your own parameters to fit your style
 * For futu users, please replace the functions with those supported by futu
 
 ##PineScript Code
