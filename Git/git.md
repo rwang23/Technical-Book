@@ -55,6 +55,9 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 * `git reset HEAD filename`: Unstages file changes in the staging area.
 * `git reset SHA`: Can be used to reset to a previous commit in your commit history
 
+##git apply a commit to another branch
+* git cherry-pick commitID --no-commit
+
 ##git revert
 版本回退到merge之前
 

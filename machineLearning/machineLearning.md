@@ -21,3 +21,10 @@
 - 使用欧式距离, 要求data必须standardize
 
 ///正交算出core relation, 如果一个core relation跟其他的component特别小,那么可以进行降维
+
+###How any PCs are needed?
+- A common rule of thumb when PCA is based on correlations is that axes with eigenvalues > 1(or 0.7)
+- Assumes relationships among variables are LINEAR
+- we can try use kernel PCA to mock linear
+
+vic.da09@gmail.com
