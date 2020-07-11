@@ -18,31 +18,24 @@ View [TTM Squeeze Algorithm](https://www.cypherscope.com/home/the-best-indicator
 //@version=4
 study("TTM Squeeze", shorttitle="My TTM Squeeze")
 
-length = input(title="Length", type=input.integer, defval=20)
+length = input(title="Length", type=input.integer, defval=14)
 bbMult = input(title="Bollinger Bands Multiplier", type=input.float, step=0.1, defval=2.0)
 kcMult = input(title="Keltner Channels Multiplier", type=input.float, step=0.1, defval=1.5)
 
-
 smoothLength = input(title="EMA Smooth Length", type=input.integer, defval=3)
-dotDisplayRatio = 1.0
+//dotDisplayRatio = 1.0
+dotAdjustatio = input(title="Dot Adjust Ratio", type=input.float, step=0.1, defval=1.1)
 src = close
 
 //Bollinger Bands
 mean = sma(src, length)
 stdev = stdev(src, length)
-//bbUpper = mean + bbMult * stdev
-//bbLower = mean - bbMult * stdev
-//BB Range
 bbRange = 2 * bbMult * stdev / mean
 
 //Keltner Channels
 basis = ema(src, length)
 avgrange = ema(tr(true), length)
-//kcUpper = basis + kcMult * avgrange
-//kcLower = basis - kcMult * avgrange
-//KC range
 kcRange = 2 * kcMult * avgrange / basis
-
 
 //Momentum
 momentum = change(src, length)
@@ -58,7 +51,7 @@ col_fall_below = #EF5350
 histColor = hist >= 0 ? hist[1] < hist ? col_grow_above : col_fall_above : hist[1] < hist ? col_grow_below : col_fall_below
 plot(hist, style=plot.style_columns, color=histColor, histbase=0)
 
-dotColor = bbRange / kcRange <= dotDisplayRatio ? color.orange : #00d916
-plot(0, title="Squeeze dot", style=plot.style_circles, linewidth=3, color=dotColor)
+dotColor = bbRange / kcRange <= dotAdjustatio ? color.orange : #00d916
+plot(0, title="Squeeze dot", style=plot.style_circles, linewidth=4, color=dotColor)
 
 ```
