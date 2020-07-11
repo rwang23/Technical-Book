@@ -2,7 +2,7 @@
 
 
 ##Algorithm
-View [TTM Squeeze Algorithm](https://www.cypherscope.com/home/the-best-indicators-youve-never-used-ttm-squeeze#:~:text=The%20TTM%20Squeeze%20captures%20the,subsequent%20direction%20of%20that%20move) to view how TTM Squeeze works
+Click [TTM Squeeze Algorithm](https://www.cypherscope.com/home/the-best-indicators-youve-never-used-ttm-squeeze#:~:text=The%20TTM%20Squeeze%20captures%20the,subsequent%20direction%20of%20that%20move) to view how TTM Squeeze works
 
 ##How to use
 * Navigate to tradingview chart
