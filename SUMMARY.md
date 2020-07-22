@@ -86,3 +86,4 @@ This is the summary of my experience in LintCode.
 
 * [Stock Trading](stockTrading/README.md)
 	* [TTM Squeeze](stockTrading/TTMSqueeze.md)
+	* [Chan&TD](stockTrading/TDChan.md)
