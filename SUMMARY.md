@@ -84,6 +84,10 @@ This is the summary of my experience in LintCode.
 * [Bash Command](bash/README.md)
 	* [Bash Command](bash/BashCommand.md)
 
+* [Django](Django/README.md)
+	* [Start](Django/Start.md)
+
 * [Stock Trading](stockTrading/README.md)
 	* [TTM Squeeze](stockTrading/TTMSqueeze.md)
 	* [Chan&TD](stockTrading/TDChan.md)
+	* [SCCI](stockTrading/SCCI.md)
